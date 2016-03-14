@@ -13,6 +13,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     @IBOutlet weak var homeTableView: UITableView!
     let mainBackgroundColor: UIColor! = UIColor(hexString: "#F58072")
+    let homeTableBackgroundColor: UIColor! = UIColor(hexString: "#FF9E7C")
     var homeTableViewHeight: CGFloat!
     var originalTableViewOrigin: CGPoint!
     var originalTableViewSize: CGSize!
@@ -28,8 +29,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         super.viewDidLoad()
         
         self.view.backgroundColor = mainBackgroundColor
-        
-        homeTableView.backgroundColor = mainBackgroundColor
+        homeTableView.backgroundColor = homeTableBackgroundColor
         homeTableView.delegate = self
         homeTableView.dataSource = self
         homeTableView.rowHeight = calculateRowHeight()
