@@ -13,6 +13,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     @IBOutlet weak var homeTableView: UITableView!
     let mainBackgroundColor: UIColor! = UIColor(hexString: "#F58072")
+    var homeTableViewHeight: CGFloat!
     var originalTableViewOrigin: CGPoint!
     var originalTableViewSize: CGSize!
     let topicsColors = [
@@ -32,6 +33,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         homeTableView.delegate = self
         homeTableView.dataSource = self
         homeTableView.rowHeight = calculateRowHeight()
+        homeTableViewHeight = homeTableView.frame.height
     }
     
     // Calculate table row height based on number of topics
@@ -62,6 +64,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBAction func didPanHomeTable(sender: UIPanGestureRecognizer) {
 
         let translation = sender.translationInView(view)
+        let velocity = sender.velocityInView(view)
         
         if sender.state == UIGestureRecognizerState.Began {
             originalTableViewOrigin = homeTableView.frame.origin
@@ -74,15 +77,47 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
                 originalTableViewSize.width,
                 originalTableViewSize.height - translation.y)
             
-            homeTableView.rowHeight = calculateRowHeight()
-            homeTableView.reloadData()
+            reloadHomeTable()
 
         } else if sender.state == UIGestureRecognizerState.Ended {
-            homeTableView.frame.origin = originalTableViewOrigin
-            homeTableView.frame.size = originalTableViewSize
-            homeTableView.rowHeight = calculateRowHeight()
-            homeTableView.reloadData()
+            if (velocity.y > 0) {
+                // Collapse
+                animateHomeTableDown()
+            } else {
+                // Open
+                animateHomeTableUp()
+            }
+            reloadHomeTable()
         }
+    }
+    
+    // Reload home table to adjust table row height
+    func reloadHomeTable() {
+        homeTableView.rowHeight = calculateRowHeight()
+        homeTableView.reloadData()
+    }
+    
+    func animateHomeTableDown() {
+        let collapsedHeight = CGFloat(160)
+        UIView.animateWithDuration(0.4, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options:[] , animations: { () -> Void in
+            self.homeTableView.frame.size = CGSize(
+                width: self.originalTableViewSize.width,
+                height: collapsedHeight)
+            self.homeTableView.frame.origin.y =
+                self.view.frame.height - collapsedHeight
+            }, completion: { (Bool) -> Void in
+        })
+    }
+    
+    func animateHomeTableUp() {
+        UIView.animateWithDuration(0.4, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options:[] , animations: { () -> Void in
+            self.homeTableView.frame.size = CGSize(
+                width: self.originalTableViewSize.width,
+                height: self.homeTableViewHeight)
+            self.homeTableView.frame.origin.y =
+                self.view.frame.height - self.homeTableViewHeight
+            }, completion: { (Bool) -> Void in
+        })
     }
 
     /*
