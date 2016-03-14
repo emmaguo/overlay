@@ -13,7 +13,8 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     @IBOutlet weak var homeTableView: UITableView!
     let mainBackgroundColor: UIColor! = UIColor(hexString: "#F58072")
-    var originalTableFrameOrigin: CGPoint!
+    var originalTableViewOrigin: CGPoint!
+    var originalTableViewSize: CGSize!
     let topicsColors = [
         UIColor(hexString: "#9F8BFF"),
         UIColor(hexString: "#65D3EF"),
@@ -31,7 +32,6 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         homeTableView.delegate = self
         homeTableView.dataSource = self
         homeTableView.rowHeight = calculateRowHeight()
-        originalTableFrameOrigin = homeTableView.frame.origin
     }
     
     // Calculate table row height based on number of topics
@@ -58,6 +58,32 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         // Dispose of any resources that can be recreated.
     }
     
+    // Dragging home table down to reveal profile page
+    @IBAction func didPanHomeTable(sender: UIPanGestureRecognizer) {
+
+        let translation = sender.translationInView(view)
+        
+        if sender.state == UIGestureRecognizerState.Began {
+            originalTableViewOrigin = homeTableView.frame.origin
+            originalTableViewSize = homeTableView.frame.size
+
+        } else if sender.state == UIGestureRecognizerState.Changed {
+            homeTableView.frame = CGRectMake(
+                0,
+                originalTableViewOrigin.y + translation.y,
+                originalTableViewSize.width,
+                originalTableViewSize.height - translation.y)
+            
+            homeTableView.rowHeight = calculateRowHeight()
+            homeTableView.reloadData()
+
+        } else if sender.state == UIGestureRecognizerState.Ended {
+            homeTableView.frame.origin = originalTableViewOrigin
+            homeTableView.frame.size = originalTableViewSize
+            homeTableView.rowHeight = calculateRowHeight()
+            homeTableView.reloadData()
+        }
+    }
 
     /*
     // MARK: - Navigation
