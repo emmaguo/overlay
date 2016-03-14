@@ -11,6 +11,9 @@ import SwiftHEXColors
 
 class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    @IBOutlet weak var homeTableView: UITableView!
+    let mainBackgroundColor: UIColor! = UIColor(hexString: "#F58072")
+    var originalTableFrameOrigin: CGPoint!
     let topicsColors = [
         UIColor(hexString: "#9F8BFF"),
         UIColor(hexString: "#65D3EF"),
@@ -19,13 +22,21 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         UIColor(hexString: "#FF9E7C")
     ]
     
-    @IBOutlet weak var homeTableView: UITableView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.view.backgroundColor = mainBackgroundColor
+        
+        homeTableView.backgroundColor = mainBackgroundColor
         homeTableView.delegate = self
         homeTableView.dataSource = self
-        homeTableView.rowHeight = 120
+        homeTableView.rowHeight = calculateRowHeight()
+        originalTableFrameOrigin = homeTableView.frame.origin
+    }
+    
+    // Calculate table row height based on number of topics
+    func calculateRowHeight() -> CGFloat {
+        return homeTableView.frame.height / CGFloat(topicsColors.count)
     }
 
     // Define number of table rows
