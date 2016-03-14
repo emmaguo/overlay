@@ -33,8 +33,10 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.95923504739999998" green="1" blue="0.74620321919999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="topicNameLabel" destination="cxT-qn-und" id="m5k-SV-qbZ"/>
+                                            <segue destination="c7r-aD-7YF" kind="modal" id="L3r-3K-5ZE"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -59,6 +61,58 @@
                 </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="694" y="347"/>
+        </scene>
+        <!--Topic View Controller-->
+        <scene sceneID="F9d-c5-r5u">
+            <objects>
+                <viewController id="c7r-aD-7YF" customClass="TopicViewController" customModule="overlay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="80u-8Z-bHO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="RdC-Kq-SSZ">
+                                <rect key="frame" x="0.0" y="50" width="322" height="518"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="Gcv-s4-oBX">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="237"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2LG-tZ-QJ9">
+                                                <rect key="frame" x="73" y="165" width="174" height="64"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.95923504739999998" green="1" blue="0.74620321919999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Odd-kC-ho2" appends="YES" id="1fr-ef-4pp"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                    </view>
+                    <navigationItem key="navigationItem" id="AHh-QT-reu"/>
+                    <connections>
+                        <outlet property="scrollView" destination="RdC-Kq-SSZ" id="gbQ-r8-hwi"/>
+                        <outlet property="topicHeaderView" destination="Gcv-s4-oBX" id="MmS-2C-bs8"/>
+                        <outlet property="topicNameLabel" destination="2LG-tZ-QJ9" id="P4j-sJ-U0A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZIv-Wx-K7b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Odd-kC-ho2">
+                    <connections>
+                        <action selector="didPanScrollView:" destination="c7r-aD-7YF" id="mIZ-yC-84r"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1218" y="347"/>
         </scene>
     </scenes>
 </document>

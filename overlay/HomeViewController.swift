@@ -24,7 +24,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         UIColor(hexString: "#FFD57E"),
         UIColor(hexString: "#FF9E7C")
     ]
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -120,14 +120,11 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         })
     }
 
-    /*
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        let indexPath = homeTableView.indexPathForSelectedRow
+        let index = indexPath!.row
+        let topicViewController = segue.destinationViewController as! TopicViewController
+        topicViewController.headerBackgroundColor = topicsColors[index]
     }
-    */
-
 }

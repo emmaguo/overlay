@@ -11,6 +11,7 @@
 		7E288FA91C7D918F0046C82F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E288FA71C7D918F0046C82F /* Main.storyboard */; };
 		7E288FAB1C7D918F0046C82F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E288FAA1C7D918F0046C82F /* Assets.xcassets */; };
 		7E288FAE1C7D918F0046C82F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E288FAC1C7D918F0046C82F /* LaunchScreen.storyboard */; };
+		7E39F2681C969BA9000E223B /* TopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E39F2671C969BA9000E223B /* TopicViewController.swift */; };
 		7E8988781C96156D006F3F8B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8988771C96156D006F3F8B /* HomeViewController.swift */; };
 		7E89887C1C96322C006F3F8B /* TopicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E89887B1C96322C006F3F8B /* TopicCell.swift */; };
 		D1EBC79193C49F17614E7E7A /* Pods_overlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F0FEFBA2F53027C8E7F1547 /* Pods_overlay.framework */; };
@@ -25,6 +26,7 @@
 		7E288FAA1C7D918F0046C82F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E288FAD1C7D918F0046C82F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E288FAF1C7D918F0046C82F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E39F2671C969BA9000E223B /* TopicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicViewController.swift; sourceTree = "<group>"; };
 		7E8988771C96156D006F3F8B /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7E89887B1C96322C006F3F8B /* TopicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicCell.swift; sourceTree = "<group>"; };
 		BF940E331B05955B847A35A8 /* Pods-overlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-overlay.release.xcconfig"; path = "Pods/Target Support Files/Pods-overlay/Pods-overlay.release.xcconfig"; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 			children = (
 				7E8988771C96156D006F3F8B /* HomeViewController.swift */,
 				7E89887B1C96322C006F3F8B /* TopicCell.swift */,
+				7E39F2671C969BA9000E223B /* TopicViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 			files = (
 				7E288FA41C7D918F0046C82F /* AppDelegate.swift in Sources */,
 				7E89887C1C96322C006F3F8B /* TopicCell.swift in Sources */,
+				7E39F2681C969BA9000E223B /* TopicViewController.swift in Sources */,
 				7E8988781C96156D006F3F8B /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
