@@ -120,11 +120,17 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         })
     }
 
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let cell = tableView.cellForRowAtIndexPath(indexPath)
+        dispatch_async(dispatch_get_main_queue()) { () -> Void in
+            self.performSegueWithIdentifier("topicSegue", sender: cell)
+        }
+    }
+    
     // MARK: - Navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let indexPath = homeTableView.indexPathForSelectedRow
-        let index = indexPath!.row
+        let cell = sender as! TopicCell
         let topicViewController = segue.destinationViewController as! TopicViewController
-        topicViewController.headerBackgroundColor = topicsColors[index]
+        topicViewController.headerBackgroundColor = cell.backgroundColor
     }
 }

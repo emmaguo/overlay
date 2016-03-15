@@ -36,7 +36,6 @@
                                         <color key="backgroundColor" red="0.95923504739999998" green="1" blue="0.74620321919999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="topicNameLabel" destination="cxT-qn-und" id="m5k-SV-qbZ"/>
-                                            <segue destination="c7r-aD-7YF" kind="modal" id="L3r-3K-5ZE"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -51,6 +50,7 @@
                     <navigationItem key="navigationItem" id="aYS-pW-nc0"/>
                     <connections>
                         <outlet property="homeTableView" destination="v2P-vm-wvB" id="Uqy-ZN-L7d"/>
+                        <segue destination="c7r-aD-7YF" kind="modal" identifier="topicSegue" id="4BJ-oa-Xee"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -82,7 +82,7 @@
                                                 <rect key="frame" x="73" y="165" width="174" height="64"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
