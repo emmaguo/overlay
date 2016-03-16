@@ -7,23 +7,13 @@
 //
 
 import UIKit
-import SwiftHEXColors
 
 class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var homeTableView: UITableView!
-    let mainBackgroundColor: UIColor! = UIColor(hexString: "#F58072")
-    let homeTableBackgroundColor: UIColor! = UIColor(hexString: "#FF9E7C")
     var homeTableViewHeight: CGFloat!
     var originalTableViewOrigin: CGPoint!
     var originalTableViewSize: CGSize!
-    let topicsColors = [
-        UIColor(hexString: "#9F8BFF"),
-        UIColor(hexString: "#65D3EF"),
-        UIColor(hexString: "#B6DE85"),
-        UIColor(hexString: "#FFD57E"),
-        UIColor(hexString: "#FF9E7C")
-    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,7 +40,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = homeTableView.dequeueReusableCellWithIdentifier("Topic Cell") as! TopicCell
         let index = indexPath.row
-        cell.topicNameLabel.text = "Topic \(index)"
+        cell.topicNameLabel.text = topicsNames[index]
         cell.backgroundColor = topicsColors[index]
         return cell
     }
