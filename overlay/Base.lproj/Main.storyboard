@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="eTC-In-JnW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -115,27 +115,52 @@
             </objects>
             <point key="canvasLocation" x="1239.5" y="346.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Quiz View Controller-->
         <scene sceneID="9R8-5l-6jE">
             <objects>
-                <viewController id="gQP-82-7Kk" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QuizViewController" id="gQP-82-7Kk" customClass="QuizViewController" customModule="overlay" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="f4h-Xa-Vkp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="qkp-OX-FT0">
-                                <rect key="frame" x="0.0" y="109" width="320" height="373"/>
+                                <rect key="frame" x="0.0" y="109" width="375" height="438"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iJd-5s-wGr">
+                                <rect key="frame" x="32" y="575" width="311" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.96464646460000003" green="0.96464646460000003" blue="0.96464646460000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Check"/>
+                                <state key="disabled">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="quizButtonDidTap:" destination="gQP-82-7Kk" eventType="touchUpInside" id="p3X-Kd-lHY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is where the question will go" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qqr-HE-FsP">
+                                <rect key="frame" x="34" y="72" width="253" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="contentView" destination="qkp-OX-FT0" id="x5E-u2-YvX"/>
+                        <outlet property="questionLabel" destination="qqr-HE-FsP" id="IKG-xw-Hhs"/>
+                        <outlet property="quizButton" destination="iJd-5s-wGr" id="SCh-H4-sKW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ndm-A4-eM4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2035" y="347"/>
+            <point key="canvasLocation" x="2034.5" y="346.5"/>
         </scene>
         <!--Proximity One View Controller-->
         <scene sceneID="TbH-vk-2Na">
@@ -207,79 +232,77 @@
         <!--Multiple Choice View Controller-->
         <scene sceneID="2Le-4L-Kbg">
             <objects>
-                <viewController id="eTC-In-JnW" customClass="MultipleChoiceViewController" customModule="overlay" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MultipleChoiceViewController" id="eTC-In-JnW" customClass="MultipleChoiceViewController" customModule="overlay" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7t6-th-pdM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lTc-Oa-qZX">
-                                <rect key="frame" x="117" y="179" width="202" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ATextLabel" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lTc-Oa-qZX">
+                                <rect key="frame" x="96" y="10" width="244" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cJ3-ou-0JL">
-                                <rect key="frame" x="117" y="234" width="202" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BTextLabel" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cJ3-ou-0JL">
+                                <rect key="frame" x="96" y="84" width="244" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LdI-UA-UpY">
-                                <rect key="frame" x="60" y="229" width="30" height="30"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LdI-UA-UpY">
+                                <rect key="frame" x="30" y="94" width="48" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.91670625858456545" green="1" blue="0.41587371256078698" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="BButton_Unselected"/>
+                                <state key="selected" image="BButton_selected"/>
                                 <connections>
                                     <action selector="onAnswerButtonDidTap:" destination="eTC-In-JnW" eventType="touchUpInside" id="RcH-qn-ONa"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="27F-Fv-a2c">
-                                <rect key="frame" x="117" y="294" width="202" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CTextLabel" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="27F-Fv-a2c">
+                                <rect key="frame" x="96" y="162" width="244" height="72"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RDy-CU-bBj">
-                                <rect key="frame" x="60" y="289" width="30" height="30"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="RDy-CU-bBj">
+                                <rect key="frame" x="30" y="174" width="48" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.91670625858456545" green="1" blue="0.41587371256078698" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="CButton_Unselected"/>
+                                <state key="selected" image="CButton_selected"/>
                                 <connections>
                                     <action selector="onAnswerButtonDidTap:" destination="eTC-In-JnW" eventType="touchUpInside" id="1iZ-Qr-i1i"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="74a-1z-Aly">
-                                <rect key="frame" x="117" y="354" width="202" height="21"/>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XhP-cc-95n">
+                                <rect key="frame" x="30" y="255" width="48" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XhP-cc-95n">
-                                <rect key="frame" x="60" y="350" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.91670625858456545" green="1" blue="0.41587371256078698" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="DButton_Unselected"/>
+                                <state key="selected" image="DButton_selected"/>
                                 <connections>
                                     <action selector="onAnswerButtonDidTap:" destination="eTC-In-JnW" eventType="touchUpInside" id="hoa-4g-fS0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1Zf-jw-cMn">
-                                <rect key="frame" x="137" y="545" width="88" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vdF-8n-4kF">
+                                <rect key="frame" x="30" y="15" width="48" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Temp button"/>
-                                <connections>
-                                    <action selector="tempButtonDidTap:" destination="eTC-In-JnW" eventType="touchUpInside" id="D8S-2b-DGr"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vdF-8n-4kF">
-                                <rect key="frame" x="60" y="175" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.91670625858456545" green="1" blue="0.41587371256078698" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="AButton_Unselected"/>
+                                <state key="selected" image="AButton_selected"/>
+                                <state key="highlighted" image="AButton_selected"/>
+                                <state key="focused" image="AButton_selected"/>
                                 <connections>
                                     <action selector="onAnswerButtonDidTap:" destination="eTC-In-JnW" eventType="touchUpInside" id="Il0-kA-swa"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DTextLabel" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="74a-1z-Aly">
+                                <rect key="frame" x="96" y="241" width="244" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -297,7 +320,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4zN-kh-g13" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2245.5" y="1110.5"/>
+            <point key="canvasLocation" x="2481.5" y="346.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="AButton_Unselected" width="48" height="48"/>
+        <image name="AButton_selected" width="48" height="48"/>
+        <image name="BButton_Unselected" width="48" height="48"/>
+        <image name="BButton_selected" width="48" height="48"/>
+        <image name="CButton_Unselected" width="48" height="48"/>
+        <image name="CButton_selected" width="48" height="48"/>
+        <image name="DButton_Unselected" width="48" height="48"/>
+        <image name="DButton_selected" width="48" height="48"/>
+    </resources>
 </document>

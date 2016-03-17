@@ -9,7 +9,7 @@
 import UIKit
 
 class MultipleChoiceViewController: UIViewController {
-
+    
     @IBOutlet weak var AButton: UIButton!
     @IBOutlet weak var ATextLabel: UILabel!
     @IBOutlet weak var BButton: UIButton!
@@ -21,6 +21,9 @@ class MultipleChoiceViewController: UIViewController {
     
     var question: Question!
     var selectedAnswer: Answer?
+    var selectedButton: UIButton?
+    
+    let userDefaults = NSUserDefaults.standardUserDefaults()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,22 +34,29 @@ class MultipleChoiceViewController: UIViewController {
         let quiz = topic.quizzes.first!
         self.question = quiz.questions.first!
         
+        ATextLabel.numberOfLines = 0
+        BTextLabel.numberOfLines = 0
+        CTextLabel.numberOfLines = 0
+        DTextLabel.numberOfLines = 0
+        
         ATextLabel.text = question.answers[0].text
         BTextLabel.text = question.answers[1].text
         CTextLabel.text = question.answers[2].text
         DTextLabel.text = question.answers[3].text
-        
-        
+
+        userDefaults.synchronize()
         
     }
     
     @IBAction func onAnswerButtonDidTap(sender: UIButton) {
+        AButton.selected = false
+        BButton.selected = false
+        CButton.selected = false
+        DButton.selected = false
+        
         selectedAnswer = question.answers[sender.tag]
-    }
-    
-    @IBAction func tempButtonDidTap(sender: UIButton) {
-        if let selectedAnswer = selectedAnswer {
-            print(selectedAnswer.isCorrect)
-        }
+        sender.selected = true
+        selectedButton = sender
+        
     }
 }

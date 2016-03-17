@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BD1D4571C9BBA11006065C2 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD1D4561C9BBA11006065C2 /* QuizViewController.swift */; };
 		3BD36FE01C9A23C500F7254F /* ProximityOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD36FDF1C9A23C500F7254F /* ProximityOneViewController.swift */; };
 		3BEF99721C9A379A007B49DC /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEF99711C9A379A007B49DC /* ViewExtensions.swift */; };
 		3BEF99761C9A69B2007B49DC /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEF99751C9A69B2007B49DC /* Quiz.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3BD1D4561C9BBA11006065C2 /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		3BD36FDF1C9A23C500F7254F /* ProximityOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProximityOneViewController.swift; sourceTree = "<group>"; };
 		3BEF99711C9A379A007B49DC /* ViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		3BEF99751C9A69B2007B49DC /* Quiz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				7E8988771C96156D006F3F8B /* HomeViewController.swift */,
 				7E89887B1C96322C006F3F8B /* TopicCell.swift */,
 				7E39F2671C969BA9000E223B /* TopicViewController.swift */,
+				3BD1D4561C9BBA11006065C2 /* QuizViewController.swift */,
 				3BD36FDF1C9A23C500F7254F /* ProximityOneViewController.swift */,
 				3BEF997B1C9A6BEB007B49DC /* MultipleChoiceViewController.swift */,
 			);
@@ -265,6 +268,7 @@
 				3BEF99781C9A6A7D007B49DC /* Question.swift in Sources */,
 				3BD36FE01C9A23C500F7254F /* ProximityOneViewController.swift in Sources */,
 				7E89887C1C96322C006F3F8B /* TopicCell.swift in Sources */,
+				3BD1D4571C9BBA11006065C2 /* QuizViewController.swift in Sources */,
 				7E39F2681C969BA9000E223B /* TopicViewController.swift in Sources */,
 				3BEF997A1C9A6B21007B49DC /* Answer.swift in Sources */,
 				3BEF99761C9A69B2007B49DC /* Quiz.swift in Sources */,
