@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="eTC-In-JnW">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -135,7 +135,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ndm-A4-eM4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1764.5" y="346.5"/>
+            <point key="canvasLocation" x="2035" y="347"/>
         </scene>
         <!--Proximity One View Controller-->
         <scene sceneID="TbH-vk-2Na">
@@ -202,7 +202,102 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G6R-Xx-kOe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2300.5" y="346.5"/>
+            <point key="canvasLocation" x="1718.5" y="1110.5"/>
+        </scene>
+        <!--Multiple Choice View Controller-->
+        <scene sceneID="2Le-4L-Kbg">
+            <objects>
+                <viewController id="eTC-In-JnW" customClass="MultipleChoiceViewController" customModule="overlay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7t6-th-pdM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lTc-Oa-qZX">
+                                <rect key="frame" x="117" y="179" width="202" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cJ3-ou-0JL">
+                                <rect key="frame" x="117" y="234" width="202" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LdI-UA-UpY">
+                                <rect key="frame" x="60" y="229" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.91670625858456545" green="1" blue="0.41587371256078698" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="onAnswerButtonDidTap:" destination="eTC-In-JnW" eventType="touchUpInside" id="RcH-qn-ONa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="27F-Fv-a2c">
+                                <rect key="frame" x="117" y="294" width="202" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RDy-CU-bBj">
+                                <rect key="frame" x="60" y="289" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.91670625858456545" green="1" blue="0.41587371256078698" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="onAnswerButtonDidTap:" destination="eTC-In-JnW" eventType="touchUpInside" id="1iZ-Qr-i1i"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="74a-1z-Aly">
+                                <rect key="frame" x="117" y="354" width="202" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XhP-cc-95n">
+                                <rect key="frame" x="60" y="350" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.91670625858456545" green="1" blue="0.41587371256078698" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="onAnswerButtonDidTap:" destination="eTC-In-JnW" eventType="touchUpInside" id="hoa-4g-fS0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1Zf-jw-cMn">
+                                <rect key="frame" x="137" y="545" width="88" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Temp button"/>
+                                <connections>
+                                    <action selector="tempButtonDidTap:" destination="eTC-In-JnW" eventType="touchUpInside" id="D8S-2b-DGr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vdF-8n-4kF">
+                                <rect key="frame" x="60" y="175" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.91670625858456545" green="1" blue="0.41587371256078698" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="onAnswerButtonDidTap:" destination="eTC-In-JnW" eventType="touchUpInside" id="Il0-kA-swa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="AButton" destination="vdF-8n-4kF" id="b6l-z7-kDC"/>
+                        <outlet property="ATextLabel" destination="lTc-Oa-qZX" id="H87-vy-ZKK"/>
+                        <outlet property="BButton" destination="LdI-UA-UpY" id="83i-dp-GrU"/>
+                        <outlet property="BTextLabel" destination="cJ3-ou-0JL" id="Ss0-ui-bgt"/>
+                        <outlet property="CButton" destination="RDy-CU-bBj" id="bCr-1z-2hx"/>
+                        <outlet property="CTextLabel" destination="27F-Fv-a2c" id="cb8-J4-G2L"/>
+                        <outlet property="DButton" destination="XhP-cc-95n" id="dyz-vB-xCQ"/>
+                        <outlet property="DTextLabel" destination="74a-1z-Aly" id="z5C-g9-IPJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4zN-kh-g13" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2245.5" y="1110.5"/>
         </scene>
     </scenes>
 </document>
