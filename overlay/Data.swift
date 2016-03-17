@@ -10,15 +10,47 @@ import UIKit
 import SwiftHEXColors
 
 // ------ Colors ------
+
+let lightestGray = UIColor(hexString: "#f9f9f9")
+let lightGray = UIColor(hexString: "#eff0f1")
+let mediumGray = UIColor(hexString: "#959ca8")
+let darkGray = UIColor(hexString: "#2e3b54")
+
+let red = UIColor(hexString: "#f44336")
+let green = UIColor(hexString: "#4caf50")
+
+let proximityColor = UIColor(hexString: "#3CF7D1")
+let alignmentColor = UIColor(hexString: "#01CEFF")
+let repetitionColor = UIColor(hexString: "#A177FF")
+let contrastColor = UIColor(hexString: "#FFD201")
+let colorColor = UIColor(hexString: "#FF6D92")
+
+// main color usage
+
 let topicsColors = [
-    UIColor(hexString: "#3CF7D1"),
-    UIColor(hexString: "#01CEFF"),
-    UIColor(hexString: "#A177FF"),
-    UIColor(hexString: "#FFD201"),
-    UIColor(hexString: "#FF6D92")
+    proximityColor,
+    alignmentColor,
+    repetitionColor,
+    contrastColor,
+    colorColor
 ]
-let mainBackgroundColor = UIColor(hexString: "#2E3B54")
+
+let mainBackgroundColor = darkGray
 let homeTableBackgroundColor = topicsColors[4]
+
+// interactive quiz colors
+
+let zoneBackgroundColor = lightestGray
+let outlineInactive = mediumGray
+let outlineActive = darkGray
+
+// quiz global colors
+
+let buttonInactive = lightGray
+let buttonActive = darkGray
+let buttonError = red
+let buttonSuccess = green
+
 
 // ------ Topics ------
 let topicsNames = [
