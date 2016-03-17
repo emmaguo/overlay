@@ -18,7 +18,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = mainBackgroundColor
+        view.backgroundColor = mainBackgroundColor
         homeTableView.backgroundColor = homeTableBackgroundColor
         homeTableView.delegate = self
         homeTableView.dataSource = self
