@@ -35,6 +35,14 @@ class ProximityOneViewController: UIViewController {
         unitBOne.backgroundColor = alignmentColor
         unitBTwo.backgroundColor = alignmentColor
         unitBThree.backgroundColor = alignmentColor
+        
+        unitAOne.layer.cornerRadius = 30
+        unitATwo.layer.cornerRadius = 30
+        unitAThree.layer.cornerRadius = 30
+        
+        unitBOne.layer.cornerRadius = 5
+        unitBTwo.layer.cornerRadius = 5
+        unitBThree.layer.cornerRadius = 5
 
         // Do any additional setup after loading the view.
     }
