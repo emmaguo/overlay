@@ -23,5 +23,12 @@ class Question {
         self.title = title
         self.answers = answers
     }
+    
+    func getViewControllerIdentifier() -> String {
+        switch type {
+        case .MultipleChoice: return "MultipleChoiceViewController"
+        case .ProximityDragOne: return "ProximityOneViewController"
+        }
+    }
 
 }

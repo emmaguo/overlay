@@ -2,12 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "CButton_Unselected.png",
+      "filename" : "checkmark_dot.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "CButton_Unselected@2x.png",
+      "filename" : "checkmark_dot@2x.png",
       "scale" : "2x"
     },
     {

@@ -16,8 +16,8 @@ let lightGray = UIColor(hexString: "#eff0f1")
 let mediumGray = UIColor(hexString: "#959ca8")
 let darkGray = UIColor(hexString: "#2e3b54")
 
-let red = UIColor(hexString: "#f44336")
-let green = UIColor(hexString: "#4caf50")
+let red = UIColor(hexString: "#F68481")
+let green = UIColor(hexString: "#9EF690")
 
 let proximityColor = UIColor(hexString: "#3CF7D1")
 let alignmentColor = UIColor(hexString: "#01CEFF")
