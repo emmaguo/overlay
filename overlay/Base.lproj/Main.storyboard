@@ -123,12 +123,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" id="Vj5-sl-7Hv">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.71440974118565848" green="1" blue="0.91516158581952078" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                             <view contentMode="scaleToFill" id="qkp-OX-FT0">
-                                <rect key="frame" x="0.0" y="109" width="375" height="438"/>
+                                <rect key="frame" x="0.0" y="143" width="375" height="404"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iJd-5s-wGr">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iJd-5s-wGr">
                                 <rect key="frame" x="32" y="575" width="311" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.96464646460000003" green="0.96464646460000003" blue="0.96464646460000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -141,21 +146,40 @@
                                     <action selector="quizButtonDidTap:" destination="gQP-82-7Kk" eventType="touchUpInside" id="p3X-Kd-lHY"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is where the question will go" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qqr-HE-FsP">
-                                <rect key="frame" x="34" y="72" width="253" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is where the question will go right?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qqr-HE-FsP">
+                                <rect key="frame" x="30" y="77" width="313" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="exit_icon" id="Maf-Qd-wcP">
+                                <rect key="frame" x="14" y="32" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Topic title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DWR-qL-jXs">
+                                <rect key="frame" x="57" y="37" width="260" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="22"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Lla-Qq-iTH">
+                                <rect key="frame" x="7" y="25" width="38" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="contentView" destination="qkp-OX-FT0" id="x5E-u2-YvX"/>
+                        <outlet property="exitButton" destination="Lla-Qq-iTH" id="gnx-fS-Ub3"/>
+                        <outlet property="navBackgroundView" destination="Vj5-sl-7Hv" id="HMX-uG-Dvt"/>
                         <outlet property="questionLabel" destination="qqr-HE-FsP" id="IKG-xw-Hhs"/>
                         <outlet property="quizButton" destination="iJd-5s-wGr" id="SCh-H4-sKW"/>
+                        <outlet property="topicLabel" destination="DWR-qL-jXs" id="yYh-du-AYJ"/>
+                        <segue destination="1n5-1h-VZE" kind="modal" identifier="quizSuccessSegue" animates="NO" id="2Z5-Re-mur"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ndm-A4-eM4" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -165,50 +189,74 @@
         <!--Proximity One View Controller-->
         <scene sceneID="TbH-vk-2Na">
             <objects>
-                <viewController id="nkz-hu-AKw" customClass="ProximityOneViewController" customModule="overlay" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProximityOneViewController" id="nkz-hu-AKw" customClass="ProximityOneViewController" customModule="overlay" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9NM-Lv-IhF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="SEI-8P-Dzs">
-                                <rect key="frame" x="36" y="76" width="304" height="86"/>
+                                <rect key="frame" x="36" y="18" width="304" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" id="zw3-Ge-2RC">
-                                <rect key="frame" x="36" y="176" width="304" height="86"/>
+                                <rect key="frame" x="36" y="118" width="304" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" id="dLx-5q-nMz">
-                                <rect key="frame" x="157" y="459" width="60" height="60"/>
+                                <rect key="frame" x="157" y="346" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.72835503660000001" blue="0.6629718657" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="1Y1-Nf-9mH" appends="YES" id="2i5-cq-W4p"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" id="kS4-OL-75o">
-                                <rect key="frame" x="279" y="459" width="60" height="60"/>
+                                <rect key="frame" x="264" y="346" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.79929458760000005" blue="0.40705616979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="6cN-c2-NU4" appends="YES" id="754-XG-F1z"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" id="pKk-jm-bDO">
-                                <rect key="frame" x="35" y="459" width="60" height="60"/>
+                                <rect key="frame" x="50" y="346" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.79929458760000005" blue="0.40705616979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="wmq-fu-tdt" appends="YES" id="cMq-7f-WCp"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" id="mWp-8X-Cl7">
-                                <rect key="frame" x="157" y="356" width="60" height="60"/>
+                                <rect key="frame" x="157" y="243" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.79929458760000005" blue="0.40705616979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="0zD-wZ-xL0" appends="YES" id="gcr-G7-U4a"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" id="wbS-B5-48R">
-                                <rect key="frame" x="35" y="356" width="60" height="60"/>
+                                <rect key="frame" x="50" y="243" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.72835503656519496" blue="0.6629718656991932" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="iP4-1j-zqT" appends="YES" id="LeL-9l-JOX"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" id="iYV-bz-HZj">
-                                <rect key="frame" x="279" y="356" width="60" height="60"/>
+                                <rect key="frame" x="264" y="243" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.72835503656519496" blue="0.6629718656991932" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Hxh-0q-6Zl" appends="YES" id="7gi-RG-jpn"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -226,8 +274,38 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G6R-Xx-kOe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="iP4-1j-zqT">
+                    <connections>
+                        <action selector="didPanShape:" destination="nkz-hu-AKw" id="0Ke-Ko-iNk"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="0zD-wZ-xL0">
+                    <connections>
+                        <action selector="didPanShape:" destination="nkz-hu-AKw" id="3Z6-xL-8FE"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Hxh-0q-6Zl">
+                    <connections>
+                        <action selector="didPanShape:" destination="nkz-hu-AKw" id="cgQ-wv-rAs"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="wmq-fu-tdt">
+                    <connections>
+                        <action selector="didPanShape:" destination="nkz-hu-AKw" id="Fk3-Qj-YTV"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="1Y1-Nf-9mH">
+                    <connections>
+                        <action selector="didPanShape:" destination="nkz-hu-AKw" id="lGU-jr-uJy"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="6cN-c2-NU4">
+                    <connections>
+                        <action selector="didPanShape:" destination="nkz-hu-AKw" id="JQp-xZ-D96"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1718.5" y="1110.5"/>
+            <point key="canvasLocation" x="2501.5" y="1110.5"/>
         </scene>
         <!--Multiple Choice View Controller-->
         <scene sceneID="2Le-4L-Kbg">
@@ -238,21 +316,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ATextLabel" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lTc-Oa-qZX">
-                                <rect key="frame" x="96" y="10" width="244" height="58"/>
+                                <rect key="frame" x="96" y="18" width="244" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BTextLabel" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cJ3-ou-0JL">
-                                <rect key="frame" x="96" y="84" width="244" height="67"/>
+                                <rect key="frame" x="96" y="92" width="244" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LdI-UA-UpY">
-                                <rect key="frame" x="30" y="94" width="48" height="48"/>
+                                <rect key="frame" x="30" y="102" width="48" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="BButton_Unselected"/>
                                 <state key="selected" image="BButton_selected"/>
@@ -261,14 +339,14 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CTextLabel" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="27F-Fv-a2c">
-                                <rect key="frame" x="96" y="162" width="244" height="72"/>
+                                <rect key="frame" x="96" y="170" width="244" height="72"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="RDy-CU-bBj">
-                                <rect key="frame" x="30" y="174" width="48" height="48"/>
+                                <rect key="frame" x="30" y="182" width="48" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="CButton_Unselected"/>
                                 <state key="selected" image="CButton_selected"/>
@@ -277,7 +355,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XhP-cc-95n">
-                                <rect key="frame" x="30" y="255" width="48" height="48"/>
+                                <rect key="frame" x="30" y="263" width="48" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="DButton_Unselected"/>
                                 <state key="selected" image="DButton_selected"/>
@@ -286,7 +364,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vdF-8n-4kF">
-                                <rect key="frame" x="30" y="15" width="48" height="48"/>
+                                <rect key="frame" x="30" y="23" width="48" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="AButton_Unselected"/>
                                 <state key="selected" image="AButton_selected"/>
@@ -297,12 +375,17 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DTextLabel" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="74a-1z-Aly">
-                                <rect key="frame" x="96" y="241" width="244" height="76"/>
+                                <rect key="frame" x="96" y="249" width="244" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="answer_check" id="aIW-KO-zXX">
+                                <rect key="frame" x="30" y="678" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.62868369162096627" green="1" blue="0.48186859466325593" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -316,11 +399,66 @@
                         <outlet property="CTextLabel" destination="27F-Fv-a2c" id="cb8-J4-G2L"/>
                         <outlet property="DButton" destination="XhP-cc-95n" id="dyz-vB-xCQ"/>
                         <outlet property="DTextLabel" destination="74a-1z-Aly" id="z5C-g9-IPJ"/>
+                        <outlet property="answerCorrectImage" destination="aIW-KO-zXX" id="Ukm-ai-SAd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4zN-kh-g13" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2481.5" y="346.5"/>
+            <point key="canvasLocation" x="2034.5" y="1110.5"/>
+        </scene>
+        <!--Success View Controller-->
+        <scene sceneID="V8m-qx-sa1">
+            <objects>
+                <viewController id="1n5-1h-VZE" customClass="SuccessViewController" customModule="overlay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m3o-6g-P2s">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" id="vac-RP-LaO">
+                                <rect key="frame" x="155" y="117" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="lPd-jK-LxG">
+                                        <rect key="frame" x="0.0" y="62" width="65" height="3"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.66743365803258592" blue="0.5452671328760238" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.76038590928653638" green="1" blue="0.46518985175432315" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quiz Title Here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Pz9-h7-ajw">
+                                <rect key="frame" x="51" y="304" width="273" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="checkmark_dot" id="bup-KZ-Khi">
+                                <rect key="frame" x="175" y="363" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="achieved" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="T3t-Mb-N56">
+                                <rect key="frame" x="118" y="365" width="113" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="achievedLabel" destination="T3t-Mb-N56" id="S4u-R0-6uI"/>
+                        <outlet property="checkmarkImageView" destination="bup-KZ-Khi" id="odz-CZ-ssG"/>
+                        <outlet property="fillDotView" destination="lPd-jK-LxG" id="55m-nr-KfN"/>
+                        <outlet property="initialDotView" destination="vac-RP-LaO" id="4iR-SS-t99"/>
+                        <outlet property="quizTitleLabel" destination="Pz9-h7-ajw" id="Z15-Zb-Lmw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hsW-5M-Fgs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2501.5" y="346.5"/>
         </scene>
     </scenes>
     <resources>
@@ -332,5 +470,8 @@
         <image name="CButton_selected" width="48" height="48"/>
         <image name="DButton_Unselected" width="48" height="48"/>
         <image name="DButton_selected" width="48" height="48"/>
+        <image name="answer_check" width="48" height="48"/>
+        <image name="checkmark_dot" width="50" height="50"/>
+        <image name="exit_icon" width="25" height="25"/>
     </resources>
 </document>

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MultipleChoiceViewController: UIViewController {
+class MultipleChoiceViewController: QuestionViewController {
     
     @IBOutlet weak var AButton: UIButton!
     @IBOutlet weak var ATextLabel: UILabel!
@@ -18,21 +18,13 @@ class MultipleChoiceViewController: UIViewController {
     @IBOutlet weak var CTextLabel: UILabel!
     @IBOutlet weak var DButton: UIButton!
     @IBOutlet weak var DTextLabel: UILabel!
+    @IBOutlet weak var answerCorrectImage: UIImageView!
     
-    var question: Question!
     var selectedAnswer: Answer?
     var selectedButton: UIButton?
     
-    let userDefaults = NSUserDefaults.standardUserDefaults()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // fix via HomeViewController on segue
-        let topics = Topic.allTopics()
-        let topic = topics.first!
-        let quiz = topic.quizzes.first!
-        self.question = quiz.questions.first!
         
         ATextLabel.numberOfLines = 0
         BTextLabel.numberOfLines = 0
@@ -43,9 +35,8 @@ class MultipleChoiceViewController: UIViewController {
         BTextLabel.text = question.answers[1].text
         CTextLabel.text = question.answers[2].text
         DTextLabel.text = question.answers[3].text
-
-        userDefaults.synchronize()
         
+        answerCorrectImage.layer.cornerRadius = 25
     }
     
     @IBAction func onAnswerButtonDidTap(sender: UIButton) {
@@ -58,5 +49,23 @@ class MultipleChoiceViewController: UIViewController {
         sender.selected = true
         selectedButton = sender
         
+        if let quizViewController = quizViewController {
+            quizViewController.resetQuizButton(true)
+        }
     }
+    
+    override func answerIsCorrect() -> Bool {
+        return (selectedAnswer?.isCorrect)!
+    }
+    
+    override func showSuccessState() {
+        let correctImage = UIImage(named: "button_correct") as UIImage?
+        selectedButton!.setImage(correctImage, forState: .Selected)
+    }
+    
+    override func showIncorrectState() {
+        let incorrectImage = UIImage(named: "button_incorrect") as UIImage?
+        selectedButton!.setImage(incorrectImage, forState: .Selected)
+    }
+
 }
