@@ -37,6 +37,8 @@ class Topic {
                         Answer(text: "answer 4", isCorrect: false)
                     ]),
                     Question(id: 3, type: Question.QuestionType.ProximityDragOne, title: "Group the related items together", answers: []),
+                    
+                    Question(id: 4, type: Question.QuestionType.ProximityTwo, title: "Which business card has better proximity?", answers: []),
                 ])
             ]),
             Topic(name: "Alignment", color: alignmentColor!, quizzes: []),

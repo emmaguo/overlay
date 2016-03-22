@@ -9,7 +9,7 @@
 class Question {
     
     enum QuestionType {
-        case MultipleChoice, ProximityDragOne
+        case MultipleChoice, ProximityDragOne, ProximityTwo
     }
     
     let id: Int
@@ -28,6 +28,7 @@ class Question {
         switch type {
         case .MultipleChoice: return "MultipleChoiceViewController"
         case .ProximityDragOne: return "ProximityOneViewController"
+        case .ProximityTwo: return "ProximityTwoViewController"
         }
     }
 
