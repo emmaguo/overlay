@@ -1,5 +1,5 @@
 //
-//  ViewExtensions.swift
+//  BorderViewExtensions.swift
 //  overlay
 //
 //  Created by Michelle Harvey on 3/16/16.

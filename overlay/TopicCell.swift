@@ -11,10 +11,15 @@ import UIKit
 class TopicCell: UITableViewCell {
 
     @IBOutlet weak var topicNameLabel: UILabel!
+    @IBOutlet weak var circleView: UIView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+
+//        let center = circleView.center
+//        let radius = CGFloat(circleView.frame.height / 2)
+//        let shapeLayer = createCircle(center, radius: radius)
+//        circleView.layer.addSublayer(shapeLayer)
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
