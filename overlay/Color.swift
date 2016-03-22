@@ -9,7 +9,7 @@
 import UIKit
 import SwiftHEXColors
 
-// ------ Colors ------
+// Basic colors
 
 let lightestGray = UIColor(hexString: "#f9f9f9")
 let lightGray = UIColor(hexString: "#eff0f1")
@@ -19,44 +19,26 @@ let darkGray = UIColor(hexString: "#2e3b54")
 let red = UIColor(hexString: "#F68481")
 let green = UIColor(hexString: "#9EF690")
 
+// Topics colors
+
 let proximityColor = UIColor(hexString: "#3CF7D1")
 let alignmentColor = UIColor(hexString: "#01CEFF")
 let repetitionColor = UIColor(hexString: "#A177FF")
 let contrastColor = UIColor(hexString: "#FFD201")
 let colorColor = UIColor(hexString: "#FF6D92")
 
-// main color usage
-
-let topicsColors = [
-    proximityColor,
-    alignmentColor,
-    repetitionColor,
-    contrastColor,
-    colorColor
-]
-
 let mainBackgroundColor = darkGray
-let homeTableBackgroundColor = topicsColors[4]
+let homeTableBackgroundColor = colorColor
 
-// interactive quiz colors
+// Interactive quiz colors
 
 let zoneBackgroundColor = lightestGray
 let outlineInactive = mediumGray
 let outlineActive = darkGray
 
-// quiz global colors
+// Quiz global colors
 
 let buttonInactive = lightGray
 let buttonActive = darkGray
 let buttonError = red
 let buttonSuccess = green
-
-
-// ------ Topics ------
-let topicsNames = [
-    "Proximity",
-    "Alignment",
-    "Repetition",
-    "Contrast",
-    "Colors"
-]

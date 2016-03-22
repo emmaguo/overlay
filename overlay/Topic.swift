@@ -5,7 +5,8 @@
 //  Created by Michelle Harvey on 3/16/16.
 //  Copyright © 2016 overlay. All rights reserved.
 //
-import SwiftHEXColors
+
+import UIKit
 
 class Topic {
     
@@ -18,7 +19,7 @@ class Topic {
         self.color = color
         self.quizzes = quizzes
     }
-    
+
     static func allTopics() -> [Topic] {
         return [
             Topic(name: "Proximity", color: proximityColor!, quizzes: [
@@ -37,8 +38,11 @@ class Topic {
                     ]),
                     Question(id: 3, type: Question.QuestionType.ProximityDragOne, title: "Group the related items together", answers: []),
                 ])
-            ])
+            ]),
+            Topic(name: "Alignment", color: alignmentColor!, quizzes: []),
+            Topic(name: "Repetition", color: repetitionColor!, quizzes: []),
+            Topic(name: "Contrast", color: contrastColor!, quizzes: []),
+            Topic(name: "Color", color: colorColor!, quizzes: [])
         ]
     }
-    
 }
