@@ -2,14 +2,14 @@
 //  CircleViewExtensions.swift
 //  overlay
 //
-//  Created by Emma Guo on 3/21/16.
+//  Created by Emma Guo on 3/23/16.
 //  Copyright © 2016 overlay. All rights reserved.
 //
 
 import Foundation
 import UIKit
 
-func createCircle(center: CGPoint, radius: CGFloat) -> CAShapeLayer {
+func createCircle(center: CGPoint, radius: CGFloat, lineWidth: CGFloat, strokeColor: CGColor) -> CAShapeLayer {
     
     let shapeLayer = CAShapeLayer()
     let circlePath = UIBezierPath(
@@ -20,13 +20,9 @@ func createCircle(center: CGPoint, radius: CGFloat) -> CAShapeLayer {
         clockwise: true)
     
     shapeLayer.path = circlePath.CGPath
-    
-    //change the fill color
+    shapeLayer.strokeColor = strokeColor
     shapeLayer.fillColor = UIColor.clearColor().CGColor
-    //Change the stroke color
-    shapeLayer.strokeColor = UIColor.redColor().CGColor
-    //you can change the line width
-    shapeLayer.lineWidth = 3.0
+    shapeLayer.lineWidth = lineWidth
     
     return shapeLayer
 }

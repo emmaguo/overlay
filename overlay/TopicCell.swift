@@ -12,14 +12,25 @@ class TopicCell: UITableViewCell {
 
     @IBOutlet weak var topicNameLabel: UILabel!
     @IBOutlet weak var circleView: UIView!
+    var mainColor: UIColor! {
+        didSet {
+            // Add circle
+            let center = circleView.center
+            let radius = CGFloat(circleView.frame.height / 2)
+            let lineWidth = CGFloat(2)
+            
+            let strokeColor = mainColor.CGColor
+            let shapeLayer = createCircle(
+                center,
+                radius: radius,
+                lineWidth: lineWidth,
+                strokeColor: strokeColor)
+            circleView.layer.addSublayer(shapeLayer)
+        }
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()
-
-//        let center = circleView.center
-//        let radius = CGFloat(circleView.frame.height / 2)
-//        let shapeLayer = createCircle(center, radius: radius)
-//        circleView.layer.addSublayer(shapeLayer)
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

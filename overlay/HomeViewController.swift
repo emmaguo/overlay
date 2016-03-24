@@ -21,7 +21,6 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         topics = Topic.allTopics()
         view.backgroundColor = mainBackgroundColor
-        homeTableView.backgroundColor = homeTableBackgroundColor
         homeTableView.delegate = self
         homeTableView.dataSource = self
         homeTableView.rowHeight = calculateRowHeight()
@@ -45,7 +44,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let topic = topics[index]
         
         cell.topicNameLabel.text = topic.name
-        cell.backgroundColor = topic.color
+        cell.mainColor = topic.color
         return cell
     }
 
@@ -125,6 +124,6 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let cell = sender as! TopicCell
         let topicViewController = segue.destinationViewController as! TopicViewController
-        topicViewController.headerBackgroundColor = cell.backgroundColor
+        topicViewController.headerBackgroundColor = cell.mainColor
     }
 }
