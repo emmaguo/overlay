@@ -11,21 +11,33 @@ import UIKit
 
 extension UIView {
     func addInactiveDashedBorder() {
-        addBorder(outlineInactive!.CGColor, lineDashPattern: [8,16])
+        addBorder(outlineInactive!.CGColor, lineWidth: 1, lineDashPattern: [8,16], singleUse: false)
     }
     
     func addActiveDashedBorder() {
-        addBorder(outlineActive!.CGColor, lineDashPattern: [8,16])
+        addBorder(outlineActive!.CGColor, lineWidth: 1.4, lineDashPattern: [8,16], singleUse: false)
     }
     
     func addSelectedBorder() {
-        addBorder(outlineActive!.CGColor, lineDashPattern: [20,0])
+        addBorder(outlineActive!.CGColor, lineWidth: 1.4, lineDashPattern: [20,0], singleUse: false)
     }
     
-    func addBorder(strokeColor: CGColor, lineDashPattern: [Int]) {
-        self.layer.sublayers?.forEach({ (layer) -> () in
-            layer.removeFromSuperlayer()
-        })
+    func addDefaultBorderInactive() {
+        addBorder(outlineInactive!.CGColor, lineWidth: 1, lineDashPattern: [20,0], singleUse: false)
+    }
+    
+    func addDefaultBorderActive(borderColor: CGColor = proximityColor!.CGColor) {
+        addBorder(borderColor, lineWidth: 4, lineDashPattern: [20,0], singleUse: false)
+    }
+    
+    func addBorder(strokeColor: CGColor, lineWidth: CGFloat, lineDashPattern: [Int], singleUse: Bool) {
+        
+        if !singleUse {
+            self.layer.sublayers?.forEach({ (layer) -> () in
+                layer.removeFromSuperlayer()
+            })
+        }
+
         let shapeLayer:CAShapeLayer = CAShapeLayer()
         let frameSize = self.frame.size
         let shapeRect = CGRect(x: 0, y: 0, width: frameSize.width, height: frameSize.height)
@@ -34,10 +46,11 @@ extension UIView {
         shapeLayer.position = CGPoint(x: frameSize.width/2, y: frameSize.height/2)
         shapeLayer.fillColor = lightestGray?.CGColor
         shapeLayer.strokeColor = strokeColor
-        shapeLayer.lineWidth = 1
+        shapeLayer.lineWidth = lineWidth
         shapeLayer.lineJoin = kCALineJoinRound
         shapeLayer.lineDashPattern = lineDashPattern
         shapeLayer.path = UIBezierPath(roundedRect: shapeRect, cornerRadius: 5).CGPath
+        shapeLayer.cornerRadius = 6
         
         self.layer.addSublayer(shapeLayer)
     }
