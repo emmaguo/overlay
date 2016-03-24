@@ -42,7 +42,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let cell = homeTableView.dequeueReusableCellWithIdentifier("Topic Cell") as! TopicCell
         let index = indexPath.row
         let topic = topics[index]
-        
+
         cell.topicNameLabel.text = topic.name
         cell.mainColor = topic.color
         return cell

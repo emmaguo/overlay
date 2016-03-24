@@ -28,6 +28,7 @@ let contrastColor = UIColor(hexString: "#FFD201")
 let colorColor = UIColor(hexString: "#FF6D92")
 
 let mainBackgroundColor = darkGray
+let topicCellBorderColor = lightGray
 
 // Interactive quiz colors
 
