@@ -24,21 +24,45 @@ class Topic {
         return [
             Topic(name: "Proximity", color: proximityColor!, quizzes: [
                 Quiz(id: 1, title: "Proximity basics", questions: [
-                    Question(id: 1, type: Question.QuestionType.MultipleChoice, title: "The purpose of proximity is...", answers: [
-                        Answer(text: "to not annoy your neighbor", isCorrect: false),
-                        Answer(text: "helps organize information", isCorrect: true),
-                        Answer(text: "create more formal, sedate presentations", isCorrect: false),
-                        Answer(text: "helps organize information", isCorrect: false)
+                    Question(id: 1, type: Question.QuestionType.MultipleChoice, title: "The purpose of proximity is to...", answers: [
+                        Answer(text: "not annoy your neighbor", isCorrect: false),
+                        Answer(text: "help organize information", isCorrect: true),
+                        Answer(text: "create more formal design", isCorrect: false),
+                        Answer(text: "highlight your knowledge of design principles", isCorrect: false)
+                        ]),
+                    Question(id: 2, type: Question.QuestionType.MultipleChoice, title: "The basic way proximity is applied to design is to...", answers: [
+                        Answer(text: "separate related items", isCorrect: false),
+                        Answer(text: "use contrasting colors to help content stand out", isCorrect: false),
+                        Answer(text: "group related items together", isCorrect: true),
+                        Answer(text: "use bold type to create legible text", isCorrect: false)
                     ]),
-                    Question(id: 2, type: Question.QuestionType.MultipleChoice, title: "Question 2", answers: [
-                        Answer(text: "answer 1", isCorrect: false),
-                        Answer(text: "answer 2", isCorrect: true),
-                        Answer(text: "answer 3", isCorrect: false),
-                        Answer(text: "answer 4", isCorrect: false)
-                    ]),
-                    Question(id: 3, type: Question.QuestionType.ProximityDragOne, title: "Group the related items together", answers: []),
+                    Question(id: 3, type: Question.QuestionType.ProximityDragOne, title: "Organize these items based on the principle of proximity", answers: []),
                     
                     Question(id: 4, type: Question.QuestionType.ProximityTwo, title: "Which business card has better proximity?", answers: []),
+                    Question(id: 5, type: Question.QuestionType.MultipleChoice, title: "What does proximity communicate to the viewer?", answers: [
+                        Answer(text: "Physical closeness implies a relationship", isCorrect: true),
+                        Answer(text: "Design is important", isCorrect: false),
+                        Answer(text: "The design is professional", isCorrect: false),
+                        Answer(text: "Good consistency in the design", isCorrect: false)
+                        ]),
+                    Question(id: 6, type: Question.QuestionType.MultipleChoice, title: "Use _______ to define groups of elements", answers: [
+                        Answer(text: "serifs", isCorrect: false),
+                        Answer(text: "images", isCorrect: false),
+                        Answer(text: "space", isCorrect: true),
+                        Answer(text: "icons", isCorrect: false)
+                        ]),
+                    Question(id: 7, type: Question.QuestionType.MultipleChoice, title: "Elements that relate to each other should be grouped...", answers: [
+                        Answer(text: "randomly", isCorrect: false),
+                        Answer(text: "securely", isCorrect: false),
+                        Answer(text: "together", isCorrect: true),
+                        Answer(text: "colorfully", isCorrect: false)
+                        ]),
+                    Question(id: 7, type: Question.QuestionType.MultipleChoice, title: "Empty space in a design is often...", answers: [
+                        Answer(text: "bad, because it's an opportunity to communicate something to the user", isCorrect: false),
+                        Answer(text: "good, because it helps direct the user towards the content that matters", isCorrect: false),
+                        Answer(text: "neutral, because it is not contributing to the actual design", isCorrect: true),
+                        Answer(text: "I'm not sure", isCorrect: false)
+                        ]),
                 ])
             ]),
             Topic(name: "Alignment", color: alignmentColor!, quizzes: []),

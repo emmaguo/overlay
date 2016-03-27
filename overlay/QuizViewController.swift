@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SCLAlertView
+import SimpleAlert
 
 class QuizViewController: UIViewController {
     
@@ -24,7 +26,7 @@ class QuizViewController: UIViewController {
     var completedQuestions = [Question]()
     var allQuestions: [Question]!
     var currentQuestion: Question!
-    let alertController = UIAlertController(title: "Title", message: "Message", preferredStyle: .Alert)
+    
     
     let userDefaults = NSUserDefaults.standardUserDefaults()
     
@@ -175,5 +177,107 @@ class QuizViewController: UIViewController {
         }
 
     }
+    
+    enum SCLAlertViewStyle: Int {
+        case Success, Error, Notice, Warning, Info, Edit, Wait
+    }
+    
+    @IBAction func exitButtonDidTap(sender: AnyObject) {
+        let alert = SimpleAlert.Controller(title: "Are you sure?", message: "You will lose all progress if you exit the quiz", style: .Alert)
+
+        alert.configContentView = { [weak self] view in
+            if let view = view as? SimpleAlert.ContentView {
+                view.frame.size.height = 44
+                view.titleLabel.textColor = UIColor.whiteColor()
+                view.titleLabel.font = UIFont.boldSystemFontOfSize(36)
+                view.messageLabel.textColor = UIColor.whiteColor()
+                view.messageLabel.font = UIFont.boldSystemFontOfSize(16)
+                view.textBackgroundView.layer.cornerRadius = 4.0
+                view.backgroundColor = self!.topic.color
+                view.textBackgroundView.clipsToBounds = true
+            }
+        }
+        
+        let actionOK = SimpleAlert.Action(title: "Yes", style: .OK)
+        let action = SimpleAlert.Action(title: "Cancel", style: .Cancel)
+
+        alert.addAction(actionOK)
+        alert.addAction(action)
+
+        alert.addAction(actionOK)
+        actionOK.button.frame.size.height = 44
+        actionOK.button.titleLabel?.font = UIFont.boldSystemFontOfSize(22)
+        actionOK.button.setTitleColor(darkGray, forState: .Normal)
+        actionOK.button.backgroundColor = UIColor.whiteColor()
+        
+        alert.addAction(action)
+        action.button.frame.size.height = 44
+        action.button.titleLabel?.font = UIFont.systemFontOfSize(22)
+        action.button.setTitleColor(darkGray, forState: .Normal)
+        action.button.backgroundColor = UIColor.whiteColor()
+        
+        presentViewController(alert, animated: true, completion: nil)
+        
+    }
+    
+    
+    
+    
+    // sclalertview 
+    
+//    @IBAction func exitButtonDidTap(sender: AnyObject) {
+//        // Get started
+//        SCLAlertView().showInfo("Important info", subTitle: "You are great")
+//        
+//        let alertViewResponder: SCLAlertViewResponder = SCLAlertView().showSuccess("Hello World", subTitle: "This is a more descriptive text.")
+//        
+//        // Upon displaying, change/close view
+//        alertViewResponder.setTitle("New Title") // Rename title
+//        alertViewResponder.setSubTitle("New description") // Rename subtitle
+//        alertViewResponder.close() // Close view
+//        
+//        let alertView = SCLAlertView()
+//        alertView.addButton("First Button", target:self, selector:Selector("firstButton"))
+//        alertView.addButton("Second Button") {
+//            print("Second button tapped")
+//        }
+//        alertView.showNotice("Button View", subTitle: "This alert view has buttons")
+//        
+//        
+//    }
+//    
+    
+    
+    // original alert
+    
+    
+//    @IBAction func exitButtonDidTap(sender: AnyObject) {
+//        let alertController = UIAlertController(title: "Are you sure?", message: "Your progress in this quiz will be lost", preferredStyle: .Alert)
+//        
+//        alertController.view.tintColor = darkGray
+//        
+//        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) { (action) in
+//            // handle cancel response here. ADD SEGUE BACK TO TOPIC VIEW CONTROLLER
+//        }
+//        
+//        alertController.addAction(cancelAction)
+//        
+//        
+//        let OKAction = UIAlertAction(title: "Yes", style: .Default) { (action) in
+//            
+//        }
+//        
+//        alertController.addAction(OKAction)
+//        
+//        presentViewController(alertController, animated: true) {
+//            
+//        }
+//        
+//    }
+
+    
+    
+    
+    
     
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="gQP-82-7Kk">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -172,6 +172,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Lla-Qq-iTH">
                                 <rect key="frame" x="7" y="25" width="38" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="exitButtonDidTap:" destination="gQP-82-7Kk" eventType="touchUpInside" id="oSN-dk-PZW"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -452,6 +455,353 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2977.5" y="1110.5"/>
+        </scene>
+        <!--Proximity Three View Controller-->
+        <scene sceneID="L0n-Og-0DH">
+            <objects>
+                <viewController id="XmD-NY-Qs8" customClass="ProximityThreeViewController" customModule="overlay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rlN-i4-vO4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="ewH-6s-EJN">
+                                <rect key="frame" x="36" y="22" width="138" height="312"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="417-hc-mjo">
+                                        <rect key="frame" x="0.0" y="57" width="138" height="255"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="CDT-tr-Xrs">
+                                        <rect key="frame" x="0.0" y="0.0" width="138" height="58"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="yUM-bX-Sse">
+                                <rect key="frame" x="201" y="22" width="138" height="312"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="iug-aR-YLr">
+                                        <rect key="frame" x="0.0" y="59" width="138" height="255"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="LEe-aS-EpD">
+                                        <rect key="frame" x="0.0" y="-1" width="138" height="61"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="x9h-5F-p4O">
+                                <rect key="frame" x="16" y="350" width="79" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Red" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="n5e-DF-1gs">
+                                        <rect key="frame" x="24" y="7" width="30" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Xkj-HK-Rkq" appends="YES" id="P8S-9h-jFb"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" id="wgM-pp-qWm">
+                                <rect key="frame" x="26" y="390" width="79" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Helvetica" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0Jl-IF-NJE">
+                                        <rect key="frame" x="4" y="7" width="71" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="UtG-D3-fVc" appends="YES" id="bkD-Tm-lQx"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" id="eyo-5a-46I">
+                                <rect key="frame" x="16" y="450" width="79" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qdD-jP-RZP">
+                                        <rect key="frame" x="23" y="7" width="34" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="EiW-3T-8LL" appends="YES" id="p5u-zy-Moq"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" id="N3c-ha-92m">
+                                <rect key="frame" x="280" y="460" width="79" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Colors" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gEV-As-WZc">
+                                        <rect key="frame" x="15" y="7" width="50" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="t9d-Cp-SZq" appends="YES" id="kUm-uf-BYX"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" id="pMU-eu-cig">
+                                <rect key="frame" x="104" y="350" width="79" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avenir" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="R02-fW-iPb">
+                                        <rect key="frame" x="16" y="7" width="48" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="SKX-Ki-VgX" appends="YES" id="nTa-qN-uBk"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" id="dZM-jn-92D">
+                                <rect key="frame" x="104" y="480" width="79" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gotham" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hbv-Ox-QJM">
+                                        <rect key="frame" x="9" y="7" width="61" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="iNn-dP-U1l" appends="YES" id="QNS-9G-hxT"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" id="pzA-2u-TZ6">
+                                <rect key="frame" x="280" y="350" width="79" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yellow" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nQX-Oo-OlA">
+                                        <rect key="frame" x="15" y="7" width="49" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Z2x-KO-bwz" appends="YES" id="VbL-xN-fRc"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" id="og2-vB-eHW">
+                                <rect key="frame" x="192" y="340" width="79" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Purple" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="An2-nK-487">
+                                        <rect key="frame" x="15" y="7" width="50" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="zLK-Pf-fQv" appends="YES" id="zqX-Di-eR1"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" id="mOe-Sc-1S4">
+                                <rect key="frame" x="172" y="389" width="79" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Green" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="s15-LC-Am3">
+                                        <rect key="frame" x="16" y="7" width="47" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="BtV-A3-lK9" appends="YES" id="2g6-ew-Aic"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" id="jQQ-Ig-ww1">
+                                <rect key="frame" x="192" y="450" width="79" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Futura" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QlZ-Ch-jCA">
+                                        <rect key="frame" x="15" y="7" width="50" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="f1u-vD-x6M" appends="YES" id="jVc-qK-h21"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" id="jzr-v8-hQR">
+                                <rect key="frame" x="260" y="400" width="79" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Roboto" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SAf-T4-9DO">
+                                        <rect key="frame" x="12" y="7" width="56" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="cKl-RM-Txq" appends="YES" id="F8K-Km-UJh"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" id="HLr-iA-C70">
+                                <rect key="frame" x="109" y="425" width="79" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fonts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BLK-Tv-3FJ">
+                                        <rect key="frame" x="18" y="7" width="43" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="GoT-1Y-mCY" appends="YES" id="wJv-NE-yOQ"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="colorFiveView" destination="pzA-2u-TZ6" id="Zka-tT-HVY"/>
+                        <outlet property="colorFourView" destination="mOe-Sc-1S4" id="Bni-2I-qQN"/>
+                        <outlet property="colorOneView" destination="x9h-5F-p4O" id="nsF-r2-KYG"/>
+                        <outlet property="colorThreeView" destination="og2-vB-eHW" id="FXx-jc-CB6"/>
+                        <outlet property="colorTwoView" destination="eyo-5a-46I" id="VIK-oG-Xr5"/>
+                        <outlet property="colorView" destination="N3c-ha-92m" id="IKZ-jU-1je"/>
+                        <outlet property="fontFiveView" destination="jQQ-Ig-ww1" id="zHl-Cf-R7T"/>
+                        <outlet property="fontFourView" destination="jzr-v8-hQR" id="1jf-u5-pTf"/>
+                        <outlet property="fontOneView" destination="wgM-pp-qWm" id="Drc-om-7ah"/>
+                        <outlet property="fontThreeView" destination="dZM-jn-92D" id="Fgp-sy-6Kq"/>
+                        <outlet property="fontTwoView" destination="pMU-eu-cig" id="pqT-kO-oqB"/>
+                        <outlet property="fontView" destination="HLr-iA-C70" id="6hc-H3-nY3"/>
+                        <outlet property="zoneOneBottomView" destination="417-hc-mjo" id="E4s-h8-GvT"/>
+                        <outlet property="zoneOneTopView" destination="CDT-tr-Xrs" id="6Qr-8V-dbZ"/>
+                        <outlet property="zoneOneView" destination="ewH-6s-EJN" id="wGr-Hb-82x"/>
+                        <outlet property="zoneTwoBottomView" destination="iug-aR-YLr" id="HHU-tp-VVb"/>
+                        <outlet property="zoneTwoTopView" destination="LEe-aS-EpD" id="CWk-Zl-EKH"/>
+                        <outlet property="zoneTwoView" destination="yUM-bX-Sse" id="Okd-nc-Zo0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mRG-ju-53g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Xkj-HK-Rkq">
+                    <connections>
+                        <action selector="didPanLabel:" destination="XmD-NY-Qs8" id="6ZN-lw-R3p"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="UtG-D3-fVc">
+                    <connections>
+                        <action selector="didPanLabel:" destination="XmD-NY-Qs8" id="tQS-nK-DgX"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="EiW-3T-8LL">
+                    <connections>
+                        <action selector="didPanLabel:" destination="XmD-NY-Qs8" id="tIV-Zr-i8f"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="t9d-Cp-SZq">
+                    <connections>
+                        <action selector="didPanLabel:" destination="XmD-NY-Qs8" id="aMb-ph-wxJ"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="SKX-Ki-VgX">
+                    <connections>
+                        <action selector="didPanLabel:" destination="XmD-NY-Qs8" id="a11-25-hVN"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="GoT-1Y-mCY">
+                    <connections>
+                        <action selector="didPanLabel:" destination="XmD-NY-Qs8" id="TT3-L3-nxm"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="iNn-dP-U1l">
+                    <connections>
+                        <action selector="didPanLabel:" destination="XmD-NY-Qs8" id="PmM-88-6yK"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Z2x-KO-bwz">
+                    <connections>
+                        <action selector="didPanLabel:" destination="XmD-NY-Qs8" id="TP8-MQ-iqN"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="zLK-Pf-fQv">
+                    <connections>
+                        <action selector="didPanLabel:" destination="XmD-NY-Qs8" id="ERV-e6-TMI"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="BtV-A3-lK9">
+                    <connections>
+                        <action selector="didPanLabel:" destination="XmD-NY-Qs8" id="Syp-6e-daG"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="f1u-vD-x6M">
+                    <connections>
+                        <action selector="didPanLabel:" destination="XmD-NY-Qs8" id="hxL-eu-1dy"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="cKl-RM-Txq">
+                    <connections>
+                        <action selector="didPanLabel:" destination="XmD-NY-Qs8" id="FlW-0D-baW"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="3395.5" y="1110.5"/>
         </scene>
         <!--Multiple Choice View Controller-->
         <scene sceneID="2Le-4L-Kbg">
