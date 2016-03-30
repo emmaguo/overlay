@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B881D7F1CA8D51400BB3891 /* ColorOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B881D7E1CA8D51400BB3891 /* ColorOneViewController.swift */; };
+		3B881D811CA8DD4000BB3891 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B881D801CA8DD4000BB3891 /* LaunchViewController.swift */; };
 		3BB30A591CA0F7DB0045B8CD /* BorderViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB30A581CA0F7DB0045B8CD /* BorderViewExtensions.swift */; };
+		3BCFA4FC1CA37EE7003178AD /* ProximityThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCFA4FB1CA37EE7003178AD /* ProximityThreeViewController.swift */; };
 		3BD1D4571C9BBA11006065C2 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD1D4561C9BBA11006065C2 /* QuizViewController.swift */; };
 		3BD1D4591C9E0BA2006065C2 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD1D4581C9E0BA2006065C2 /* SuccessViewController.swift */; };
 		3BD1D45B1C9F5E8C006065C2 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD1D45A1C9F5E8C006065C2 /* QuestionViewController.swift */; };
@@ -30,7 +33,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B881D7E1CA8D51400BB3891 /* ColorOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorOneViewController.swift; sourceTree = "<group>"; };
+		3B881D801CA8DD4000BB3891 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		3BB30A581CA0F7DB0045B8CD /* BorderViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderViewExtensions.swift; sourceTree = "<group>"; };
+		3BCFA4FB1CA37EE7003178AD /* ProximityThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProximityThreeViewController.swift; sourceTree = "<group>"; };
 		3BD1D4561C9BBA11006065C2 /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		3BD1D4581C9E0BA2006065C2 /* SuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SuccessViewController.swift; path = ../SuccessViewController.swift; sourceTree = "<group>"; };
 		3BD1D45A1C9F5E8C006065C2 /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
@@ -132,14 +138,17 @@
 		7E8988761C9613C8006F3F8B /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3B881D801CA8DD4000BB3891 /* LaunchViewController.swift */,
 				3BD1D45A1C9F5E8C006065C2 /* QuestionViewController.swift */,
 				7E8988771C96156D006F3F8B /* HomeViewController.swift */,
 				7E89887B1C96322C006F3F8B /* TopicCell.swift */,
 				7E39F2671C969BA9000E223B /* TopicViewController.swift */,
 				3BD1D4561C9BBA11006065C2 /* QuizViewController.swift */,
+				3BEF997B1C9A6BEB007B49DC /* MultipleChoiceViewController.swift */,
 				3BD36FDF1C9A23C500F7254F /* ProximityOneViewController.swift */,
 				3BD1D45C1CA0C3EE006065C2 /* ProximityTwoViewController.swift */,
-				3BEF997B1C9A6BEB007B49DC /* MultipleChoiceViewController.swift */,
+				3BCFA4FB1CA37EE7003178AD /* ProximityThreeViewController.swift */,
+				3B881D7E1CA8D51400BB3891 /* ColorOneViewController.swift */,
 				3BD1D4581C9E0BA2006065C2 /* SuccessViewController.swift */,
 			);
 			name = "View Controllers";
@@ -280,14 +289,17 @@
 				7E288FA41C7D918F0046C82F /* AppDelegate.swift in Sources */,
 				3BEF99811C9A6ED5007B49DC /* Topic.swift in Sources */,
 				3BD1D45D1CA0C3EE006065C2 /* ProximityTwoViewController.swift in Sources */,
+				3B881D7F1CA8D51400BB3891 /* ColorOneViewController.swift in Sources */,
 				3BEF997C1C9A6BEB007B49DC /* MultipleChoiceViewController.swift in Sources */,
 				7EBE3EAB1C9A221F00EB4171 /* Color.swift in Sources */,
 				3BEF99781C9A6A7D007B49DC /* Question.swift in Sources */,
+				3BCFA4FC1CA37EE7003178AD /* ProximityThreeViewController.swift in Sources */,
 				3BD36FE01C9A23C500F7254F /* ProximityOneViewController.swift in Sources */,
 				7E89887C1C96322C006F3F8B /* TopicCell.swift in Sources */,
 				3BD1D4591C9E0BA2006065C2 /* SuccessViewController.swift in Sources */,
 				3BD1D4571C9BBA11006065C2 /* QuizViewController.swift in Sources */,
 				7E39F2681C969BA9000E223B /* TopicViewController.swift in Sources */,
+				3B881D811CA8DD4000BB3891 /* LaunchViewController.swift in Sources */,
 				3BD1D45B1C9F5E8C006065C2 /* QuestionViewController.swift in Sources */,
 				3BEF997A1C9A6B21007B49DC /* Answer.swift in Sources */,
 				3BEF99761C9A69B2007B49DC /* Quiz.swift in Sources */,

@@ -23,6 +23,11 @@ class ProximityThreeViewController: QuestionViewController {
     
     // labels
     var allLabels: [UIView]!
+    var fontLabels: [UIView]!
+    var colorLabels: [UIView]!
+    var fontTitleLabel: [UIView]!
+    var colorTitleLabel: [UIView]!
+    
     @IBOutlet weak var fontView: UIView!
     @IBOutlet weak var colorView: UIView!
    
@@ -43,6 +48,11 @@ class ProximityThreeViewController: QuestionViewController {
         super.viewDidLoad()
 
         allLabels = [fontView, colorView, fontOneView, fontTwoView, fontThreeView, fontFourView, fontFiveView, colorOneView, colorTwoView, colorThreeView, colorFourView, colorFiveView]
+        
+        fontLabels = [fontOneView, fontTwoView, fontThreeView, fontFourView, fontFiveView]
+        colorLabels = [colorOneView, colorTwoView, colorThreeView, colorFourView, colorFiveView]
+        fontTitleLabel = [fontView]
+        colorTitleLabel = [colorView]
         
         zoneOneView.addInactiveDashedBorder()
         zoneTwoView.addInactiveDashedBorder()
@@ -80,7 +90,7 @@ class ProximityThreeViewController: QuestionViewController {
         let labelView = sender.view as! UIView!
         
         if sender.state == UIGestureRecognizerState.Began {
-//            resetQuizButton()
+            resetQuizButton()
             print("Gesture began at: \(point)")
             labelOriginalCenter = labelView.center
             view.bringSubviewToFront(labelView)
@@ -108,6 +118,8 @@ class ProximityThreeViewController: QuestionViewController {
                 labelView.transform = CGAffineTransformMakeScale(1.1, 1.1)
             })
             
+            print(zoneTwoBottomView.frame)
+            
             zoneOneView.addInactiveDashedBorder()
             zoneTwoView.addInactiveDashedBorder()
             
@@ -117,34 +129,39 @@ class ProximityThreeViewController: QuestionViewController {
                 })
             } else if isInView(zoneOneBottomView, label: labelView) {
                 UIView.animateWithDuration(0.1, animations: { () -> Void in
-                    labelView.center = CGPoint(x: labelView.center.x, y: self.zoneOneView.center.y)
+                    labelView.center = CGPoint(x: self.zoneOneBottomView.center.x, y: labelView.center.y)
                 })
-                
-            } else {
+            } else if isInView(zoneTwoTopView, label: labelView){
                 UIView.animateWithDuration(0.1, animations: { () -> Void in
-                    labelView.center = self.labelOriginalCenter
+                    labelView.center = CGPoint(x: self.zoneTwoTopView.center.x - 16, y: self.zoneTwoTopView.center.y)
+                })
+            } else if isInView(zoneOneTopView, label: labelView){
+                UIView.animateWithDuration(0.1, animations: { () -> Void in
+                    labelView.center = CGPoint(x: self.zoneOneTopView.center.x - 16, y: self.zoneOneTopView.center.y)
                 })
             }
         }
         
     }
     
-    
-    
     override func answerIsCorrect() -> Bool {
         
-//        let allAInZoneOne = allInArray(aUnits) { aUnit in self.isInView(self.zoneOneView, shape: aUnit) }
-//        let allBInZoneTwo = allInArray(bUnits) { bUnit in self.isInView(self.zoneTwoView, shape: bUnit) }
-//        let allAInZoneTwo = allInArray(aUnits) { aUnit in self.isInView(self.zoneTwoView, shape: aUnit) }
-//        let allBInZoneOne = allInArray(bUnits) { bUnit in self.isInView(self.zoneOneView, shape: bUnit) }
-//        
-//        return (allAInZoneOne && allBInZoneTwo) || (allAInZoneTwo && allBInZoneOne)
+        let allColorInZoneOne = allInArray(colorLabels) { eachLabel in self.isInView(self.zoneOneBottomView, label: eachLabel) }
+        let allColorInZoneTwo = allInArray(colorLabels) { eachLabel in self.isInView(self.zoneTwoBottomView, label: eachLabel) }
+        let allFontInZoneOne = allInArray(fontLabels) { eachLabel in self.isInView(self.zoneOneBottomView, label: eachLabel) }
+        let allFontInZoneTwo = allInArray(fontLabels) { eachLabel in self.isInView(self.zoneTwoBottomView, label: eachLabel) }
+        let colorTitleInZoneOne = allInArray(colorTitleLabel) { eachLabel in self.isInView(self.zoneOneTopView, label: eachLabel) }
+        let colorTitleInZoneTwo = allInArray(colorTitleLabel) { eachLabel in self.isInView(self.zoneTwoTopView, label: eachLabel) }
+        let fontTitleInZoneOne = allInArray(fontTitleLabel) { eachLabel in self.isInView(self.zoneOneTopView, label: eachLabel) }
+        let fontTitleInZoneTwo = allInArray(fontTitleLabel) { eachLabel in self.isInView(self.zoneTwoTopView, label: eachLabel) }
+        
+        return (allColorInZoneOne && colorTitleInZoneOne && allFontInZoneTwo && fontTitleInZoneTwo) || (allColorInZoneTwo && colorTitleInZoneTwo && allFontInZoneOne && fontTitleInZoneOne)
         return true
     }
     
-//    func resetQuizButton() {
-//        quizViewController.resetQuizButton(true)
-//    }
+    func resetQuizButton() {
+        quizViewController.resetQuizButton(true)
+    }
     
     func allInArray(views: [UIView], predicate: (UIView) -> Bool) -> Bool {
         return views.filter(predicate).count == views.count

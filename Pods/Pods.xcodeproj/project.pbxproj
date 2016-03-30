@@ -7,137 +7,230 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		11154FB5DADBF683DA457AD43057D629 /* Pods-overlay-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 18092057F4C778D9D723955C41AA155D /* Pods-overlay-dummy.m */; };
-		29762D142252D9E95F65E678594DC4D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		3C37E91F37616C07D6AFAB7BC8B6CA77 /* SwiftHEXColors-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB9C8060DC4E7C2665A9FD4E1980D37 /* SwiftHEXColors-dummy.m */; };
-		7CCBCEB0FABF14259B9DF241BC4B5929 /* SwiftHEXColors-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AC3B6C166C320199573D1DF56FD3D60E /* SwiftHEXColors-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		82AE1EA118F9855170B1EEA3425B01B8 /* SwiftHEXColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A61B948B6C573B93171D3CC4A6C0011 /* SwiftHEXColors.swift */; };
-		86CB37B64AB4694D40192AA6E5C96FA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		C59D3E6CA0DA2A32040CEA7BC95D0D02 /* Pods-overlay-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 851FBBAB29E87C4E5F230BB40FFFBEEB /* Pods-overlay-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D7D3DF14CB673538DDEA90A3B5752E0B /* SwiftHEXColors.h in Headers */ = {isa = PBXBuildFile; fileRef = C265DA3D31FDD3AF6EC32E1C06DC85DE /* SwiftHEXColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		049B8FBE8F26935253D05EBBF5F7C20A /* SCLAlertView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A89AD04778C4A02E8C5434B4182EFF /* SCLAlertView-dummy.m */; };
+		0FB48AB89B17CC21616F067B6A38586C /* SimpleAlert-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9516CB9623B9D933EBA33DB523090E8A /* SimpleAlert-dummy.m */; };
+		41C0707A75CF35517FB62DDB14AFC3FE /* SimpleAlert.xib in Sources */ = {isa = PBXBuildFile; fileRef = C33504B9AA09275D56ABB12A720843B8 /* SimpleAlert.xib */; };
+		504BBC5EA68E54D1B97D2F652A1923C0 /* SwiftHEXColors-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B995751BB08420882C0FD43843857970 /* SwiftHEXColors-dummy.m */; };
+		574AE461BEAE1F0469B4CBA9BC91E63F /* SimpleAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD31C78FBAC7CD903714933A43CC015A /* SimpleAlert.swift */; };
+		8235F64D7370EA4DA212C1AF32746440 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		8303A59D1251A1EBF6FD27FDD5D37892 /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 2F00EF8249BC185EDADBCEA31E09A2C9 /* Info.plist */; };
+		85F82022F940A05876761995C5413966 /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8847A32519CFA973EAA71E7A6C58836C /* SCLAlertView.swift */; };
+		99D316174794C84154D03B4882BF9C96 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		9B84600E609FB1196D87F430DEBDAB1A /* SwiftHEXColors-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E44EFF724AB990B03A8C70AAB8F0D46B /* SwiftHEXColors-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CCB3625D8AF7A4855D356709BC7C875 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */; };
+		A66995D8A536DCE28C2DFCB10946DEC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		BEBC97C781451A19629396DFD33AFE26 /* SwiftHEXColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE38E858D85A07F11B3DC3F60FFAA85 /* SwiftHEXColors.swift */; };
+		C8ECD2B0CF19736A55188257F33D25E5 /* SimpleAlert-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B7DF4D08F295CB5357EC5BB16319144E /* SimpleAlert-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6DFBB74540DA2D875685AE6719A737A /* Pods-overlay-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 18092057F4C778D9D723955C41AA155D /* Pods-overlay-dummy.m */; };
+		EC29D76EC2E75E325EB57287A561CB52 /* Pods-overlay-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 851FBBAB29E87C4E5F230BB40FFFBEEB /* Pods-overlay-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F43F65480DA0E53A05659212C2D06DA1 /* SCLAlertView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A6297268E02EE8A2C7BB5C0125038992 /* SCLAlertView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC17296BF0828A9445C0B1F6FA3B5A30 /* SwiftHEXColors.h in Headers */ = {isa = PBXBuildFile; fileRef = 66E3389105E6C911A3E7E6D0C5D15F3A /* SwiftHEXColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FEBB76814065AC969A61E84FE9982180 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		FFD31FEFA29FEE619A00BA2F1DCD7FD9 /* SimpleAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = DD76E5597C8AF54E8C0FF821A3EEFA1F /* SimpleAlert.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		25FAAE4BC06C951B8324D3AD848DBA88 /* PBXContainerItemProxy */ = {
+		761426067B26AA50B1DB4B444931570D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FEE702A9F019A3EF786D8E004A6EA837;
+			remoteGlobalIDString = 81B40872EFA6D0AC53505B396C220E74;
+			remoteInfo = SCLAlertView;
+		};
+		C6EFF10C5C0C42193326401E1D289B45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C23E3F9401C3F24FA2F5DD846A5B098;
+			remoteInfo = SimpleAlert;
+		};
+		E3B4288D9382898E0085352562A2BC9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECEB330072076EFE058A67DBA05BE052;
 			remoteInfo = SwiftHEXColors;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		18092057F4C778D9D723955C41AA155D /* Pods-overlay-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-overlay-dummy.m"; sourceTree = "<group>"; };
-		1AB9C8060DC4E7C2665A9FD4E1980D37 /* SwiftHEXColors-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftHEXColors-dummy.m"; sourceTree = "<group>"; };
-		250138C968B877CAA931B94266E70E4F /* SwiftHEXColors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftHEXColors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		4A61B948B6C573B93171D3CC4A6C0011 /* SwiftHEXColors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftHEXColors.swift; path = Sources/SwiftHEXColors.swift; sourceTree = "<group>"; };
-		521D0CA45562BC99EB8014ACA42D1793 /* SwiftHEXColors.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftHEXColors.modulemap; sourceTree = "<group>"; };
-		5302E2C1C45A705B147F89BE9DF8BA56 /* SwiftHEXColors.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftHEXColors.xcconfig; sourceTree = "<group>"; };
+		288F9820D48F2035B4D72CB6D87CE056 /* Pods_overlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_overlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F00EF8249BC185EDADBCEA31E09A2C9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = SCLAlertView/Info.plist; sourceTree = "<group>"; };
+		3DCECE723BDA70BDE4DA053FB3AC1564 /* SCLAlertView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SCLAlertView.modulemap; sourceTree = "<group>"; };
+		4189537C66450E3BFB127622F604C0C8 /* SCLAlertView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-prefix.pch"; sourceTree = "<group>"; };
+		41895F1A4D5923331F998FA71890A7A4 /* SwiftHEXColors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftHEXColors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41A89AD04778C4A02E8C5434B4182EFF /* SCLAlertView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SCLAlertView-dummy.m"; sourceTree = "<group>"; };
+		490E30767ACFB547EAA31908E333F5DA /* SwiftHEXColors-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftHEXColors-prefix.pch"; sourceTree = "<group>"; };
+		4BD9DBC7F44354EDA3AC79A26FF9B660 /* SimpleAlert.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SimpleAlert.modulemap; sourceTree = "<group>"; };
 		5F53323A2D4CF7C05A0815E3783F47D3 /* Pods-overlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-overlay.release.xcconfig"; sourceTree = "<group>"; };
+		66E3389105E6C911A3E7E6D0C5D15F3A /* SwiftHEXColors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftHEXColors.h; path = Sources/SwiftHEXColors.h; sourceTree = "<group>"; };
+		6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		70671F6C86DB4E284BABFFC98316F0AB /* SimpleAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimpleAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79EF87E133BEC8B3317ECC24B2F20B73 /* Pods-overlay.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-overlay.modulemap"; sourceTree = "<group>"; };
 		7FDFFC8067E0CB10341897EC190F1D1B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8048CAFE513643B30060FB20B296D58D /* SimpleAlert-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleAlert-prefix.pch"; sourceTree = "<group>"; };
 		851FBBAB29E87C4E5F230BB40FFFBEEB /* Pods-overlay-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-overlay-umbrella.h"; sourceTree = "<group>"; };
+		87D9ADEF7132FCCFAD137AE2DF25E39C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8847A32519CFA973EAA71E7A6C58836C /* SCLAlertView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCLAlertView.swift; path = SCLAlertView/SCLAlertView.swift; sourceTree = "<group>"; };
+		8F5599BB24E182A4EA547ABDBC9C1EB3 /* SimpleAlert.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SimpleAlert.xcconfig; sourceTree = "<group>"; };
 		90E8F1DDA2C4BAB0C9B0FA418C828A63 /* Pods-overlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-overlay.debug.xcconfig"; sourceTree = "<group>"; };
 		9359728BC58A8B0250CDF4506B55EC66 /* Pods-overlay-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-overlay-resources.sh"; sourceTree = "<group>"; };
+		9516CB9623B9D933EBA33DB523090E8A /* SimpleAlert-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SimpleAlert-dummy.m"; sourceTree = "<group>"; };
+		A6297268E02EE8A2C7BB5C0125038992 /* SCLAlertView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-umbrella.h"; sourceTree = "<group>"; };
 		A93214BE4898A8AD137B0F99307669F6 /* Pods-overlay-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-overlay-frameworks.sh"; sourceTree = "<group>"; };
-		AC3B6C166C320199573D1DF56FD3D60E /* SwiftHEXColors-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftHEXColors-umbrella.h"; sourceTree = "<group>"; };
 		AEAA8F4B054734199042784539F1C774 /* Pods-overlay-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-overlay-acknowledgements.plist"; sourceTree = "<group>"; };
-		B340DB268CF94DB0BCD1EC428A99F1C1 /* Pods_overlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_overlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7DF4D08F295CB5357EC5BB16319144E /* SimpleAlert-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleAlert-umbrella.h"; sourceTree = "<group>"; };
+		B995751BB08420882C0FD43843857970 /* SwiftHEXColors-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftHEXColors-dummy.m"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C265DA3D31FDD3AF6EC32E1C06DC85DE /* SwiftHEXColors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftHEXColors.h; path = Sources/SwiftHEXColors.h; sourceTree = "<group>"; };
-		E3E18E1C2579BFB07F1FF612E8F423F2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E97186B5AFCA4D522F7DCAAF045F2DC4 /* SwiftHEXColors-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftHEXColors-prefix.pch"; sourceTree = "<group>"; };
+		C33504B9AA09275D56ABB12A720843B8 /* SimpleAlert.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = SimpleAlert.xib; path = SimpleAlert/SimpleAlert.xib; sourceTree = "<group>"; };
+		C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		CCE38E858D85A07F11B3DC3F60FFAA85 /* SwiftHEXColors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftHEXColors.swift; path = Sources/SwiftHEXColors.swift; sourceTree = "<group>"; };
+		D17965F7BFB168EA40FB11FC75CAD366 /* SwiftHEXColors.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftHEXColors.xcconfig; sourceTree = "<group>"; };
+		DB499478EB9D7D77C3EF54E5B198FF19 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD76E5597C8AF54E8C0FF821A3EEFA1F /* SimpleAlert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SimpleAlert.h; path = SimpleAlert/SimpleAlert.h; sourceTree = "<group>"; };
+		E44EFF724AB990B03A8C70AAB8F0D46B /* SwiftHEXColors-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftHEXColors-umbrella.h"; sourceTree = "<group>"; };
+		E6B7680D69F70F440D13D8935E3C0B0A /* SwiftHEXColors.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftHEXColors.modulemap; sourceTree = "<group>"; };
 		EFF4BEF03762BE0C1C623322A4427C30 /* Pods-overlay-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-overlay-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F80640DD7862AA45C6E1F6C5B10AE4E7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD31C78FBAC7CD903714933A43CC015A /* SimpleAlert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleAlert.swift; path = SimpleAlert/SimpleAlert.swift; sourceTree = "<group>"; };
+		FF88E98475A8F2445C73835F327BDD63 /* SCLAlertView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SCLAlertView.xcconfig; sourceTree = "<group>"; };
+		FFE5D6B27E7582B47C5E02AB4FE61565 /* SCLAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SCLAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3DF6195DCD4AFCBD643FEF3D38CF995B /* Frameworks */ = {
+		088BC2F736E12A2C963B3791A7109E02 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29762D142252D9E95F65E678594DC4D3 /* Foundation.framework in Frameworks */,
+				99D316174794C84154D03B4882BF9C96 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8428E1E13AC875976B85FDB90E1B99B9 /* Frameworks */ = {
+		2D1EE60D1360E352E1A9B7A614A634FF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86CB37B64AB4694D40192AA6E5C96FA8 /* Foundation.framework in Frameworks */,
+				FEBB76814065AC969A61E84FE9982180 /* Foundation.framework in Frameworks */,
+				9CCB3625D8AF7A4855D356709BC7C875 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E2C328E8EA95709E81FF2FD85B97E88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8235F64D7370EA4DA212C1AF32746440 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FBDA4916F232279286107A428ABFE56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A66995D8A536DCE28C2DFCB10946DEC0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		643EF5A3C165FDF63B0AA5963609D6B0 /* Pods */ = {
+		18340F12838DEE43507667CC74401EB1 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				7EE78F953F95B965777D3D4D3D30987F /* SwiftHEXColors */,
+				6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */,
+				C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */,
 			);
-			name = Pods;
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		21CD91E161179F10FF50836F071659B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				288F9820D48F2035B4D72CB6D87CE056 /* Pods_overlay.framework */,
+				FFE5D6B27E7582B47C5E02AB4FE61565 /* SCLAlertView.framework */,
+				70671F6C86DB4E284BABFFC98316F0AB /* SimpleAlert.framework */,
+				41895F1A4D5923331F998FA71890A7A4 /* SwiftHEXColors.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34DCBF64C1ABFDF49E982309D1F4383A /* SimpleAlert */ = {
+			isa = PBXGroup;
+			children = (
+				DD76E5597C8AF54E8C0FF821A3EEFA1F /* SimpleAlert.h */,
+				FD31C78FBAC7CD903714933A43CC015A /* SimpleAlert.swift */,
+				C33504B9AA09275D56ABB12A720843B8 /* SimpleAlert.xib */,
+				6B6344B994A8B0CC780943A75F70BB1F /* Support Files */,
+			);
+			path = SimpleAlert;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18340F12838DEE43507667CC74401EB1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B6344B994A8B0CC780943A75F70BB1F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB499478EB9D7D77C3EF54E5B198FF19 /* Info.plist */,
+				4BD9DBC7F44354EDA3AC79A26FF9B660 /* SimpleAlert.modulemap */,
+				8F5599BB24E182A4EA547ABDBC9C1EB3 /* SimpleAlert.xcconfig */,
+				9516CB9623B9D933EBA33DB523090E8A /* SimpleAlert-dummy.m */,
+				8048CAFE513643B30060FB20B296D58D /* SimpleAlert-prefix.pch */,
+				B7DF4D08F295CB5357EC5BB16319144E /* SimpleAlert-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SimpleAlert";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				643EF5A3C165FDF63B0AA5963609D6B0 /* Pods */,
-				B70E9A6CC5F78DD69E25374C8E0DA40D /* Products */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				A36886C30DFA9F6FDE3918DC5C663C74 /* Pods */,
+				21CD91E161179F10FF50836F071659B9 /* Products */,
 				F523787F109A08B1D8C3EE3CFCDF793F /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		7EE78F953F95B965777D3D4D3D30987F /* SwiftHEXColors */ = {
+		85FFF511684CA1DE3F0EF9447DD72DAC /* SwiftHEXColors */ = {
 			isa = PBXGroup;
 			children = (
-				C265DA3D31FDD3AF6EC32E1C06DC85DE /* SwiftHEXColors.h */,
-				4A61B948B6C573B93171D3CC4A6C0011 /* SwiftHEXColors.swift */,
-				8E8929D701F51A3835DB20DAEB6053B2 /* Support Files */,
+				66E3389105E6C911A3E7E6D0C5D15F3A /* SwiftHEXColors.h */,
+				CCE38E858D85A07F11B3DC3F60FFAA85 /* SwiftHEXColors.swift */,
+				9E6AD8BB5C268D172718559DD1329265 /* Support Files */,
 			);
 			path = SwiftHEXColors;
 			sourceTree = "<group>";
 		};
-		8E8929D701F51A3835DB20DAEB6053B2 /* Support Files */ = {
+		9E6AD8BB5C268D172718559DD1329265 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E3E18E1C2579BFB07F1FF612E8F423F2 /* Info.plist */,
-				521D0CA45562BC99EB8014ACA42D1793 /* SwiftHEXColors.modulemap */,
-				5302E2C1C45A705B147F89BE9DF8BA56 /* SwiftHEXColors.xcconfig */,
-				1AB9C8060DC4E7C2665A9FD4E1980D37 /* SwiftHEXColors-dummy.m */,
-				E97186B5AFCA4D522F7DCAAF045F2DC4 /* SwiftHEXColors-prefix.pch */,
-				AC3B6C166C320199573D1DF56FD3D60E /* SwiftHEXColors-umbrella.h */,
+				87D9ADEF7132FCCFAD137AE2DF25E39C /* Info.plist */,
+				E6B7680D69F70F440D13D8935E3C0B0A /* SwiftHEXColors.modulemap */,
+				D17965F7BFB168EA40FB11FC75CAD366 /* SwiftHEXColors.xcconfig */,
+				B995751BB08420882C0FD43843857970 /* SwiftHEXColors-dummy.m */,
+				490E30767ACFB547EAA31908E333F5DA /* SwiftHEXColors-prefix.pch */,
+				E44EFF724AB990B03A8C70AAB8F0D46B /* SwiftHEXColors-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SwiftHEXColors";
 			sourceTree = "<group>";
 		};
-		B70E9A6CC5F78DD69E25374C8E0DA40D /* Products */ = {
+		A36886C30DFA9F6FDE3918DC5C663C74 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B340DB268CF94DB0BCD1EC428A99F1C1 /* Pods_overlay.framework */,
-				250138C968B877CAA931B94266E70E4F /* SwiftHEXColors.framework */,
+				F43E58C0D8BFE5FBB52E27F9B48C7F86 /* SCLAlertView */,
+				34DCBF64C1ABFDF49E982309D1F4383A /* SimpleAlert */,
+				85FFF511684CA1DE3F0EF9447DD72DAC /* SwiftHEXColors */,
 			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
-			);
-			name = iOS;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		CF24281B464045A74A9FD10C06E2322E /* Pods-overlay */ = {
@@ -158,6 +251,30 @@
 			path = "Target Support Files/Pods-overlay";
 			sourceTree = "<group>";
 		};
+		EADA126E09A396B4428090A3C30C8723 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F80640DD7862AA45C6E1F6C5B10AE4E7 /* Info.plist */,
+				3DCECE723BDA70BDE4DA053FB3AC1564 /* SCLAlertView.modulemap */,
+				FF88E98475A8F2445C73835F327BDD63 /* SCLAlertView.xcconfig */,
+				41A89AD04778C4A02E8C5434B4182EFF /* SCLAlertView-dummy.m */,
+				4189537C66450E3BFB127622F604C0C8 /* SCLAlertView-prefix.pch */,
+				A6297268E02EE8A2C7BB5C0125038992 /* SCLAlertView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SCLAlertView";
+			sourceTree = "<group>";
+		};
+		F43E58C0D8BFE5FBB52E27F9B48C7F86 /* SCLAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				2F00EF8249BC185EDADBCEA31E09A2C9 /* Info.plist */,
+				8847A32519CFA973EAA71E7A6C58836C /* SCLAlertView.swift */,
+				EADA126E09A396B4428090A3C30C8723 /* Support Files */,
+			);
+			path = SCLAlertView;
+			sourceTree = "<group>";
+		};
 		F523787F109A08B1D8C3EE3CFCDF793F /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,51 +286,104 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		45BB427575EA9A649C5AE1CFB29B3B44 /* Headers */ = {
+		45E2FD2687A6F4D146A432C67F03CC2D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CCBCEB0FABF14259B9DF241BC4B5929 /* SwiftHEXColors-umbrella.h in Headers */,
-				D7D3DF14CB673538DDEA90A3B5752E0B /* SwiftHEXColors.h in Headers */,
+				9B84600E609FB1196D87F430DEBDAB1A /* SwiftHEXColors-umbrella.h in Headers */,
+				FC17296BF0828A9445C0B1F6FA3B5A30 /* SwiftHEXColors.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E25A66CA720C7A423FC5A3D62A366FD2 /* Headers */ = {
+		4B717BD9AF2BA4A8E79E07E5C032E028 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C59D3E6CA0DA2A32040CEA7BC95D0D02 /* Pods-overlay-umbrella.h in Headers */,
+				F43F65480DA0E53A05659212C2D06DA1 /* SCLAlertView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD771996BF45A3EC375EC57046263773 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8ECD2B0CF19736A55188257F33D25E5 /* SimpleAlert-umbrella.h in Headers */,
+				FFD31FEFA29FEE619A00BA2F1DCD7FD9 /* SimpleAlert.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC0371FA6B8FBE9BAF8535F87970938F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC29D76EC2E75E325EB57287A561CB52 /* Pods-overlay-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		393818A17EEEE5218AA7CF867E8B2A9D /* Pods-overlay */ = {
+		3B81208758A69B7DEBB069672BDA99AB /* Pods-overlay */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 658FA459A0F334F7A911C20156CEB01A /* Build configuration list for PBXNativeTarget "Pods-overlay" */;
+			buildConfigurationList = D08A11EF0BB78C96333CBA2B59087556 /* Build configuration list for PBXNativeTarget "Pods-overlay" */;
 			buildPhases = (
-				7F7EE977C5C0226441A0D6CC67FB15C7 /* Sources */,
-				8428E1E13AC875976B85FDB90E1B99B9 /* Frameworks */,
-				E25A66CA720C7A423FC5A3D62A366FD2 /* Headers */,
+				FAC7185EE1C0A3101184752797A2C454 /* Sources */,
+				9FBDA4916F232279286107A428ABFE56 /* Frameworks */,
+				FC0371FA6B8FBE9BAF8535F87970938F /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4B698F77355BF377ACF8A563B47F3594 /* PBXTargetDependency */,
+				95CB72BEB3380E6FBEC1E29287AF1901 /* PBXTargetDependency */,
+				5D2D245E70E10D49D721C2E5B2E6673A /* PBXTargetDependency */,
+				A679EA49B45632D5BF2EE52682E991B1 /* PBXTargetDependency */,
 			);
 			name = "Pods-overlay";
 			productName = "Pods-overlay";
-			productReference = B340DB268CF94DB0BCD1EC428A99F1C1 /* Pods_overlay.framework */;
+			productReference = 288F9820D48F2035B4D72CB6D87CE056 /* Pods_overlay.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		FEE702A9F019A3EF786D8E004A6EA837 /* SwiftHEXColors */ = {
+		4C23E3F9401C3F24FA2F5DD846A5B098 /* SimpleAlert */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0A81CC8AA62B3C27C3386520DDDC0972 /* Build configuration list for PBXNativeTarget "SwiftHEXColors" */;
+			buildConfigurationList = 4994CD6236C4B722EC9A0A507B349E96 /* Build configuration list for PBXNativeTarget "SimpleAlert" */;
 			buildPhases = (
-				FD122EE095C2DF8598590EAB9C6E3072 /* Sources */,
-				3DF6195DCD4AFCBD643FEF3D38CF995B /* Frameworks */,
-				45BB427575EA9A649C5AE1CFB29B3B44 /* Headers */,
+				6CDD3BA00E4B72B1DB3115147B50B35E /* Sources */,
+				2D1EE60D1360E352E1A9B7A614A634FF /* Frameworks */,
+				AD771996BF45A3EC375EC57046263773 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleAlert;
+			productName = SimpleAlert;
+			productReference = 70671F6C86DB4E284BABFFC98316F0AB /* SimpleAlert.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		81B40872EFA6D0AC53505B396C220E74 /* SCLAlertView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9BB8DBFF5419D6A3945897482B09E9B /* Build configuration list for PBXNativeTarget "SCLAlertView" */;
+			buildPhases = (
+				5AF284C2027C601D0B303DD82C158D84 /* Sources */,
+				088BC2F736E12A2C963B3791A7109E02 /* Frameworks */,
+				4B717BD9AF2BA4A8E79E07E5C032E028 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SCLAlertView;
+			productName = SCLAlertView;
+			productReference = FFE5D6B27E7582B47C5E02AB4FE61565 /* SCLAlertView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ECEB330072076EFE058A67DBA05BE052 /* SwiftHEXColors */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 598453258340C38DE962CCACB20B86A1 /* Build configuration list for PBXNativeTarget "SwiftHEXColors" */;
+			buildPhases = (
+				3C01DD8AD5A61954D79ECEBF9B65CCA7 /* Sources */,
+				8E2C328E8EA95709E81FF2FD85B97E88 /* Frameworks */,
+				45E2FD2687A6F4D146A432C67F03CC2D /* Headers */,
 			);
 			buildRules = (
 			);
@@ -221,7 +391,7 @@
 			);
 			name = SwiftHEXColors;
 			productName = SwiftHEXColors;
-			productReference = 250138C968B877CAA931B94266E70E4F /* SwiftHEXColors.framework */;
+			productReference = 41895F1A4D5923331F998FA71890A7A4 /* SwiftHEXColors.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -241,47 +411,221 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = B70E9A6CC5F78DD69E25374C8E0DA40D /* Products */;
+			productRefGroup = 21CD91E161179F10FF50836F071659B9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				393818A17EEEE5218AA7CF867E8B2A9D /* Pods-overlay */,
-				FEE702A9F019A3EF786D8E004A6EA837 /* SwiftHEXColors */,
+				3B81208758A69B7DEBB069672BDA99AB /* Pods-overlay */,
+				81B40872EFA6D0AC53505B396C220E74 /* SCLAlertView */,
+				4C23E3F9401C3F24FA2F5DD846A5B098 /* SimpleAlert */,
+				ECEB330072076EFE058A67DBA05BE052 /* SwiftHEXColors */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7F7EE977C5C0226441A0D6CC67FB15C7 /* Sources */ = {
+		3C01DD8AD5A61954D79ECEBF9B65CCA7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11154FB5DADBF683DA457AD43057D629 /* Pods-overlay-dummy.m in Sources */,
+				504BBC5EA68E54D1B97D2F652A1923C0 /* SwiftHEXColors-dummy.m in Sources */,
+				BEBC97C781451A19629396DFD33AFE26 /* SwiftHEXColors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FD122EE095C2DF8598590EAB9C6E3072 /* Sources */ = {
+		5AF284C2027C601D0B303DD82C158D84 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C37E91F37616C07D6AFAB7BC8B6CA77 /* SwiftHEXColors-dummy.m in Sources */,
-				82AE1EA118F9855170B1EEA3425B01B8 /* SwiftHEXColors.swift in Sources */,
+				8303A59D1251A1EBF6FD27FDD5D37892 /* Info.plist in Sources */,
+				049B8FBE8F26935253D05EBBF5F7C20A /* SCLAlertView-dummy.m in Sources */,
+				85F82022F940A05876761995C5413966 /* SCLAlertView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CDD3BA00E4B72B1DB3115147B50B35E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FB48AB89B17CC21616F067B6A38586C /* SimpleAlert-dummy.m in Sources */,
+				574AE461BEAE1F0469B4CBA9BC91E63F /* SimpleAlert.swift in Sources */,
+				41C0707A75CF35517FB62DDB14AFC3FE /* SimpleAlert.xib in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC7185EE1C0A3101184752797A2C454 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6DFBB74540DA2D875685AE6719A737A /* Pods-overlay-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4B698F77355BF377ACF8A563B47F3594 /* PBXTargetDependency */ = {
+		5D2D245E70E10D49D721C2E5B2E6673A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SimpleAlert;
+			target = 4C23E3F9401C3F24FA2F5DD846A5B098 /* SimpleAlert */;
+			targetProxy = C6EFF10C5C0C42193326401E1D289B45 /* PBXContainerItemProxy */;
+		};
+		95CB72BEB3380E6FBEC1E29287AF1901 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SCLAlertView;
+			target = 81B40872EFA6D0AC53505B396C220E74 /* SCLAlertView */;
+			targetProxy = 761426067B26AA50B1DB4B444931570D /* PBXContainerItemProxy */;
+		};
+		A679EA49B45632D5BF2EE52682E991B1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftHEXColors;
-			target = FEE702A9F019A3EF786D8E004A6EA837 /* SwiftHEXColors */;
-			targetProxy = 25FAAE4BC06C951B8324D3AD848DBA88 /* PBXContainerItemProxy */;
+			target = ECEB330072076EFE058A67DBA05BE052 /* SwiftHEXColors */;
+			targetProxy = E3B4288D9382898E0085352562A2BC9C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		52A84A87AD614B1D4210B56EC20D7B43 /* Debug */ = {
+		24CD40ECC72EE4C079A1CDF3202AE8F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F53323A2D4CF7C05A0815E3783F47D3 /* Pods-overlay.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-overlay/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-overlay/Pods-overlay.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_overlay;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		30F9DF783B8041BB90A634CC9302266E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF88E98475A8F2445C73835F327BDD63 /* SCLAlertView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SCLAlertView/SCLAlertView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SCLAlertView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SCLAlertView/SCLAlertView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SCLAlertView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5B518CF881815378B2D22205D87A5CA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F5599BB24E182A4EA547ABDBC9C1EB3 /* SimpleAlert.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SimpleAlert/SimpleAlert-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SimpleAlert/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SimpleAlert/SimpleAlert.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SimpleAlert;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5D854DBD9C0D5ED6C27AD33A347C0E0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D17965F7BFB168EA40FB11FC75CAD366 /* SwiftHEXColors.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftHEXColors/SwiftHEXColors-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftHEXColors/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftHEXColors/SwiftHEXColors.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftHEXColors;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6EDEE4B96431450A92BE2F2C8E85AF61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F5599BB24E182A4EA547ABDBC9C1EB3 /* SimpleAlert.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SimpleAlert/SimpleAlert-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SimpleAlert/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SimpleAlert/SimpleAlert.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SimpleAlert;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8601EE89F07C276396AA58DD89547F0D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 90E8F1DDA2C4BAB0C9B0FA418C828A63 /* Pods-overlay.debug.xcconfig */;
 			buildSettings = {
@@ -311,36 +655,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		6166FA622CE1AB40D011E4278E4A6E82 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F53323A2D4CF7C05A0815E3783F47D3 /* Pods-overlay.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-overlay/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-overlay/Pods-overlay.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_overlay;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		8D1534490D941DCA47C62AC4314182AF /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -381,61 +695,6 @@
 			};
 			name = Debug;
 		};
-		A7A97764148953093349EA3BDCB5C5FC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5302E2C1C45A705B147F89BE9DF8BA56 /* SwiftHEXColors.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftHEXColors/SwiftHEXColors-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftHEXColors/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftHEXColors/SwiftHEXColors.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SwiftHEXColors;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		BAF9A35E199D7C63D606739C81D8F191 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5302E2C1C45A705B147F89BE9DF8BA56 /* SwiftHEXColors.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftHEXColors/SwiftHEXColors-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftHEXColors/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftHEXColors/SwiftHEXColors.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SwiftHEXColors;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		C5A18280E9321A9268D1C80B7DA43967 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -470,18 +729,64 @@
 			};
 			name = Release;
 		};
+		C73544251479A776F5A02ED04ED38790 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D17965F7BFB168EA40FB11FC75CAD366 /* SwiftHEXColors.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftHEXColors/SwiftHEXColors-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftHEXColors/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftHEXColors/SwiftHEXColors.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftHEXColors;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CEA30EA52F8A0AF14E68235D1C99B95D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF88E98475A8F2445C73835F327BDD63 /* SCLAlertView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SCLAlertView/SCLAlertView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SCLAlertView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SCLAlertView/SCLAlertView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SCLAlertView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0A81CC8AA62B3C27C3386520DDDC0972 /* Build configuration list for PBXNativeTarget "SwiftHEXColors" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A7A97764148953093349EA3BDCB5C5FC /* Debug */,
-				BAF9A35E199D7C63D606739C81D8F191 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -491,11 +796,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		658FA459A0F334F7A911C20156CEB01A /* Build configuration list for PBXNativeTarget "Pods-overlay" */ = {
+		4994CD6236C4B722EC9A0A507B349E96 /* Build configuration list for PBXNativeTarget "SimpleAlert" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				52A84A87AD614B1D4210B56EC20D7B43 /* Debug */,
-				6166FA622CE1AB40D011E4278E4A6E82 /* Release */,
+				6EDEE4B96431450A92BE2F2C8E85AF61 /* Debug */,
+				5B518CF881815378B2D22205D87A5CA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		598453258340C38DE962CCACB20B86A1 /* Build configuration list for PBXNativeTarget "SwiftHEXColors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C73544251479A776F5A02ED04ED38790 /* Debug */,
+				5D854DBD9C0D5ED6C27AD33A347C0E0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9BB8DBFF5419D6A3945897482B09E9B /* Build configuration list for PBXNativeTarget "SCLAlertView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30F9DF783B8041BB90A634CC9302266E /* Debug */,
+				CEA30EA52F8A0AF14E68235D1C99B95D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D08A11EF0BB78C96333CBA2B59087556 /* Build configuration list for PBXNativeTarget "Pods-overlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8601EE89F07C276396AA58DD89547F0D /* Debug */,
+				24CD40ECC72EE4C079A1CDF3202AE8F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

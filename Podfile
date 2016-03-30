@@ -5,5 +5,7 @@ use_frameworks!
 
 target 'overlay' do
     pod 'SwiftHEXColors'
+    pod 'SCLAlertView'
+    pod 'SimpleAlert'
 end
 

@@ -17,7 +17,11 @@ let mediumGray = UIColor(hexString: "#959ca8")
 let darkGray = UIColor(hexString: "#2e3b54")
 
 let red = UIColor(hexString: "#F68481")
-let green = UIColor(hexString: "#9EF690")
+let green = UIColor(hexString: "#A4EA9A")
+let yellow = UIColor(hexString: "#FEE085")
+let blue = UIColor(hexString: "#81A8FC")
+let purple = UIColor(hexString: "#A177FF")
+let orange = UIColor(hexString: "#FEB383")
 
 // Topics colors
 

@@ -92,7 +92,6 @@ class QuizViewController: UIViewController {
         }
     }
     
-    
     @IBAction func quizButtonDidTap(sender: UIButton) {
         
         if let questionViewController = questionViewController {
@@ -103,7 +102,7 @@ class QuizViewController: UIViewController {
                     print("Advancing to next quiz")
                 } else {
                     questionViewController.showSuccessState()
-                    quizButton.backgroundColor = topic.color
+                    quizButton.backgroundColor = green
                     quizButton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
                     quizButton.setTitle("Correct! Next  →", forState: UIControlState.Normal)
                     completedQuestions.append(currentQuestion)
@@ -187,97 +186,33 @@ class QuizViewController: UIViewController {
 
         alert.configContentView = { [weak self] view in
             if let view = view as? SimpleAlert.ContentView {
-                view.frame.size.height = 44
                 view.titleLabel.textColor = UIColor.whiteColor()
-                view.titleLabel.font = UIFont.boldSystemFontOfSize(36)
+                view.titleLabel.font = UIFont.boldSystemFontOfSize(26)
                 view.messageLabel.textColor = UIColor.whiteColor()
-                view.messageLabel.font = UIFont.boldSystemFontOfSize(16)
+                view.messageLabel.font = UIFont.systemFontOfSize(18)
                 view.textBackgroundView.layer.cornerRadius = 4.0
-                view.backgroundColor = self!.topic.color
+                view.backgroundColor = darkGray
                 view.textBackgroundView.clipsToBounds = true
             }
         }
         
-        let actionOK = SimpleAlert.Action(title: "Yes", style: .OK)
         let action = SimpleAlert.Action(title: "Cancel", style: .Cancel)
-
-        alert.addAction(actionOK)
-        alert.addAction(action)
-
-        alert.addAction(actionOK)
-        actionOK.button.frame.size.height = 44
-        actionOK.button.titleLabel?.font = UIFont.boldSystemFontOfSize(22)
-        actionOK.button.setTitleColor(darkGray, forState: .Normal)
-        actionOK.button.backgroundColor = UIColor.whiteColor()
+        let actionOK = SimpleAlert.Action(title: "Yes", style: .OK)
         
         alert.addAction(action)
-        action.button.frame.size.height = 44
-        action.button.titleLabel?.font = UIFont.systemFontOfSize(22)
+//        action.button.frame.size.height = 44
+        action.button.titleLabel?.font = UIFont.systemFontOfSize(18)
         action.button.setTitleColor(darkGray, forState: .Normal)
         action.button.backgroundColor = UIColor.whiteColor()
+        
+        alert.addAction(actionOK)
+//        actionOK.button.frame.size.height = 44
+        actionOK.button.titleLabel?.font = UIFont.boldSystemFontOfSize(18)
+        actionOK.button.setTitleColor(darkGray, forState: .Normal)
+        actionOK.button.backgroundColor = UIColor.whiteColor()
         
         presentViewController(alert, animated: true, completion: nil)
         
     }
-    
-    
-    
-    
-    // sclalertview 
-    
-//    @IBAction func exitButtonDidTap(sender: AnyObject) {
-//        // Get started
-//        SCLAlertView().showInfo("Important info", subTitle: "You are great")
-//        
-//        let alertViewResponder: SCLAlertViewResponder = SCLAlertView().showSuccess("Hello World", subTitle: "This is a more descriptive text.")
-//        
-//        // Upon displaying, change/close view
-//        alertViewResponder.setTitle("New Title") // Rename title
-//        alertViewResponder.setSubTitle("New description") // Rename subtitle
-//        alertViewResponder.close() // Close view
-//        
-//        let alertView = SCLAlertView()
-//        alertView.addButton("First Button", target:self, selector:Selector("firstButton"))
-//        alertView.addButton("Second Button") {
-//            print("Second button tapped")
-//        }
-//        alertView.showNotice("Button View", subTitle: "This alert view has buttons")
-//        
-//        
-//    }
-//    
-    
-    
-    // original alert
-    
-    
-//    @IBAction func exitButtonDidTap(sender: AnyObject) {
-//        let alertController = UIAlertController(title: "Are you sure?", message: "Your progress in this quiz will be lost", preferredStyle: .Alert)
-//        
-//        alertController.view.tintColor = darkGray
-//        
-//        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) { (action) in
-//            // handle cancel response here. ADD SEGUE BACK TO TOPIC VIEW CONTROLLER
-//        }
-//        
-//        alertController.addAction(cancelAction)
-//        
-//        
-//        let OKAction = UIAlertAction(title: "Yes", style: .Default) { (action) in
-//            
-//        }
-//        
-//        alertController.addAction(OKAction)
-//        
-//        presentViewController(alertController, animated: true) {
-//            
-//        }
-//        
-//    }
-
-    
-    
-    
-    
     
 }

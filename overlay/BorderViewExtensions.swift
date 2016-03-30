@@ -54,4 +54,34 @@ extension UIView {
         
         self.layer.addSublayer(shapeLayer)
     }
+    
+    func addColorBorder() {
+        let shapeLayer:CAShapeLayer = CAShapeLayer()
+        let frameSize = self.frame.size
+        let shapeRect = CGRect(x: 0, y: 0, width: frameSize.width, height: frameSize.height)
+
+        shapeLayer.fillColor = UIColor.clearColor().CGColor
+        shapeLayer.strokeColor = mediumGray?.CGColor
+        shapeLayer.lineWidth = 4
+        shapeLayer.path = UIBezierPath(roundedRect: shapeRect, cornerRadius: 30).CGPath
+        
+        self.layer.addSublayer(shapeLayer)
+    }
+    
+    func removeColorBorder() {
+        let shapeLayer:CAShapeLayer = CAShapeLayer()
+        let frameSize = self.frame.size
+        let shapeRect = CGRect(x: 0, y: 0, width: frameSize.width, height: frameSize.height)
+        
+        shapeLayer.fillColor = UIColor.clearColor().CGColor
+        shapeLayer.strokeColor = UIColor.whiteColor().CGColor
+        shapeLayer.lineWidth = 5
+        shapeLayer.path = UIBezierPath(roundedRect: shapeRect, cornerRadius: 30).CGPath
+        
+        self.layer.addSublayer(shapeLayer)
+    }
+    
+    
+    
+    
 }
