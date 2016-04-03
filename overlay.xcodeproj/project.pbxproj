@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B881D7F1CA8D51400BB3891 /* ColorOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B881D7E1CA8D51400BB3891 /* ColorOneViewController.swift */; };
+		3B881D811CA8DD4000BB3891 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B881D801CA8DD4000BB3891 /* LaunchViewController.swift */; };
+		3BB30A591CA0F7DB0045B8CD /* BorderViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB30A581CA0F7DB0045B8CD /* BorderViewExtensions.swift */; };
+		3BCFA4FC1CA37EE7003178AD /* ProximityThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCFA4FB1CA37EE7003178AD /* ProximityThreeViewController.swift */; };
+		3BD1D4571C9BBA11006065C2 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD1D4561C9BBA11006065C2 /* QuizViewController.swift */; };
+		3BD1D4591C9E0BA2006065C2 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD1D4581C9E0BA2006065C2 /* SuccessViewController.swift */; };
+		3BD1D45B1C9F5E8C006065C2 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD1D45A1C9F5E8C006065C2 /* QuestionViewController.swift */; };
+		3BD1D45D1CA0C3EE006065C2 /* ProximityTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD1D45C1CA0C3EE006065C2 /* ProximityTwoViewController.swift */; };
+		3BD36FE01C9A23C500F7254F /* ProximityOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD36FDF1C9A23C500F7254F /* ProximityOneViewController.swift */; };
+		3BEF99761C9A69B2007B49DC /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEF99751C9A69B2007B49DC /* Quiz.swift */; };
+		3BEF99781C9A6A7D007B49DC /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEF99771C9A6A7D007B49DC /* Question.swift */; };
+		3BEF997A1C9A6B21007B49DC /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEF99791C9A6B21007B49DC /* Answer.swift */; };
+		3BEF997C1C9A6BEB007B49DC /* MultipleChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEF997B1C9A6BEB007B49DC /* MultipleChoiceViewController.swift */; };
+		3BEF99811C9A6ED5007B49DC /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEF99801C9A6ED5007B49DC /* Topic.swift */; };
+		7E23B5471CA37C2100379B55 /* CircleViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E23B5461CA37C2100379B55 /* CircleViewExtensions.swift */; };
 		7E288FA41C7D918F0046C82F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E288FA31C7D918F0046C82F /* AppDelegate.swift */; };
 		7E288FA91C7D918F0046C82F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E288FA71C7D918F0046C82F /* Main.storyboard */; };
 		7E288FAB1C7D918F0046C82F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E288FAA1C7D918F0046C82F /* Assets.xcassets */; };
@@ -16,12 +31,28 @@
 		7E89887C1C96322C006F3F8B /* TopicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E89887B1C96322C006F3F8B /* TopicCell.swift */; };
 		7EBE3EAB1C9A221F00EB4171 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBE3EAA1C9A221F00EB4171 /* Data.swift */; };
 		C826217A1C9A38960002FF66 /* LessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82621791C9A38960002FF66 /* LessonViewController.swift */; };
+		7EBE3EAB1C9A221F00EB4171 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBE3EAA1C9A221F00EB4171 /* Color.swift */; };
 		D1EBC79193C49F17614E7E7A /* Pods_overlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F0FEFBA2F53027C8E7F1547 /* Pods_overlay.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B881D7E1CA8D51400BB3891 /* ColorOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorOneViewController.swift; sourceTree = "<group>"; };
+		3B881D801CA8DD4000BB3891 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		3BB30A581CA0F7DB0045B8CD /* BorderViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderViewExtensions.swift; sourceTree = "<group>"; };
+		3BCFA4FB1CA37EE7003178AD /* ProximityThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProximityThreeViewController.swift; sourceTree = "<group>"; };
+		3BD1D4561C9BBA11006065C2 /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		3BD1D4581C9E0BA2006065C2 /* SuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SuccessViewController.swift; path = ../SuccessViewController.swift; sourceTree = "<group>"; };
+		3BD1D45A1C9F5E8C006065C2 /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		3BD1D45C1CA0C3EE006065C2 /* ProximityTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProximityTwoViewController.swift; sourceTree = "<group>"; };
+		3BD36FDF1C9A23C500F7254F /* ProximityOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProximityOneViewController.swift; sourceTree = "<group>"; };
+		3BEF99751C9A69B2007B49DC /* Quiz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
+		3BEF99771C9A6A7D007B49DC /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		3BEF99791C9A6B21007B49DC /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		3BEF997B1C9A6BEB007B49DC /* MultipleChoiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleChoiceViewController.swift; sourceTree = "<group>"; };
+		3BEF99801C9A6ED5007B49DC /* Topic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 		3F0FEFBA2F53027C8E7F1547 /* Pods_overlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_overlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E3192B06282321065C2D21E /* Pods-overlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-overlay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-overlay/Pods-overlay.debug.xcconfig"; sourceTree = "<group>"; };
+		7E23B5461CA37C2100379B55 /* CircleViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleViewExtensions.swift; sourceTree = "<group>"; };
 		7E288FA01C7D918F0046C82F /* overlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = overlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E288FA31C7D918F0046C82F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E288FA81C7D918F0046C82F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -31,7 +62,7 @@
 		7E39F2671C969BA9000E223B /* TopicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicViewController.swift; sourceTree = "<group>"; };
 		7E8988771C96156D006F3F8B /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7E89887B1C96322C006F3F8B /* TopicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicCell.swift; sourceTree = "<group>"; };
-		7EBE3EAA1C9A221F00EB4171 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		7EBE3EAA1C9A221F00EB4171 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		BF940E331B05955B847A35A8 /* Pods-overlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-overlay.release.xcconfig"; path = "Pods/Target Support Files/Pods-overlay/Pods-overlay.release.xcconfig"; sourceTree = "<group>"; };
 		C82621791C9A38960002FF66 /* LessonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,6 +96,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		3BEF997D1C9A6E9E007B49DC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3BEF99801C9A6ED5007B49DC /* Topic.swift */,
+				3BEF99751C9A69B2007B49DC /* Quiz.swift */,
+				3BEF99771C9A6A7D007B49DC /* Question.swift */,
+				3BEF99791C9A6B21007B49DC /* Answer.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		7E288F971C7D918F0046C82F = {
 			isa = PBXGroup;
 			children = (
@@ -86,13 +128,14 @@
 		7E288FA21C7D918F0046C82F /* overlay */ = {
 			isa = PBXGroup;
 			children = (
+				7E90EEB71CA0C97A00F0C70B /* Helpers */,
+				3BEF997D1C9A6E9E007B49DC /* Models */,
 				7E8988761C9613C8006F3F8B /* View Controllers */,
 				7E288FA31C7D918F0046C82F /* AppDelegate.swift */,
 				7E288FA71C7D918F0046C82F /* Main.storyboard */,
 				7E288FAA1C7D918F0046C82F /* Assets.xcassets */,
 				7E288FAC1C7D918F0046C82F /* LaunchScreen.storyboard */,
 				7E288FAF1C7D918F0046C82F /* Info.plist */,
-				7EBE3EAA1C9A221F00EB4171 /* Data.swift */,
 			);
 			path = overlay;
 			sourceTree = "<group>";
@@ -101,11 +144,30 @@
 			isa = PBXGroup;
 			children = (
 				C82621791C9A38960002FF66 /* LessonViewController.swift */,
+				3B881D801CA8DD4000BB3891 /* LaunchViewController.swift */,
+				3BD1D45A1C9F5E8C006065C2 /* QuestionViewController.swift */,
 				7E8988771C96156D006F3F8B /* HomeViewController.swift */,
 				7E89887B1C96322C006F3F8B /* TopicCell.swift */,
 				7E39F2671C969BA9000E223B /* TopicViewController.swift */,
+				3BD1D4561C9BBA11006065C2 /* QuizViewController.swift */,
+				3BEF997B1C9A6BEB007B49DC /* MultipleChoiceViewController.swift */,
+				3BD36FDF1C9A23C500F7254F /* ProximityOneViewController.swift */,
+				3BD1D45C1CA0C3EE006065C2 /* ProximityTwoViewController.swift */,
+				3BCFA4FB1CA37EE7003178AD /* ProximityThreeViewController.swift */,
+				3B881D7E1CA8D51400BB3891 /* ColorOneViewController.swift */,
+				3BD1D4581C9E0BA2006065C2 /* SuccessViewController.swift */,
 			);
 			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		7E90EEB71CA0C97A00F0C70B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3BB30A581CA0F7DB0045B8CD /* BorderViewExtensions.swift */,
+				7EBE3EAA1C9A221F00EB4171 /* Color.swift */,
+				7E23B5461CA37C2100379B55 /* CircleViewExtensions.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,10 +294,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E288FA41C7D918F0046C82F /* AppDelegate.swift in Sources */,
-				7EBE3EAB1C9A221F00EB4171 /* Data.swift in Sources */,
+				3BEF99811C9A6ED5007B49DC /* Topic.swift in Sources */,
+				3BD1D45D1CA0C3EE006065C2 /* ProximityTwoViewController.swift in Sources */,
+				3B881D7F1CA8D51400BB3891 /* ColorOneViewController.swift in Sources */,
+				3BEF997C1C9A6BEB007B49DC /* MultipleChoiceViewController.swift in Sources */,
+				7EBE3EAB1C9A221F00EB4171 /* Color.swift in Sources */,
+				3BEF99781C9A6A7D007B49DC /* Question.swift in Sources */,
+				3BCFA4FC1CA37EE7003178AD /* ProximityThreeViewController.swift in Sources */,
+				3BD36FE01C9A23C500F7254F /* ProximityOneViewController.swift in Sources */,
 				7E89887C1C96322C006F3F8B /* TopicCell.swift in Sources */,
+				3BD1D4591C9E0BA2006065C2 /* SuccessViewController.swift in Sources */,
+				3BD1D4571C9BBA11006065C2 /* QuizViewController.swift in Sources */,
 				7E39F2681C969BA9000E223B /* TopicViewController.swift in Sources */,
 				C826217A1C9A38960002FF66 /* LessonViewController.swift in Sources */,
+				3B881D811CA8DD4000BB3891 /* LaunchViewController.swift in Sources */,
+				7E23B5471CA37C2100379B55 /* CircleViewExtensions.swift in Sources */,
+				3BD1D45B1C9F5E8C006065C2 /* QuestionViewController.swift in Sources */,
+				3BEF997A1C9A6B21007B49DC /* Answer.swift in Sources */,
+				3BEF99761C9A69B2007B49DC /* Quiz.swift in Sources */,
+				3BB30A591CA0F7DB0045B8CD /* BorderViewExtensions.swift in Sources */,
 				7E8988781C96156D006F3F8B /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

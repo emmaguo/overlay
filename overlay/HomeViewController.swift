@@ -14,12 +14,13 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     var homeTableViewHeight: CGFloat!
     var originalTableViewOrigin: CGPoint!
     var originalTableViewSize: CGSize!
+    var topics: [Topic]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = mainBackgroundColor
-        homeTableView.backgroundColor = homeTableBackgroundColor
+        topics = Topic.allTopics()
+        view.backgroundColor = mainBackgroundColor
         homeTableView.delegate = self
         homeTableView.dataSource = self
         homeTableView.rowHeight = calculateRowHeight()
@@ -28,20 +29,22 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     // Calculate table row height based on number of topics
     func calculateRowHeight() -> CGFloat {
-        return homeTableView.frame.height / CGFloat(topicsColors.count)
+        return homeTableView.frame.height / CGFloat(topics.count)
     }
 
     // Define number of table rows
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return topicsColors.count
+        return topics.count
     }
     
     // Define table topic cell content
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = homeTableView.dequeueReusableCellWithIdentifier("Topic Cell") as! TopicCell
         let index = indexPath.row
-        cell.topicNameLabel.text = topicsNames[index]
-        cell.backgroundColor = topicsColors[index]
+        let topic = topics[index]
+
+        cell.topicNameLabel.text = topic.name
+        cell.mainColor = topic.color
         return cell
     }
 
@@ -121,6 +124,6 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let cell = sender as! TopicCell
         let topicViewController = segue.destinationViewController as! TopicViewController
-        topicViewController.headerBackgroundColor = cell.backgroundColor
+        topicViewController.headerBackgroundColor = cell.mainColor
     }
 }
