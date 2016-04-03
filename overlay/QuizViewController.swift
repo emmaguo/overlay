@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SCLAlertView
+import SimpleAlert
 
 class QuizViewController: UIViewController {
     
@@ -24,7 +26,7 @@ class QuizViewController: UIViewController {
     var completedQuestions = [Question]()
     var allQuestions: [Question]!
     var currentQuestion: Question!
-    let alertController = UIAlertController(title: "Title", message: "Message", preferredStyle: .Alert)
+    
     
     let userDefaults = NSUserDefaults.standardUserDefaults()
     
@@ -90,7 +92,6 @@ class QuizViewController: UIViewController {
         }
     }
     
-    
     @IBAction func quizButtonDidTap(sender: UIButton) {
         
         if let questionViewController = questionViewController {
@@ -101,7 +102,7 @@ class QuizViewController: UIViewController {
                     print("Advancing to next quiz")
                 } else {
                     questionViewController.showSuccessState()
-                    quizButton.backgroundColor = topic.color
+                    quizButton.backgroundColor = green
                     quizButton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
                     quizButton.setTitle("Correct! Next  →", forState: UIControlState.Normal)
                     completedQuestions.append(currentQuestion)
@@ -174,6 +175,44 @@ class QuizViewController: UIViewController {
             
         }
 
+    }
+    
+    enum SCLAlertViewStyle: Int {
+        case Success, Error, Notice, Warning, Info, Edit, Wait
+    }
+    
+    @IBAction func exitButtonDidTap(sender: AnyObject) {
+        let alert = SimpleAlert.Controller(title: "Are you sure?", message: "You will lose all progress if you exit the quiz", style: .Alert)
+
+        alert.configContentView = { [weak self] view in
+            if let view = view as? SimpleAlert.ContentView {
+                view.titleLabel.textColor = UIColor.whiteColor()
+                view.titleLabel.font = UIFont.boldSystemFontOfSize(26)
+                view.messageLabel.textColor = UIColor.whiteColor()
+                view.messageLabel.font = UIFont.systemFontOfSize(18)
+                view.textBackgroundView.layer.cornerRadius = 4.0
+                view.backgroundColor = darkGray
+                view.textBackgroundView.clipsToBounds = true
+            }
+        }
+        
+        let action = SimpleAlert.Action(title: "Cancel", style: .Cancel)
+        let actionOK = SimpleAlert.Action(title: "Yes", style: .OK)
+        
+        alert.addAction(action)
+//        action.button.frame.size.height = 44
+        action.button.titleLabel?.font = UIFont.systemFontOfSize(18)
+        action.button.setTitleColor(darkGray, forState: .Normal)
+        action.button.backgroundColor = UIColor.whiteColor()
+        
+        alert.addAction(actionOK)
+//        actionOK.button.frame.size.height = 44
+        actionOK.button.titleLabel?.font = UIFont.boldSystemFontOfSize(18)
+        actionOK.button.setTitleColor(darkGray, forState: .Normal)
+        actionOK.button.backgroundColor = UIColor.whiteColor()
+        
+        presentViewController(alert, animated: true, completion: nil)
+        
     }
     
 }

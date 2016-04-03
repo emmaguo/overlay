@@ -9,7 +9,7 @@
 class Question {
     
     enum QuestionType {
-        case MultipleChoice, ProximityDragOne, ProximityTwo
+        case MultipleChoice, ProximityDragOne, ProximityTwo, ProximityThree, ColorOne
     }
     
     let id: Int
@@ -29,6 +29,8 @@ class Question {
         case .MultipleChoice: return "MultipleChoiceViewController"
         case .ProximityDragOne: return "ProximityOneViewController"
         case .ProximityTwo: return "ProximityTwoViewController"
+        case .ProximityThree: return "ProximityThreeViewController"
+        case .ColorOne: return "ColorOneViewController"
         }
     }
 

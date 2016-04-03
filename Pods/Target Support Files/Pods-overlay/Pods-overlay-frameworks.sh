@@ -84,8 +84,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-overlay/SCLAlertView.framework"
+  install_framework "Pods-overlay/SimpleAlert.framework"
   install_framework "Pods-overlay/SwiftHEXColors.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-overlay/SCLAlertView.framework"
+  install_framework "Pods-overlay/SimpleAlert.framework"
   install_framework "Pods-overlay/SwiftHEXColors.framework"
 fi
