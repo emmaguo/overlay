@@ -29,6 +29,8 @@
 		7E39F2681C969BA9000E223B /* TopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E39F2671C969BA9000E223B /* TopicViewController.swift */; };
 		7E8988781C96156D006F3F8B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8988771C96156D006F3F8B /* HomeViewController.swift */; };
 		7E89887C1C96322C006F3F8B /* TopicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E89887B1C96322C006F3F8B /* TopicCell.swift */; };
+		7EBE3EAB1C9A221F00EB4171 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBE3EAA1C9A221F00EB4171 /* Data.swift */; };
+		C826217A1C9A38960002FF66 /* LessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82621791C9A38960002FF66 /* LessonViewController.swift */; };
 		7EBE3EAB1C9A221F00EB4171 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBE3EAA1C9A221F00EB4171 /* Color.swift */; };
 		D1EBC79193C49F17614E7E7A /* Pods_overlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F0FEFBA2F53027C8E7F1547 /* Pods_overlay.framework */; };
 /* End PBXBuildFile section */
@@ -62,6 +64,7 @@
 		7E89887B1C96322C006F3F8B /* TopicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicCell.swift; sourceTree = "<group>"; };
 		7EBE3EAA1C9A221F00EB4171 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		BF940E331B05955B847A35A8 /* Pods-overlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-overlay.release.xcconfig"; path = "Pods/Target Support Files/Pods-overlay/Pods-overlay.release.xcconfig"; sourceTree = "<group>"; };
+		C82621791C9A38960002FF66 /* LessonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +143,7 @@
 		7E8988761C9613C8006F3F8B /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C82621791C9A38960002FF66 /* LessonViewController.swift */,
 				3B881D801CA8DD4000BB3891 /* LaunchViewController.swift */,
 				3BD1D45A1C9F5E8C006065C2 /* QuestionViewController.swift */,
 				7E8988771C96156D006F3F8B /* HomeViewController.swift */,
@@ -302,6 +306,7 @@
 				3BD1D4591C9E0BA2006065C2 /* SuccessViewController.swift in Sources */,
 				3BD1D4571C9BBA11006065C2 /* QuizViewController.swift in Sources */,
 				7E39F2681C969BA9000E223B /* TopicViewController.swift in Sources */,
+				C826217A1C9A38960002FF66 /* LessonViewController.swift in Sources */,
 				3B881D811CA8DD4000BB3891 /* LaunchViewController.swift in Sources */,
 				7E23B5471CA37C2100379B55 /* CircleViewExtensions.swift in Sources */,
 				3BD1D45B1C9F5E8C006065C2 /* QuestionViewController.swift in Sources */,
