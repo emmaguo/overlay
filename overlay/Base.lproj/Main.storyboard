@@ -914,7 +914,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view tag="1" contentMode="scaleToFill" id="zRZ-nO-YeO">
-                                <rect key="frame" x="246" y="90" width="60" height="60"/>
+                                <rect key="frame" x="234" y="145" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.88311650720000001" green="0.91892250949999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
@@ -923,7 +923,7 @@
                                 </connections>
                             </view>
                             <view tag="2" contentMode="scaleToFill" id="0ca-ph-zuS">
-                                <rect key="frame" x="247" y="192" width="60" height="60"/>
+                                <rect key="frame" x="235" y="247" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.88311650720000001" green="0.91892250949999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
@@ -932,7 +932,7 @@
                                 </connections>
                             </view>
                             <view tag="3" contentMode="scaleToFill" id="IEj-Qc-b8H">
-                                <rect key="frame" x="157" y="254" width="60" height="60"/>
+                                <rect key="frame" x="145" y="309" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.88311650720000001" green="0.91892250949999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
@@ -941,7 +941,7 @@
                                 </connections>
                             </view>
                             <view tag="6" contentMode="scaleToFill" id="1ex-Wb-ZSp">
-                                <rect key="frame" x="157" y="28" width="60" height="60"/>
+                                <rect key="frame" x="145" y="83" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.88311650720000001" green="0.91892250949999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
@@ -950,7 +950,7 @@
                                 </connections>
                             </view>
                             <view tag="5" contentMode="scaleToFill" id="itO-eF-CFU">
-                                <rect key="frame" x="66" y="90" width="60" height="60"/>
+                                <rect key="frame" x="54" y="145" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.88311650716934165" green="0.91892250950813514" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
@@ -959,7 +959,7 @@
                                 </connections>
                             </view>
                             <view tag="4" contentMode="scaleToFill" id="gzq-Vk-VhE">
-                                <rect key="frame" x="67" y="192" width="60" height="60"/>
+                                <rect key="frame" x="55" y="247" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.88311650720000001" green="0.91892250949999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
@@ -1013,6 +1013,625 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2034.5" y="1871.5"/>
+        </scene>
+        <!--Color Two View Controller-->
+        <scene sceneID="b2b-u5-8It">
+            <objects>
+                <viewController storyboardIdentifier="ColorTwoViewController" id="83S-xJ-2HE" customClass="ColorTwoViewController" customModule="overlay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2LZ-Qz-Yms">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view tag="1" contentMode="scaleToFill" id="EJf-ux-kCu">
+                                <rect key="frame" x="221" y="145" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88311650720000001" green="0.91892250949999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Kki-5j-3JD" appends="YES" id="Vse-iK-KJk"/>
+                                </connections>
+                            </view>
+                            <view tag="2" contentMode="scaleToFill" id="Kjr-Ok-g6j">
+                                <rect key="frame" x="222" y="247" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88311650720000001" green="0.91892250949999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="PpK-wu-Qrq" appends="YES" id="AIx-Yb-itD"/>
+                                </connections>
+                            </view>
+                            <view tag="3" contentMode="scaleToFill" id="bmF-8W-GnT">
+                                <rect key="frame" x="132" y="309" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88311650720000001" green="0.91892250949999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="JER-pv-8X5" appends="YES" id="vze-f5-S4B"/>
+                                </connections>
+                            </view>
+                            <view tag="6" contentMode="scaleToFill" id="cfz-Vm-lZE">
+                                <rect key="frame" x="132" y="83" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88311650720000001" green="0.91892250949999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="p3R-P4-UNy" appends="YES" id="9ei-Lu-Am3"/>
+                                </connections>
+                            </view>
+                            <view tag="5" contentMode="scaleToFill" id="vsw-sa-oAi">
+                                <rect key="frame" x="41" y="145" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88311650720000001" green="0.91892250949999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="nWQ-wb-gme" appends="YES" id="1CH-8w-JPT"/>
+                                </connections>
+                            </view>
+                            <view tag="4" contentMode="scaleToFill" id="vVU-Uj-dyf">
+                                <rect key="frame" x="42" y="247" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88311650720000001" green="0.91892250949999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Xbe-Dz-jb9" appends="YES" id="Drm-0B-OXL"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="blueView" destination="vVU-Uj-dyf" id="sfo-LI-jQz"/>
+                        <outlet property="greenView" destination="bmF-8W-GnT" id="avd-Jh-DyZ"/>
+                        <outlet property="orangeView" destination="EJf-ux-kCu" id="zHL-Sz-LFD"/>
+                        <outlet property="purpleView" destination="vsw-sa-oAi" id="uVw-aZ-Au8"/>
+                        <outlet property="redView" destination="cfz-Vm-lZE" id="vjP-HA-pAA"/>
+                        <outlet property="yellowView" destination="Kjr-Ok-g6j" id="kaa-ye-CIa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3ZU-OW-Sa4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="p3R-P4-UNy">
+                    <connections>
+                        <action selector="colorDidTap:" destination="83S-xJ-2HE" id="3Fi-eR-yu1"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Kki-5j-3JD">
+                    <connections>
+                        <action selector="colorDidTap:" destination="83S-xJ-2HE" id="Uma-Jn-XUG"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="PpK-wu-Qrq">
+                    <connections>
+                        <action selector="colorDidTap:" destination="83S-xJ-2HE" id="QDD-ay-9aD"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="JER-pv-8X5">
+                    <connections>
+                        <action selector="colorDidTap:" destination="83S-xJ-2HE" id="YEO-yU-Oc0"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Xbe-Dz-jb9">
+                    <connections>
+                        <action selector="colorDidTap:" destination="83S-xJ-2HE" id="iOG-x0-Wt5"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="nWQ-wb-gme">
+                    <connections>
+                        <action selector="colorDidTap:" destination="83S-xJ-2HE" id="aun-YX-b3q"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2507.5" y="1871.5"/>
+        </scene>
+        <!--Color Three View Controller-->
+        <scene sceneID="6bL-j5-P1S">
+            <objects>
+                <viewController storyboardIdentifier="ColorThreeViewController" id="ONY-cg-mmA" customClass="ColorThreeViewController" customModule="overlay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Noq-N3-wbD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view tag="6" contentMode="scaleToFill" id="tKn-xY-I81">
+                                <rect key="frame" x="124" y="103" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88311650720000001" green="0.91892250949999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Vq5-eq-r0s" appends="YES" id="U0I-nK-2sR"/>
+                                </connections>
+                            </view>
+                            <view tag="6" contentMode="scaleToFill" id="HiR-0y-nIS">
+                                <rect key="frame" x="44" y="186" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88311650720000001" green="0.91892250949999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Nb5-Tv-JRb" appends="YES" id="D5Y-f4-VYL"/>
+                                </connections>
+                            </view>
+                            <view tag="6" contentMode="scaleToFill" id="JRg-n1-xUr">
+                                <rect key="frame" x="67" y="131" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88311650720000001" green="0.91892250949999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="9MS-ak-J1p" appends="YES" id="LWZ-30-4BB"/>
+                                </connections>
+                            </view>
+                            <view tag="6" contentMode="scaleToFill" id="czc-An-Gt3">
+                                <rect key="frame" x="242" y="131" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88311650720000001" green="0.91892250949999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="dCl-Gk-yKp" appends="YES" id="S3r-zG-vud"/>
+                                </connections>
+                            </view>
+                            <view tag="6" contentMode="scaleToFill" id="XfO-FU-QcE">
+                                <rect key="frame" x="269" y="186" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88311650720000001" green="0.91892250949999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="H5r-UO-AGX" appends="YES" id="Oua-Cs-lrG"/>
+                                </connections>
+                            </view>
+                            <view tag="6" contentMode="scaleToFill" id="noA-WW-hcF">
+                                <rect key="frame" x="269" y="248" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88311650720000001" green="0.91892250949999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="8c8-Zw-CcP" appends="YES" id="OEW-wy-dYt"/>
+                                </connections>
+                            </view>
+                            <view tag="6" contentMode="scaleToFill" id="Uin-gg-p0N">
+                                <rect key="frame" x="240" y="300" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88311650720000001" green="0.91892250949999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="t36-3k-Zn8" appends="YES" id="txu-zX-6ul"/>
+                                </connections>
+                            </view>
+                            <view tag="6" contentMode="scaleToFill" id="7gx-qv-gSe">
+                                <rect key="frame" x="68" y="300" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88311650720000001" green="0.91892250949999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="xsI-7b-cor" appends="YES" id="K5Z-ig-jCG"/>
+                                </connections>
+                            </view>
+                            <view tag="6" contentMode="scaleToFill" id="spD-Th-osh">
+                                <rect key="frame" x="124" y="325" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88311650720000001" green="0.91892250949999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="9Ua-MP-nN1" appends="YES" id="BfZ-z5-SA2"/>
+                                </connections>
+                            </view>
+                            <view tag="6" contentMode="scaleToFill" id="RRT-kL-TIr">
+                                <rect key="frame" x="186" y="103" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88311650720000001" green="0.91892250949999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="bUt-yl-9VQ" appends="YES" id="BeN-7L-Tq0"/>
+                                </connections>
+                            </view>
+                            <view tag="6" contentMode="scaleToFill" id="Tje-sa-1ZK">
+                                <rect key="frame" x="186" y="325" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88311650720000001" green="0.91892250949999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="b0m-MC-LrO" appends="YES" id="ylw-3f-Nfr"/>
+                                </connections>
+                            </view>
+                            <view tag="6" contentMode="scaleToFill" id="JBj-UV-dPp">
+                                <rect key="frame" x="44" y="248" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88311650720000001" green="0.91892250949999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="FVj-IM-hgO" appends="YES" id="0Jw-Uv-5WK"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="bluePurpleView" destination="JBj-UV-dPp" id="xRx-XK-J1u"/>
+                        <outlet property="blueView" destination="7gx-qv-gSe" id="4HH-4W-nqE"/>
+                        <outlet property="greenBlueView" destination="spD-Th-osh" id="rRF-Lk-Wpg"/>
+                        <outlet property="greenView" destination="Tje-sa-1ZK" id="Ann-0t-iGW"/>
+                        <outlet property="orangeView" destination="czc-An-Gt3" id="QWp-se-3i8"/>
+                        <outlet property="orangeYellowView" destination="XfO-FU-QcE" id="C5P-U3-cCK"/>
+                        <outlet property="purpleRedView" destination="JRg-n1-xUr" id="aJ2-om-iZx"/>
+                        <outlet property="purpleView" destination="HiR-0y-nIS" id="3MS-Xm-tBN"/>
+                        <outlet property="redOrangeView" destination="RRT-kL-TIr" id="h7O-aK-zXe"/>
+                        <outlet property="redView" destination="tKn-xY-I81" id="V8l-wb-fJG"/>
+                        <outlet property="yellowGreenView" destination="Uin-gg-p0N" id="bbM-AW-yOx"/>
+                        <outlet property="yellowView" destination="noA-WW-hcF" id="8K6-bJ-d1e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7KE-6y-oaF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Vq5-eq-r0s">
+                    <connections>
+                        <action selector="colorDidTap:" destination="ONY-cg-mmA" id="BjM-AM-A5C"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="bUt-yl-9VQ">
+                    <connections>
+                        <action selector="colorDidTap:" destination="ONY-cg-mmA" id="Rdf-yj-Z0n"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="dCl-Gk-yKp">
+                    <connections>
+                        <action selector="colorDidTap:" destination="ONY-cg-mmA" id="wfY-JS-Tr9"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="H5r-UO-AGX">
+                    <connections>
+                        <action selector="colorDidTap:" destination="ONY-cg-mmA" id="Hwc-Ro-sWO"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="8c8-Zw-CcP">
+                    <connections>
+                        <action selector="colorDidTap:" destination="ONY-cg-mmA" id="Q4Z-1c-1br"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="t36-3k-Zn8">
+                    <connections>
+                        <action selector="colorDidTap:" destination="ONY-cg-mmA" id="JH4-bH-jVL"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="b0m-MC-LrO">
+                    <connections>
+                        <action selector="colorDidTap:" destination="ONY-cg-mmA" id="LAW-ze-wYi"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="9Ua-MP-nN1">
+                    <connections>
+                        <action selector="colorDidTap:" destination="ONY-cg-mmA" id="Pob-s1-U7g"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="xsI-7b-cor">
+                    <connections>
+                        <action selector="colorDidTap:" destination="ONY-cg-mmA" id="oun-9e-Pui"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="FVj-IM-hgO">
+                    <connections>
+                        <action selector="colorDidTap:" destination="ONY-cg-mmA" id="p2O-UU-qwI"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Nb5-Tv-JRb">
+                    <connections>
+                        <action selector="colorDidTap:" destination="ONY-cg-mmA" id="Zbi-GI-g2i"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="9MS-ak-J1p">
+                    <connections>
+                        <action selector="colorDidTap:" destination="ONY-cg-mmA" id="jPA-8J-DoH"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2930.5" y="1871.5"/>
+        </scene>
+        <!--Color Four View Controller-->
+        <scene sceneID="cch-bP-KlW">
+            <objects>
+                <viewController storyboardIdentifier="ColorFourViewController" id="sIU-o0-NQk" customClass="ColorFourViewController" customModule="overlay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V8B-P5-bDG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="Y1Q-0z-DAQ">
+                                <rect key="frame" x="122" y="120" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="fWs-2S-d22">
+                                <rect key="frame" x="123" y="121" width="98" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="rZQ-GV-ZwQ">
+                                <rect key="frame" x="0.0" y="220" width="375" height="334"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="hT3-M8-sqc">
+                                <rect key="frame" x="217" y="284" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="UHp-Ac-NCo">
+                                <rect key="frame" x="42" y="284" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="YzC-Ux-rB7" appends="YES" id="tkt-mM-sO0"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="blackView" destination="hT3-M8-sqc" id="n9u-WD-Ke4"/>
+                        <outlet property="colorView" destination="fWs-2S-d22" id="Vlb-CE-Sg1"/>
+                        <outlet property="outsideView" destination="rZQ-GV-ZwQ" id="PtJ-7H-mRD"/>
+                        <outlet property="whiteView" destination="UHp-Ac-NCo" id="MS3-kn-1sL"/>
+                        <outlet property="zoneOneView" destination="Y1Q-0z-DAQ" id="gVt-ku-z3A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KCu-uM-UKP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="YzC-Ux-rB7">
+                    <connections>
+                        <action selector="didPanShape:" destination="sIU-o0-NQk" id="zGU-yj-Vws"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="3370.5" y="1871.5"/>
+        </scene>
+        <!--Color Five View Controller-->
+        <scene sceneID="coy-aa-zRM">
+            <objects>
+                <viewController storyboardIdentifier="ColorFiveViewController" id="V7H-pq-oRJ" customClass="ColorFiveViewController" customModule="overlay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fuf-U7-rER">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="fQ0-sC-DxL">
+                                <rect key="frame" x="122" y="116" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="4ug-Ol-hPH">
+                                <rect key="frame" x="123" y="117" width="98" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="u1l-eQ-Z5z">
+                                <rect key="frame" x="0.0" y="216" width="375" height="334"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="dK2-Ep-ULQ">
+                                <rect key="frame" x="217" y="280" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="Vue-vQ-xlX">
+                                <rect key="frame" x="42" y="280" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="TqI-zU-OhC" appends="YES" id="DnI-Qf-Jp5"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="blackView" destination="dK2-Ep-ULQ" id="Yq4-e3-P0j"/>
+                        <outlet property="colorView" destination="4ug-Ol-hPH" id="Ag7-AZ-hZj"/>
+                        <outlet property="outsideView" destination="u1l-eQ-Z5z" id="SE8-kL-EnN"/>
+                        <outlet property="whiteView" destination="Vue-vQ-xlX" id="184-7e-nsk"/>
+                        <outlet property="zoneOneView" destination="fQ0-sC-DxL" id="YQx-zA-TMe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rm7-A2-kyk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="TqI-zU-OhC"/>
+            </objects>
+            <point key="canvasLocation" x="3796.5" y="1871.5"/>
+        </scene>
+        <!--Color Six View Controller-->
+        <scene sceneID="SpT-xb-kLE">
+            <objects>
+                <viewController storyboardIdentifier="ColorSixViewController" id="Fyc-ri-vYb" customClass="ColorSixViewController" customModule="overlay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FmY-pU-gkg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view tag="6" contentMode="scaleToFill" id="SHb-DM-jYt">
+                                <rect key="frame" x="45" y="186" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88311650720000001" green="0.91892250949999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="5B4-9N-tnc" appends="YES" id="7o4-aW-aeH"/>
+                                </connections>
+                            </view>
+                            <view tag="6" contentMode="scaleToFill" id="kVK-Gz-VX7">
+                                <rect key="frame" x="68" y="131" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88311650720000001" green="0.91892250949999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="msy-85-jZD" appends="YES" id="hqm-vW-5h7"/>
+                                </connections>
+                            </view>
+                            <view tag="6" contentMode="scaleToFill" id="1mi-iS-tl8">
+                                <rect key="frame" x="45" y="248" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88311650720000001" green="0.91892250949999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="UbQ-IH-3nP" appends="YES" id="K8z-Dn-ayK"/>
+                                </connections>
+                            </view>
+                            <view tag="6" contentMode="scaleToFill" id="2zX-Vp-IAi">
+                                <rect key="frame" x="124" y="103" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88311650720000001" green="0.91892250949999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Lbt-fC-GJI" appends="YES" id="Pbu-Pa-Ubt"/>
+                                </connections>
+                            </view>
+                            <view tag="6" contentMode="scaleToFill" id="v71-0v-mn2">
+                                <rect key="frame" x="242" y="131" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88311650720000001" green="0.91892250949999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="JOA-Ge-hmq" appends="YES" id="GEv-Xz-31A"/>
+                                </connections>
+                            </view>
+                            <view tag="6" contentMode="scaleToFill" id="dNr-gZ-CHX">
+                                <rect key="frame" x="269" y="186" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88311650720000001" green="0.91892250949999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="bi7-6Y-f6r" appends="YES" id="w47-nh-Xb6"/>
+                                </connections>
+                            </view>
+                            <view tag="6" contentMode="scaleToFill" id="L0x-sF-xye">
+                                <rect key="frame" x="269" y="248" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88311650720000001" green="0.91892250949999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="4Kd-Tb-V3Z" appends="YES" id="F6w-b5-ZMr"/>
+                                </connections>
+                            </view>
+                            <view tag="6" contentMode="scaleToFill" id="L1d-Wt-c3b">
+                                <rect key="frame" x="240" y="300" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88311650720000001" green="0.91892250949999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="0ZC-Ls-CIn" appends="YES" id="P6t-MM-dSg"/>
+                                </connections>
+                            </view>
+                            <view tag="6" contentMode="scaleToFill" id="yHx-Qe-Ius">
+                                <rect key="frame" x="68" y="300" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88311650720000001" green="0.91892250949999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Uqi-wl-Xdp" appends="YES" id="iRg-uf-myz"/>
+                                </connections>
+                            </view>
+                            <view tag="6" contentMode="scaleToFill" id="bQj-Ww-zyd">
+                                <rect key="frame" x="124" y="325" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88311650720000001" green="0.91892250949999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Ib4-UG-bAk" appends="YES" id="04x-E2-uib"/>
+                                </connections>
+                            </view>
+                            <view tag="6" contentMode="scaleToFill" id="UH2-og-Sfa">
+                                <rect key="frame" x="186" y="103" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88311650720000001" green="0.91892250949999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Ccp-sx-Uze" appends="YES" id="XPb-Nm-QAM"/>
+                                </connections>
+                            </view>
+                            <view tag="6" contentMode="scaleToFill" id="nnN-gc-5Gh">
+                                <rect key="frame" x="186" y="325" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88311650720000001" green="0.91892250949999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="3yf-cs-VO1" appends="YES" id="vPI-L3-0ev"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="bluePurpleView" destination="1mi-iS-tl8" id="3My-8y-veC"/>
+                        <outlet property="blueView" destination="yHx-Qe-Ius" id="RDZ-CI-Jmf"/>
+                        <outlet property="greenBlueView" destination="bQj-Ww-zyd" id="vXA-Qq-qoT"/>
+                        <outlet property="greenView" destination="nnN-gc-5Gh" id="MaI-W9-6yh"/>
+                        <outlet property="orangeView" destination="v71-0v-mn2" id="xST-gc-hhA"/>
+                        <outlet property="orangeYellowView" destination="dNr-gZ-CHX" id="aKE-07-ct7"/>
+                        <outlet property="purpleRedView" destination="kVK-Gz-VX7" id="Rei-qy-Bfz"/>
+                        <outlet property="purpleView" destination="SHb-DM-jYt" id="zNH-2T-EQx"/>
+                        <outlet property="redOrangeView" destination="UH2-og-Sfa" id="Cd2-75-ecD"/>
+                        <outlet property="redView" destination="2zX-Vp-IAi" id="YGK-cL-kdL"/>
+                        <outlet property="yellowGreenView" destination="L1d-Wt-c3b" id="Teh-e7-uWO"/>
+                        <outlet property="yellowView" destination="L0x-sF-xye" id="vzr-TD-scK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J8B-9A-08w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Lbt-fC-GJI">
+                    <connections>
+                        <action selector="colorDidTap:" destination="Fyc-ri-vYb" id="2uJ-jK-V6H"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Ccp-sx-Uze">
+                    <connections>
+                        <action selector="colorDidTap:" destination="Fyc-ri-vYb" id="OT9-hf-aZb"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="JOA-Ge-hmq">
+                    <connections>
+                        <action selector="colorDidTap:" destination="Fyc-ri-vYb" id="yUQ-cC-8HA"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="bi7-6Y-f6r">
+                    <connections>
+                        <action selector="colorDidTap:" destination="Fyc-ri-vYb" id="ARw-2v-EKZ"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="4Kd-Tb-V3Z">
+                    <connections>
+                        <action selector="colorDidTap:" destination="Fyc-ri-vYb" id="CUJ-jD-0Vi"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="0ZC-Ls-CIn">
+                    <connections>
+                        <action selector="colorDidTap:" destination="Fyc-ri-vYb" id="uV0-rJ-mNy"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="3yf-cs-VO1">
+                    <connections>
+                        <action selector="colorDidTap:" destination="Fyc-ri-vYb" id="Ofy-Hm-BQA"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Ib4-UG-bAk">
+                    <connections>
+                        <action selector="colorDidTap:" destination="Fyc-ri-vYb" id="eBf-n0-IrO"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Uqi-wl-Xdp">
+                    <connections>
+                        <action selector="colorDidTap:" destination="Fyc-ri-vYb" id="eaf-7D-JCy"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="UbQ-IH-3nP">
+                    <connections>
+                        <action selector="colorDidTap:" destination="Fyc-ri-vYb" id="khD-uf-Tae"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="5B4-9N-tnc">
+                    <connections>
+                        <action selector="colorDidTap:" destination="Fyc-ri-vYb" id="0h4-p4-e4k"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="msy-85-jZD">
+                    <connections>
+                        <action selector="colorDidTap:" destination="Fyc-ri-vYb" id="hU1-Yc-7Jk"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="4216.5" y="1871.5"/>
         </scene>
         <!--Launch View Controller-->
         <scene sceneID="ZOw-3F-YuC">

@@ -11,6 +11,11 @@
 		3B59186D1CB21C9E00778E57 /* LessonCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B59186C1CB21C9E00778E57 /* LessonCard.swift */; };
 		3B5918701CB2279F00778E57 /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B59186E1CB2279F00778E57 /* BaseTransition.swift */; };
 		3B5918711CB2279F00778E57 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B59186F1CB2279F00778E57 /* FadeTransition.swift */; };
+		3B5918731CB2E8B400778E57 /* ColorTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5918721CB2E8B400778E57 /* ColorTwoViewController.swift */; };
+		3B5918751CB2F5BE00778E57 /* ColorThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5918741CB2F5BE00778E57 /* ColorThreeViewController.swift */; };
+		3B5918771CB2FFFE00778E57 /* ColorFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5918761CB2FFFE00778E57 /* ColorFourViewController.swift */; };
+		3B5918791CB309FF00778E57 /* ColorFiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5918781CB309FF00778E57 /* ColorFiveViewController.swift */; };
+		3B59187B1CB30FF000778E57 /* ColorSixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B59187A1CB30FF000778E57 /* ColorSixViewController.swift */; };
 		3B881D7F1CA8D51400BB3891 /* ColorOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B881D7E1CA8D51400BB3891 /* ColorOneViewController.swift */; };
 		3B881D811CA8DD4000BB3891 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B881D801CA8DD4000BB3891 /* LaunchViewController.swift */; };
 		3BB30A591CA0F7DB0045B8CD /* BorderViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB30A581CA0F7DB0045B8CD /* BorderViewExtensions.swift */; };
@@ -43,6 +48,11 @@
 		3B59186C1CB21C9E00778E57 /* LessonCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonCard.swift; sourceTree = "<group>"; };
 		3B59186E1CB2279F00778E57 /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTransition.swift; sourceTree = "<group>"; };
 		3B59186F1CB2279F00778E57 /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
+		3B5918721CB2E8B400778E57 /* ColorTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorTwoViewController.swift; sourceTree = "<group>"; };
+		3B5918741CB2F5BE00778E57 /* ColorThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorThreeViewController.swift; sourceTree = "<group>"; };
+		3B5918761CB2FFFE00778E57 /* ColorFourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorFourViewController.swift; sourceTree = "<group>"; };
+		3B5918781CB309FF00778E57 /* ColorFiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorFiveViewController.swift; sourceTree = "<group>"; };
+		3B59187A1CB30FF000778E57 /* ColorSixViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSixViewController.swift; sourceTree = "<group>"; };
 		3B881D7E1CA8D51400BB3891 /* ColorOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorOneViewController.swift; sourceTree = "<group>"; };
 		3B881D801CA8DD4000BB3891 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		3BB30A581CA0F7DB0045B8CD /* BorderViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderViewExtensions.swift; sourceTree = "<group>"; };
@@ -164,6 +174,11 @@
 				3BD1D45C1CA0C3EE006065C2 /* ProximityTwoViewController.swift */,
 				3BCFA4FB1CA37EE7003178AD /* ProximityThreeViewController.swift */,
 				3B881D7E1CA8D51400BB3891 /* ColorOneViewController.swift */,
+				3B5918721CB2E8B400778E57 /* ColorTwoViewController.swift */,
+				3B5918741CB2F5BE00778E57 /* ColorThreeViewController.swift */,
+				3B5918761CB2FFFE00778E57 /* ColorFourViewController.swift */,
+				3B5918781CB309FF00778E57 /* ColorFiveViewController.swift */,
+				3B59187A1CB30FF000778E57 /* ColorSixViewController.swift */,
 				3BD1D4581C9E0BA2006065C2 /* SuccessViewController.swift */,
 			);
 			name = "View Controllers";
@@ -312,6 +327,7 @@
 				3BEF997C1C9A6BEB007B49DC /* MultipleChoiceViewController.swift in Sources */,
 				7EBE3EAB1C9A221F00EB4171 /* Color.swift in Sources */,
 				3BEF99781C9A6A7D007B49DC /* Question.swift in Sources */,
+				3B5918791CB309FF00778E57 /* ColorFiveViewController.swift in Sources */,
 				3BCFA4FC1CA37EE7003178AD /* ProximityThreeViewController.swift in Sources */,
 				3B59186D1CB21C9E00778E57 /* LessonCard.swift in Sources */,
 				3BD36FE01C9A23C500F7254F /* ProximityOneViewController.swift in Sources */,
@@ -323,11 +339,15 @@
 				C826217A1C9A38960002FF66 /* LessonViewController.swift in Sources */,
 				3B881D811CA8DD4000BB3891 /* LaunchViewController.swift in Sources */,
 				7E23B5471CA37C2100379B55 /* CircleViewExtensions.swift in Sources */,
+				3B5918751CB2F5BE00778E57 /* ColorThreeViewController.swift in Sources */,
+				3B5918731CB2E8B400778E57 /* ColorTwoViewController.swift in Sources */,
 				3BD1D45B1C9F5E8C006065C2 /* QuestionViewController.swift in Sources */,
 				3BEF997A1C9A6B21007B49DC /* Answer.swift in Sources */,
 				3BEF99761C9A69B2007B49DC /* Quiz.swift in Sources */,
 				3BB30A591CA0F7DB0045B8CD /* BorderViewExtensions.swift in Sources */,
 				7E8988781C96156D006F3F8B /* HomeViewController.swift in Sources */,
+				3B59187B1CB30FF000778E57 /* ColorSixViewController.swift in Sources */,
+				3B5918771CB2FFFE00778E57 /* ColorFourViewController.swift in Sources */,
 				3B59186B1CB21B6E00778E57 /* Lesson.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
