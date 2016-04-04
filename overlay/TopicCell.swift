@@ -20,11 +20,11 @@ class TopicCell: UITableViewCell {
             })
             
             // Add circle
-            let center = circleView.center
+            let center = CGPoint(x: 50, y: 60)
             let radius = CGFloat(25)
             let lineWidth = CGFloat(3)
             let strokeColor = mainColor.CGColor
-            
+                
             let shapeLayer = createCircle(
                 center,
                 radius: radius,
