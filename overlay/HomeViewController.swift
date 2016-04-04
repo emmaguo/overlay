@@ -80,6 +80,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
                 // Open
                 animateHomeTableUp()
             }
+            
             reloadHomeTable()
         }
     }
@@ -96,8 +97,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
             self.homeTableView.frame.size = CGSize(
                 width: self.originalTableViewSize.width,
                 height: collapsedHeight)
-            self.homeTableView.frame.origin.y =
-                self.view.frame.height - collapsedHeight
+            self.homeTableView.frame.origin.y = self.view.frame.height - collapsedHeight
             }, completion: { (Bool) -> Void in
         })
     }
