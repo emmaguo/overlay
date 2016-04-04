@@ -64,7 +64,7 @@ class Topic {
                         Answer(text: "neutral, because it is not contributing to the actual design", isCorrect: true),
                         Answer(text: "I'm not sure", isCorrect: false)
                     ]),
-                    Question(id: 8, type: Question.QuestionType.ProximityThree, title: "How would you apply proximity to sort these words into understandable groups?", answers: []),
+                    Question(id: 8, type: Question.QuestionType.ProximityThree, title: "Use proximity to sort these words into understandable groups", answers: []),
                 ]),
                 Quiz(id: 2, title: "Advanced proximity", questions: [
                     Question(id: 1, type: Question.QuestionType.MultipleChoice, title: "The purpose of proximity is to...", answers: [

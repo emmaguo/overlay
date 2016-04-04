@@ -14,17 +14,7 @@ class LessonViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var progressRailView: UIView!
     @IBOutlet weak var progressView: UIView!
     
-    
-    let lessonContent: [String: String] = [
-        "subject": "Test this sentence is a test this sentence is a test.",
-        "how": "Test this sentence is a test this sentence is a test.",
-        "why": "Test this sentence is a test this sentence is a test.",
-        "One": "and another one.",
-        "two": "and another one.",
-        "3": "and another one.",
-        "4": "and another one."
-
-    ]
+    let lessonCards = Lesson.allLessons().first!.lessonCards
     
     var lessonCount = CGFloat()
     var progressSegment = CGFloat()
@@ -32,18 +22,19 @@ class LessonViewController: UIViewController, UIScrollViewDelegate {
     var contentWidth = 333
     var lessonIndex = 0
     
+    var fadeTransition: FadeTransition!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         lessonScrollView.delegate = self
-        lessonCount = CGFloat(lessonContent.count)
+        lessonCount = CGFloat(lessonCards.count)
         
         // Progress and Bkg color
         progressView.layer.cornerRadius = 3
         progressView.backgroundColor = UIColor(hexString: "#35DEBC")
         progressRailView.layer.cornerRadius = 3
         backgroundView.backgroundColor = primaryColor
-        var railLength = progressRailView.frame.size.width
+        let railLength = progressRailView.frame.size.width
         progressSegment = railLength/(lessonCount+1)
         print(progressSegment)
 
@@ -55,7 +46,7 @@ class LessonViewController: UIViewController, UIScrollViewDelegate {
         lessonScrollView.showsHorizontalScrollIndicator = false
         
         // Quiz card
-        var quizCard = UIView(frame: CGRectMake((lessonCount)*contentWidth+6, 100, 320, 244))
+        let quizCard = UIView(frame: CGRectMake((lessonCount)*contentWidth+6, 100, 320, 244))
         quizCard.backgroundColor = UIColor(hexString: "#FFFFFF")
         quizCard.layer.cornerRadius = 16.0
         quizCard.layer.shadowColor = UIColor.blackColor().CGColor
@@ -63,14 +54,14 @@ class LessonViewController: UIViewController, UIScrollViewDelegate {
         quizCard.layer.shadowOffset = CGSizeZero
         quizCard.layer.shadowRadius = 16
         
-        var quizHeader = UILabel(frame: CGRectMake(24, 24, 272, 30))
+        let quizHeader = UILabel(frame: CGRectMake(24, 24, 272, 30))
         quizHeader.text = "Quiz Time!"
         quizHeader.textColor = UIColor(hexString: "#2E3B54")
         quizHeader.font = UIFont(name:"Avenir-Heavy", size: 24.0)
         quizHeader.textAlignment = NSTextAlignment.Center
         quizHeader.contentMode = UIViewContentMode.ScaleAspectFit
         
-        var quizBody = UILabel(frame: CGRectMake(24, 66, 272, 400))
+        let quizBody = UILabel(frame: CGRectMake(24, 66, 272, 400))
         quizBody.text = "Let’s put this lesson’s concepts into practice!"
         quizBody.textColor = UIColor(hexString: "#2E3B54")
         quizBody.font = UIFont(name:"Avenir", size: 18.0)
@@ -80,7 +71,7 @@ class LessonViewController: UIViewController, UIScrollViewDelegate {
         quizBody.contentMode = UIViewContentMode.ScaleAspectFit
         quizBody.sizeToFit()
         
-        var quizButton = UIButton (frame: CGRectMake(24, 160, 269, 60))
+        let quizButton = UIButton (frame: CGRectMake(24, 160, 269, 60))
         quizButton.backgroundColor = primaryColor
         quizButton.layer.cornerRadius = 4.0
         quizButton.setTitle("Take Quiz", forState: .Normal)
@@ -93,12 +84,10 @@ class LessonViewController: UIViewController, UIScrollViewDelegate {
 
         lessonScrollView.addSubview(quizCard)
 
-
-
-        for (title, content) in lessonContent {
+        for lessonCard in lessonCards {
             
             // Create cards
-            var card = UIView(frame: CGRectMake(CGFloat(lessonIndex)*contentWidth+6, 0, 320, 480))
+            let card = UIView(frame: CGRectMake(CGFloat(lessonIndex)*contentWidth+6, 0, 320, 480))
             card.backgroundColor = UIColor(hexString: "#FFFFFF")
             card.layer.cornerRadius = 16.0
             card.layer.shadowColor = UIColor.blackColor().CGColor
@@ -107,15 +96,15 @@ class LessonViewController: UIViewController, UIScrollViewDelegate {
             card.layer.shadowRadius = 16
             
             // Create content on 1 card
-            var headerLabel = UILabel(frame: CGRectMake(24, 24, 200, 30))
-            headerLabel.text = String(title)
+            let headerLabel = UILabel(frame: CGRectMake(24, 24, 200, 30))
+            headerLabel.text = lessonCard.title
             headerLabel.textColor = UIColor(hexString: "#2E3B54")
             headerLabel.font = UIFont(name:"Avenir-Heavy", size: 24.0)
             headerLabel.textAlignment = NSTextAlignment.Left
             headerLabel.contentMode = UIViewContentMode.ScaleAspectFit
             
-            var bodyLabel = UILabel(frame: CGRectMake(24, 66, 272, 400))
-            bodyLabel.text = content
+            let bodyLabel = UILabel(frame: CGRectMake(24, 66, 272, 400))
+            bodyLabel.text = lessonCard.body
             bodyLabel.textColor = UIColor(hexString: "#2E3B54")
             bodyLabel.font = UIFont(name:"Avenir", size: 18.0)
             bodyLabel.textAlignment = NSTextAlignment.Left
@@ -129,13 +118,9 @@ class LessonViewController: UIViewController, UIScrollViewDelegate {
             lessonScrollView.addSubview(card)
 
             if lessonIndex < Int(lessonCount) {
-            lessonIndex++
-//            print(lessonIndex)
+                lessonIndex++
             }
-            
         }
-
-    
     }
 
     override func didReceiveMemoryWarning() {
@@ -143,23 +128,42 @@ class LessonViewController: UIViewController, UIScrollViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    func scrollViewDidScroll(scrollView: UIScrollView!) {
+    func scrollViewDidScroll(scrollView: UIScrollView) {
         // Get the current page based on the scroll offset
-        var progress : CGFloat = CGFloat(lessonScrollView.contentOffset.x / (lessonCount+1))
+        let progress : CGFloat = CGFloat(lessonScrollView.contentOffset.x / (lessonCount+1))
         print(lessonScrollView.contentOffset.x)
         print(progress)
         print(progressSegment)
         progressView.frame.origin.x = -270 + progress
-        
     }
     
-    func scrollViewDidEndDecelerating(scrollView: UIScrollView!) {
+    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
         var page : Int = Int(round(lessonScrollView.contentOffset.x / 333))
         
     }
-    func buttonAction(sender:UIButton!)
-    {
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        // Access the ViewController that you will be transitioning too, a.k.a, the destinationViewController.
+        var destinationViewController = segue.destinationViewController
+        
+        // Set the modal presentation style of your destinationViewController to be custom.
+        destinationViewController.modalPresentationStyle = UIModalPresentationStyle.Custom
+        
+        // Create a new instance of your fadeTransition.
+        fadeTransition = FadeTransition()
+        
+        // Tell the destinationViewController's  transitioning delegate to look in fadeTransition for transition instructions.
+        destinationViewController.transitioningDelegate = fadeTransition
+        
+        // Adjust the transition duration. (seconds)
+        fadeTransition.duration = 1.0
+    }
+    
+    func buttonAction(sender:UIButton!) {
         print("Button tapped")
+        
+        performSegueWithIdentifier("quizSegue", sender: self)
     }
 
     /*
