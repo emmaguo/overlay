@@ -31,6 +31,11 @@ class MultipleChoiceViewController: QuestionViewController {
         CTextLabel.numberOfLines = 0
         DTextLabel.numberOfLines = 0
         
+        ATextLabel.textColor = darkGray
+        BTextLabel.textColor = darkGray
+        CTextLabel.textColor = darkGray
+        DTextLabel.textColor = darkGray
+        
         ATextLabel.text = question.answers[0].text
         BTextLabel.text = question.answers[1].text
         CTextLabel.text = question.answers[2].text

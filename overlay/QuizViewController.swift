@@ -20,6 +20,8 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var quizButton: UIButton!
     @IBOutlet weak var exitButton: UIButton!
     @IBOutlet weak var navBackgroundView: UIView!
+    @IBOutlet weak var closeImageView: UIImageView!
+    @IBOutlet weak var endFadeView: UIView!
     
     var topic: Topic!
     var quiz: Quiz!
@@ -42,7 +44,9 @@ class QuizViewController: UIViewController {
         instantiateViewControllerForQuestion(currentQuestion, animated: false)
         
         buttonStyles()
+        cardStyles()
         questionLabel.numberOfLines = 0
+        endFadeView.alpha = 0
         
         navBackgroundView.backgroundColor = topic.color
         
@@ -54,10 +58,27 @@ class QuizViewController: UIViewController {
     }
     
     func buttonStyles() {
-        quizButton.layer.cornerRadius = 5
+        quizButton.layer.cornerRadius = 4
         quizButton.backgroundColor = lightGray
         quizButton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Disabled)
         quizButton.setTitle("Check", forState: UIControlState.Normal)
+    }
+    
+    func cardStyles() {
+//        var quizCard = UIView(frame: CGRectMake((lessonCount)*contentWidth+6, 100, 320, 244))
+        contentView.backgroundColor = UIColor(hexString: "#FFFFFF")
+        contentView.layer.cornerRadius = 16.0
+        endFadeView.layer.cornerRadius = 16.0
+        contentView.layer.shadowColor = UIColor.blackColor().CGColor
+        contentView.layer.shadowOpacity = 0.2
+        contentView.layer.shadowOffset = CGSizeZero
+        contentView.layer.shadowRadius = 16
+    
+        var quizBody = UILabel(frame: CGRectMake(24, 66, 272, 400))
+        questionLabel.textColor = darkGray
+        questionLabel.font = UIFont(name:"Avenir", size: 18.0)
+        questionLabel.textAlignment = NSTextAlignment.Center
+        questionLabel.numberOfLines = 2    
     }
     
     func shouldAdvanceToNextQuestion() -> Bool {
@@ -79,7 +100,21 @@ class QuizViewController: UIViewController {
             instantiateViewControllerForQuestion(nextQuestion, animated: true)
         } else {
             
-            performSegueWithIdentifier("quizSuccessSegue", sender: self)
+            UIView.animateWithDuration(0.3, animations: { () -> Void in
+                self.topicLabel.alpha = 0
+                self.questionLabel.alpha = 0
+                self.closeImageView.alpha = 0
+                self.quizButton.alpha = 0
+                self.endFadeView.alpha = 1
+            }, completion: { (Bool) -> Void in
+                UIView.animateWithDuration(0.8, animations: { () -> Void in
+                    self.endFadeView.transform = CGAffineTransformMakeScale(1.3, 1.9)
+                }, completion: { (Bool) -> Void in
+                    self.performSegueWithIdentifier("quizSuccessSegue", sender: self)
+                })
+            })
+            
+            
         }
     }
     
