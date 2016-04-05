@@ -8,20 +8,40 @@
 
 import UIKit
 
-class TopicViewController: UIViewController {
+class TopicViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var topicHeaderView: UIView!
     @IBOutlet weak var topicNameLabel: UILabel!
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var tableView: UITableView!
+
     var originalScrollViewOrigin: CGPoint!
     var topicIndex: Int!
+    var topic: Topic!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let topic = OverlayData[topicIndex]
+
+        topic = OverlayData[topicIndex]
         topicHeaderView.backgroundColor = topic.color
         topicNameLabel.text = topic.name
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
+    
+    // Define number of table rows
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return topic.subjects.count
+    }
+    
+    // Define table topic cell content
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("Subject Cell") as! SubjectCell
+        let index = indexPath.row
+        let subject = topic.subjects[index]
+        cell.name.text = subject.name
+        cell.durationLabel.text = String(subject.duration) + " mins"
+        return cell
     }
 
     override func didReceiveMemoryWarning() {

@@ -28,6 +28,7 @@
 		3BEF997A1C9A6B21007B49DC /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEF99791C9A6B21007B49DC /* Answer.swift */; };
 		3BEF997C1C9A6BEB007B49DC /* MultipleChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEF997B1C9A6BEB007B49DC /* MultipleChoiceViewController.swift */; };
 		3BEF99811C9A6ED5007B49DC /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEF99801C9A6ED5007B49DC /* Topic.swift */; };
+		7E0E73D71CB396D700CD3473 /* SubjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0E73D61CB396D700CD3473 /* SubjectCell.swift */; };
 		7E288FA41C7D918F0046C82F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E288FA31C7D918F0046C82F /* AppDelegate.swift */; };
 		7E288FA91C7D918F0046C82F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E288FA71C7D918F0046C82F /* Main.storyboard */; };
 		7E288FAB1C7D918F0046C82F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E288FAA1C7D918F0046C82F /* Assets.xcassets */; };
@@ -67,6 +68,7 @@
 		3BEF99801C9A6ED5007B49DC /* Topic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 		3F0FEFBA2F53027C8E7F1547 /* Pods_overlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_overlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E3192B06282321065C2D21E /* Pods-overlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-overlay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-overlay/Pods-overlay.debug.xcconfig"; sourceTree = "<group>"; };
+		7E0E73D61CB396D700CD3473 /* SubjectCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectCell.swift; sourceTree = "<group>"; };
 		7E288FA01C7D918F0046C82F /* overlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = overlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E288FA31C7D918F0046C82F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E288FA81C7D918F0046C82F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				3BD1D45A1C9F5E8C006065C2 /* QuestionViewController.swift */,
 				7E8988771C96156D006F3F8B /* HomeViewController.swift */,
 				7E89887B1C96322C006F3F8B /* TopicCell.swift */,
+				7E0E73D61CB396D700CD3473 /* SubjectCell.swift */,
 				7E39F2671C969BA9000E223B /* TopicViewController.swift */,
 				3BD1D4561C9BBA11006065C2 /* QuizViewController.swift */,
 				3BEF997B1C9A6BEB007B49DC /* MultipleChoiceViewController.swift */,
@@ -336,6 +339,7 @@
 				7E89887C1C96322C006F3F8B /* TopicCell.swift in Sources */,
 				3BD1D4591C9E0BA2006065C2 /* SuccessViewController.swift in Sources */,
 				3BD1D4571C9BBA11006065C2 /* QuizViewController.swift in Sources */,
+				7E0E73D71CB396D700CD3473 /* SubjectCell.swift in Sources */,
 				3B5918701CB2279F00778E57 /* BaseTransition.swift in Sources */,
 				7E39F2681C969BA9000E223B /* TopicViewController.swift in Sources */,
 				C826217A1C9A38960002FF66 /* LessonViewController.swift in Sources */,

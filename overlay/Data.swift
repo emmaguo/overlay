@@ -15,6 +15,7 @@ let OverlayData = [
         subjects: [
             Subject(
                 name: "Proximity basics",
+                duration: 5,
                 lessons: [
                     LessonCard(title: "Title one", image: nil, body: "This is body one"),
                     LessonCard(title: "Title two", image: nil, body: "Body two"),
@@ -100,6 +101,7 @@ let OverlayData = [
             ),
             Subject(
                 name: "Advanced proximity",
+                duration: 4,
                 lessons: [],
                 quizzes: [
                     Question(
@@ -116,6 +118,7 @@ let OverlayData = [
             ),
             Subject(
                 name: "Proximity in digital design",
+                duration: 2,
                 lessons: [],
                 quizzes: [
                     Question(
