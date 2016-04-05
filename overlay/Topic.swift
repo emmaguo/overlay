@@ -25,7 +25,7 @@ class Topic {
             Topic(name: "Proximity", color: proximityColor!, quizzes: [
                 Quiz(id: 1, title: "Proximity basics", questions: [
                     Question(id: 1, type: Question.QuestionType.MultipleChoice, title: "The purpose of proximity is to...", answers: [
-                        Answer(text: "not annoy your neighbor", isCorrect: false),
+                        Answer(text: "show contrast", isCorrect: false),
                         Answer(text: "help organize information", isCorrect: true),
                         Answer(text: "create more formal design", isCorrect: false),
                         Answer(text: "highlight your knowledge of design principles", isCorrect: false)
@@ -164,13 +164,18 @@ class Topic {
             Topic(name: "Color", color: colorColor!, quizzes: [
                 Quiz(id: 1, title: "Color wheel 101", questions: [
                     Question(id: 1, type: Question.QuestionType.ColorOne, title: "Select the primary colors", answers: []),
-                    Question(id: 2, type: Question.QuestionType.MultipleChoice, title: "The purpose of proximity is to...", answers: [
-                        Answer(text: "not annoy your neighbor", isCorrect: false),
-                        Answer(text: "help organize information", isCorrect: true),
-                        Answer(text: "create more formal design", isCorrect: false),
-                        Answer(text: "highlight your knowledge of design principles", isCorrect: false)
+                    Question(id: 2, type: Question.QuestionType.ColorTwo, title: "Select the secondary colors", answers: []),
+                    Question(id: 3, type: Question.QuestionType.MultipleChoice, title: "What is hue?", answers: [
+                        Answer(text: "The lightness or darkness of a color", isCorrect: false),
+                        Answer(text: "The overall intensity or brightness of a color", isCorrect: false),
+                        Answer(text: "The addition of gray to a pure color", isCorrect: false),
+                        Answer(text: "The perceived value of a color, or the color itself", isCorrect: true)
                         ]),
-                    ]),
+                    Question(id: 4, type: Question.QuestionType.ColorThree, title: "Select red and two analogous colors", answers: []),
+                    Question(id: 5, type: Question.QuestionType.ColorFour, title: "What do you add to the blue square to give it shade?", answers: []),
+                    Question(id: 6, type: Question.QuestionType.ColorFive, title: "What do you add to the green square to give it tint?", answers: []),
+                    Question(id: 7, type: Question.QuestionType.ColorSix, title: "Select three colors with a triad relationship", answers: []),
+                ]),
                 Quiz(id: 2, title: "Color palette basics", questions: [
                     Question(id: 1, type: Question.QuestionType.MultipleChoice, title: "The purpose of proximity is to...", answers: [
                         Answer(text: "not annoy your neighbor", isCorrect: false),
