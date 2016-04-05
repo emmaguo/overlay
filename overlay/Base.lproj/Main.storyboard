@@ -22,7 +22,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="123.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0b9-ua-eve" id="IfR-d2-pyQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="123.40000152587891"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="123.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" id="QZk-pz-7oz">
@@ -341,7 +341,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2897.5" y="1110.5"/>
+            <point key="canvasLocation" x="2955.5" y="1110.5"/>
         </scene>
         <!--Proximity Two View Controller-->
         <scene sceneID="FpH-D2-pdv">
@@ -482,7 +482,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="3373.5" y="1110.5"/>
+            <point key="canvasLocation" x="3488.5" y="1110.5"/>
         </scene>
         <!--Proximity Three View Controller-->
         <scene sceneID="L0n-Og-0DH">
@@ -825,7 +825,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="3791.5" y="1110.5"/>
+            <point key="canvasLocation" x="4005.5" y="1110.5"/>
         </scene>
         <!--Multiple Choice View Controller-->
         <scene sceneID="2Le-4L-Kbg">
@@ -1033,7 +1033,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2430.5" y="1871.5"/>
+            <point key="canvasLocation" x="2430.5" y="1879.5"/>
         </scene>
         <!--Color Two View Controller-->
         <scene sceneID="b2b-u5-8It">
@@ -1142,7 +1142,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2631.5" y="2067.5"/>
+            <point key="canvasLocation" x="2955.5" y="1879.5"/>
         </scene>
         <!--Color Three View Controller-->
         <scene sceneID="6bL-j5-P1S">
@@ -1341,7 +1341,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2930.5" y="1871.5"/>
+            <point key="canvasLocation" x="3488.5" y="1879.5"/>
         </scene>
         <!--Color Four View Controller-->
         <scene sceneID="cch-bP-KlW">
@@ -1399,7 +1399,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="3370.5" y="1871.5"/>
+            <point key="canvasLocation" x="4005.5" y="1879.5"/>
         </scene>
         <!--Color Five View Controller-->
         <scene sceneID="coy-aa-zRM">
@@ -1453,7 +1453,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rm7-A2-kyk" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="TqI-zU-OhC"/>
             </objects>
-            <point key="canvasLocation" x="3796.5" y="1871.5"/>
+            <point key="canvasLocation" x="4512.5" y="1879.5"/>
         </scene>
         <!--Color Six View Controller-->
         <scene sceneID="SpT-xb-kLE">
@@ -1652,7 +1652,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="4216.5" y="1871.5"/>
+            <point key="canvasLocation" x="5010.5" y="1879.5"/>
         </scene>
         <!--Launch View Controller-->
         <scene sceneID="ZOw-3F-YuC">
@@ -1764,7 +1764,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hsW-5M-Fgs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2897.5" y="346.5"/>
+            <point key="canvasLocation" x="2955.5" y="346.5"/>
         </scene>
         <!--Lesson View Controller-->
         <scene sceneID="ouk-7d-Dfi">
