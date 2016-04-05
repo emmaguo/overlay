@@ -16,7 +16,7 @@ let OverlayData = [
             Subject(
                 name: "Proximity basics",
                 lessons: [
-                    LessonCard(title: "Title one", image: nil, body: "Body one"),
+                    LessonCard(title: "Title one", image: nil, body: "This is body one"),
                     LessonCard(title: "Title two", image: nil, body: "Body two"),
                     LessonCard(title: "Title three", image: nil, body: "Body three")
                 ],
