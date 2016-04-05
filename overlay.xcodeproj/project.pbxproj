@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B59186B1CB21B6E00778E57 /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B59186A1CB21B6E00778E57 /* Lesson.swift */; };
 		3B59186D1CB21C9E00778E57 /* LessonCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B59186C1CB21C9E00778E57 /* LessonCard.swift */; };
 		3B5918701CB2279F00778E57 /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B59186E1CB2279F00778E57 /* BaseTransition.swift */; };
 		3B5918711CB2279F00778E57 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B59186F1CB2279F00778E57 /* FadeTransition.swift */; };
@@ -25,7 +24,6 @@
 		3BD1D45B1C9F5E8C006065C2 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD1D45A1C9F5E8C006065C2 /* QuestionViewController.swift */; };
 		3BD1D45D1CA0C3EE006065C2 /* ProximityTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD1D45C1CA0C3EE006065C2 /* ProximityTwoViewController.swift */; };
 		3BD36FE01C9A23C500F7254F /* ProximityOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD36FDF1C9A23C500F7254F /* ProximityOneViewController.swift */; };
-		3BEF99761C9A69B2007B49DC /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEF99751C9A69B2007B49DC /* Quiz.swift */; };
 		3BEF99781C9A6A7D007B49DC /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEF99771C9A6A7D007B49DC /* Question.swift */; };
 		3BEF997A1C9A6B21007B49DC /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEF99791C9A6B21007B49DC /* Answer.swift */; };
 		3BEF997C1C9A6BEB007B49DC /* MultipleChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEF997B1C9A6BEB007B49DC /* MultipleChoiceViewController.swift */; };
@@ -35,6 +33,8 @@
 		7E288FAB1C7D918F0046C82F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E288FAA1C7D918F0046C82F /* Assets.xcassets */; };
 		7E288FAE1C7D918F0046C82F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E288FAC1C7D918F0046C82F /* LaunchScreen.storyboard */; };
 		7E39F2681C969BA9000E223B /* TopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E39F2671C969BA9000E223B /* TopicViewController.swift */; };
+		7E67D7391CB350EF00DFE549 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E67D7381CB350EF00DFE549 /* Data.swift */; };
+		7E67D73B1CB358B400DFE549 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E67D73A1CB358B400DFE549 /* Subject.swift */; };
 		7E8988781C96156D006F3F8B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8988771C96156D006F3F8B /* HomeViewController.swift */; };
 		7E89887C1C96322C006F3F8B /* TopicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E89887B1C96322C006F3F8B /* TopicCell.swift */; };
 		7EBE3EAB1C9A221F00EB4171 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBE3EAA1C9A221F00EB4171 /* Color.swift */; };
@@ -44,7 +44,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3B59186A1CB21B6E00778E57 /* Lesson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
 		3B59186C1CB21C9E00778E57 /* LessonCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonCard.swift; sourceTree = "<group>"; };
 		3B59186E1CB2279F00778E57 /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTransition.swift; sourceTree = "<group>"; };
 		3B59186F1CB2279F00778E57 /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
@@ -62,7 +61,6 @@
 		3BD1D45A1C9F5E8C006065C2 /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		3BD1D45C1CA0C3EE006065C2 /* ProximityTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProximityTwoViewController.swift; sourceTree = "<group>"; };
 		3BD36FDF1C9A23C500F7254F /* ProximityOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProximityOneViewController.swift; sourceTree = "<group>"; };
-		3BEF99751C9A69B2007B49DC /* Quiz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		3BEF99771C9A6A7D007B49DC /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		3BEF99791C9A6B21007B49DC /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		3BEF997B1C9A6BEB007B49DC /* MultipleChoiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleChoiceViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +74,8 @@
 		7E288FAD1C7D918F0046C82F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E288FAF1C7D918F0046C82F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E39F2671C969BA9000E223B /* TopicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicViewController.swift; sourceTree = "<group>"; };
+		7E67D7381CB350EF00DFE549 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		7E67D73A1CB358B400DFE549 /* Subject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
 		7E8988771C96156D006F3F8B /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7E89887B1C96322C006F3F8B /* TopicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicCell.swift; sourceTree = "<group>"; };
 		7EBE3EAA1C9A221F00EB4171 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -117,11 +117,11 @@
 			isa = PBXGroup;
 			children = (
 				3BEF99801C9A6ED5007B49DC /* Topic.swift */,
-				3B59186A1CB21B6E00778E57 /* Lesson.swift */,
 				3B59186C1CB21C9E00778E57 /* LessonCard.swift */,
-				3BEF99751C9A69B2007B49DC /* Quiz.swift */,
 				3BEF99771C9A6A7D007B49DC /* Question.swift */,
 				3BEF99791C9A6B21007B49DC /* Answer.swift */,
+				7E67D7381CB350EF00DFE549 /* Data.swift */,
+				7E67D73A1CB358B400DFE549 /* Subject.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -332,6 +332,7 @@
 				3BCFA4FC1CA37EE7003178AD /* ProximityThreeViewController.swift in Sources */,
 				3B59186D1CB21C9E00778E57 /* LessonCard.swift in Sources */,
 				3BD36FE01C9A23C500F7254F /* ProximityOneViewController.swift in Sources */,
+				7E67D7391CB350EF00DFE549 /* Data.swift in Sources */,
 				7E89887C1C96322C006F3F8B /* TopicCell.swift in Sources */,
 				3BD1D4591C9E0BA2006065C2 /* SuccessViewController.swift in Sources */,
 				3BD1D4571C9BBA11006065C2 /* QuizViewController.swift in Sources */,
@@ -342,13 +343,12 @@
 				3B5918751CB2F5BE00778E57 /* ColorThreeViewController.swift in Sources */,
 				3B5918731CB2E8B400778E57 /* ColorTwoViewController.swift in Sources */,
 				3BD1D45B1C9F5E8C006065C2 /* QuestionViewController.swift in Sources */,
+				7E67D73B1CB358B400DFE549 /* Subject.swift in Sources */,
 				3BEF997A1C9A6B21007B49DC /* Answer.swift in Sources */,
-				3BEF99761C9A69B2007B49DC /* Quiz.swift in Sources */,
 				3BB30A591CA0F7DB0045B8CD /* BorderViewExtensions.swift in Sources */,
 				7E8988781C96156D006F3F8B /* HomeViewController.swift in Sources */,
 				3B59187B1CB30FF000778E57 /* ColorSixViewController.swift in Sources */,
 				3B5918771CB2FFFE00778E57 /* ColorFourViewController.swift in Sources */,
-				3B59186B1CB21B6E00778E57 /* Lesson.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

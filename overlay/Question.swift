@@ -7,21 +7,28 @@
 //
 
 class Question {
-    
-    enum QuestionType {
-        case MultipleChoice, ProximityDragOne, ProximityTwo, ProximityThree, ColorOne, ColorTwo, ColorThree, ColorFour, ColorFive, ColorSix
-    }
-    
-    let id: Int
+
     let type: QuestionType
     let title: String
     let answers: [Answer]
     
-    init(id: Int, type: QuestionType, title: String, answers: [Answer]) {
-        self.id = id
+    init(type: QuestionType, title: String, answers: [Answer]) {
         self.type = type
         self.title = title
         self.answers = answers
+    }
+    
+    enum QuestionType {
+        case MultipleChoice
+        case ProximityDragOne
+        case ProximityTwo
+        case ProximityThree
+        case ColorOne
+        case ColorTwo
+        case ColorThree
+        case ColorFour
+        case ColorFive
+        case ColorSix
     }
     
     func getViewControllerIdentifier() -> String {
@@ -38,5 +45,4 @@ class Question {
         case .ColorSix: return "ColorSixViewController"
         }
     }
-
 }

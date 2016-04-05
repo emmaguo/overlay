@@ -10,16 +10,13 @@ import UIKit
 
 class LessonCard {
     
-    let id: Int
     let title: String
     let image: UIImage?
     let body: String
     
-    init(id: Int, title: String, image: UIImage?, body: String) {
-        self.id = id
+    init(title: String, image: UIImage?, body: String) {
         self.title = title
         self.image = image
         self.body = body
     }
-    
 }

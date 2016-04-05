@@ -15,5 +15,4 @@ class Answer {
         self.text = text
         self.isCorrect = isCorrect
     }
-
 }
