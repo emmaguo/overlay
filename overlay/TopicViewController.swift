@@ -19,7 +19,7 @@ class TopicViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let topic = Topic.allTopics()[topicIndex]
+        let topic = OverlayData[topicIndex]
         topicHeaderView.backgroundColor = topic.color
         topicNameLabel.text = topic.name
     }

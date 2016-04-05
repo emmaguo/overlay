@@ -24,7 +24,7 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var endFadeView: UIView!
     
     var topic: Topic!
-    var quiz: Quiz!
+    var subject: Subject!
     var completedQuestions = [Question]()
     var allQuestions: [Question]!
     var currentQuestion: Question!
@@ -36,9 +36,9 @@ class QuizViewController: UIViewController {
         super.viewDidLoad()
         
         // TODO: segue from topic view controller
-        topic = Topic.allTopics().first!
-        quiz = topic.quizzes.first!
-        allQuestions = quiz.questions
+        topic = OverlayData.first!
+        subject = topic.subjects.first!
+        allQuestions = subject.quizzes
         currentQuestion = allQuestions.first!
         
         instantiateViewControllerForQuestion(currentQuestion, animated: false)
@@ -86,9 +86,10 @@ class QuizViewController: UIViewController {
     }
     
     func hasCompletedQuestion(question: Question) -> Bool {
-        return completedQuestions.contains({ completedQuestion in
-            question.id == completedQuestion.id
-        })
+//        return completedQuestions.contains({ completedQuestion in
+//            question.id == completedQuestion.id
+//        })
+        return false
     }
     
     func advanceToNextQuestionOrSuccess () {
@@ -121,7 +122,7 @@ class QuizViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "quizSuccessSegue" {
             if let successViewController = segue.destinationViewController as? SuccessViewController {
-                successViewController.quizTitle = quiz.title
+                successViewController.quizTitle = subject.name
                 successViewController.topicColor = topic.color
             }
         }
@@ -165,7 +166,7 @@ class QuizViewController: UIViewController {
     
     func instantiateViewControllerForQuestion(question: Question, animated: Bool) {
         questionLabel.text = question.title
-        topicLabel.text = quiz.title
+        topicLabel.text = subject.name
         currentQuestion = question
         
         removeFinishedQuestion()

@@ -14,7 +14,7 @@ class LessonViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var progressRailView: UIView!
     @IBOutlet weak var progressView: UIView!
     
-    let lessonCards = Lesson.allLessons().first!.lessonCards
+    let lessonCards = OverlayData[0].subjects[0].lessons
     
     var lessonCount = CGFloat()
     var progressSegment = CGFloat()

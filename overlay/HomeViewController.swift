@@ -14,12 +14,10 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     var homeTableViewHeight: CGFloat!
     var originalTableViewOrigin: CGPoint!
     var originalTableViewSize: CGSize!
-    var topics: [Topic]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        topics = Topic.allTopics()
+
         view.backgroundColor = mainBackgroundColor
         homeTableView.delegate = self
         homeTableView.dataSource = self
@@ -29,19 +27,19 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     // Calculate table row height based on number of topics
     func calculateRowHeight() -> CGFloat {
-        return homeTableView.frame.height / CGFloat(topics.count)
+        return homeTableView.frame.height / CGFloat(OverlayData.count)
     }
 
     // Define number of table rows
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return topics.count
+        return OverlayData.count
     }
     
     // Define table topic cell content
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = homeTableView.dequeueReusableCellWithIdentifier("Topic Cell") as! TopicCell
         let index = indexPath.row
-        let topic = topics[index]
+        let topic = OverlayData[index]
 
         cell.topicNameLabel.text = topic.name
         cell.mainColor = topic.color
