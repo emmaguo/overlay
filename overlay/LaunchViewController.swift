@@ -28,7 +28,6 @@ class LaunchViewController: UIViewController {
         outlineView.frame.origin.y = -170
         
         loadingAnimation()
-
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,7 +43,7 @@ class LaunchViewController: UIViewController {
                 self.outlineView.frame.origin.y = 254
             
             }) { (Bool) -> Void in
-                UIView.animateWithDuration(1.3, delay: 0.2, options: [.Repeat, .Autoreverse, .CurveEaseInOut], animations: { () -> Void in
+                UIView.animateWithDuration(1.3, delay: 0.2, options: [], animations: { () -> Void in
                    
                     self.colorViews.forEach { (colorView) -> () in
                         colorView.frame.size.height = 100
@@ -58,22 +57,19 @@ class LaunchViewController: UIViewController {
                 
                     }) { (Bool) -> Void in
                         // completion
+                        self.performSegueWithIdentifier("homeSegue", sender: self)
                 }
         }
-        
     }
 
     func animationStyles() {
         outlineView.layer.cornerRadius = 80
         outlineView.backgroundColor = lightestGray
-        
         colorView.backgroundColor = colorColor
         contrastView.backgroundColor = contrastColor
         repetitionView.backgroundColor = repetitionColor
         alignmentView.backgroundColor = alignmentColor
         proximityView.backgroundColor = proximityColor
-
-
     }
     
     /*

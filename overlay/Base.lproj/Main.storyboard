@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="dl8-UH-B4u">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--Home View Controller-->
@@ -13,24 +13,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" id="v2P-vm-wvB">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="123.40000000000001" sectionHeaderHeight="28" sectionFooterHeight="28" id="v2P-vm-wvB">
                                 <rect key="frame" x="0.0" y="50" width="375" height="617"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Topic Cell" id="0b9-ua-eve" customClass="TopicCell" customModule="overlay" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="80"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="123.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0b9-ua-eve" id="IfR-d2-pyQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="123.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" id="QZk-pz-7oz">
-                                                    <rect key="frame" x="14" y="15" width="50" height="50"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="101" height="123.5"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" id="cxT-qn-und">
-                                                    <rect key="frame" x="92" y="15" width="191" height="49"/>
+                                                    <rect key="frame" x="110" y="0.0" width="267" height="123.5"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="28"/>
                                                     <nil key="highlightedColor"/>
@@ -76,22 +76,43 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="RdC-Kq-SSZ">
-                                <rect key="frame" x="0.0" y="50" width="377" height="617"/>
+                                <rect key="frame" x="0.0" y="0.0" width="377" height="667"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" id="Gcv-s4-oBX">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="336"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="179"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2LG-tZ-QJ9">
-                                                <rect key="frame" x="73" y="165" width="174" height="64"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2LG-tZ-QJ9">
+                                                <rect key="frame" x="28" y="34" width="251" height="75"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="28"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="38"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.95923504739999998" green="1" blue="0.74620321919999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.52414448540000003" green="0.47963237530000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="V8v-Pw-VYS">
+                                        <rect key="frame" x="67" y="209" width="241" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Summary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Eb3-6f-jBd">
+                                                <rect key="frame" x="72" y="8" width="150" height="54"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="FCg-mf-QB5">
+                                                <rect key="frame" x="72" y="20" width="92" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <segue destination="31S-nr-XOm" kind="modal" id="Jch-HQ-WMD"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                 </subviews>
                                 <gestureRecognizers/>
@@ -199,7 +220,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ndm-A4-eM4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2034.5" y="346.5"/>
+            <point key="canvasLocation" x="2430.5" y="346.5"/>
         </scene>
         <!--Proximity One View Controller-->
         <scene sceneID="TbH-vk-2Na">
@@ -320,7 +341,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2501.5" y="1110.5"/>
+            <point key="canvasLocation" x="2897.5" y="1110.5"/>
         </scene>
         <!--Proximity Two View Controller-->
         <scene sceneID="FpH-D2-pdv">
@@ -461,7 +482,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2977.5" y="1110.5"/>
+            <point key="canvasLocation" x="3373.5" y="1110.5"/>
         </scene>
         <!--Proximity Three View Controller-->
         <scene sceneID="L0n-Og-0DH">
@@ -804,7 +825,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="3395.5" y="1110.5"/>
+            <point key="canvasLocation" x="3791.5" y="1110.5"/>
         </scene>
         <!--Multiple Choice View Controller-->
         <scene sceneID="2Le-4L-Kbg">
@@ -903,7 +924,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4zN-kh-g13" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2034.5" y="1110.5"/>
+            <point key="canvasLocation" x="2430.5" y="1110.5"/>
         </scene>
         <!--Color One View Controller-->
         <scene sceneID="Y2Q-Ld-65W">
@@ -1012,7 +1033,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2034.5" y="1871.5"/>
+            <point key="canvasLocation" x="2430.5" y="1871.5"/>
         </scene>
         <!--Color Two View Controller-->
         <scene sceneID="b2b-u5-8It">
@@ -1684,11 +1705,12 @@
                         <outlet property="outlineView" destination="Udo-3v-7E8" id="hUN-TP-IZ5"/>
                         <outlet property="proximityView" destination="gNZ-Bc-G3W" id="wBx-GR-P3M"/>
                         <outlet property="repetitionView" destination="SsL-7I-8Z5" id="lv9-DV-Un3"/>
+                        <segue destination="BYZ-38-t0r" kind="modal" identifier="homeSegue" id="ODP-aZ-3w6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W2I-OK-WTX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20.5" y="346.5"/>
+            <point key="canvasLocation" x="116.5" y="346.5"/>
         </scene>
         <!--Success View Controller-->
         <scene sceneID="V8m-qx-sa1">
@@ -1742,7 +1764,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hsW-5M-Fgs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2501.5" y="346.5"/>
+            <point key="canvasLocation" x="2897.5" y="346.5"/>
         </scene>
         <!--Lesson View Controller-->
         <scene sceneID="ouk-7d-Dfi">
@@ -1791,7 +1813,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a8y-sT-EHR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1239.5" y="1110.5"/>
+            <point key="canvasLocation" x="1815.5" y="346.5"/>
         </scene>
     </scenes>
     <resources>

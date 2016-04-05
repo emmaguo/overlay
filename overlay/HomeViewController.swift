@@ -80,6 +80,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
                 // Open
                 animateHomeTableUp()
             }
+            
             reloadHomeTable()
         }
     }
@@ -91,13 +92,12 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     func animateHomeTableDown() {
-        let collapsedHeight = CGFloat(160)
+        let collapsedHeight = CGFloat(220)
         UIView.animateWithDuration(0.4, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options:[] , animations: { () -> Void in
             self.homeTableView.frame.size = CGSize(
                 width: self.originalTableViewSize.width,
                 height: collapsedHeight)
-            self.homeTableView.frame.origin.y =
-                self.view.frame.height - collapsedHeight
+            self.homeTableView.frame.origin.y = self.view.frame.height - collapsedHeight
             }, completion: { (Bool) -> Void in
         })
     }
@@ -124,6 +124,6 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let cell = sender as! TopicCell
         let topicViewController = segue.destinationViewController as! TopicViewController
-        topicViewController.headerBackgroundColor = cell.mainColor
+        topicViewController.topicIndex = homeTableView.indexPathForCell(cell)!.row
     }
 }

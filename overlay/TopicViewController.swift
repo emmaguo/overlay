@@ -13,13 +13,15 @@ class TopicViewController: UIViewController {
     @IBOutlet weak var topicHeaderView: UIView!
     @IBOutlet weak var topicNameLabel: UILabel!
     @IBOutlet weak var scrollView: UIScrollView!
-    var headerBackgroundColor: UIColor!
     var originalScrollViewOrigin: CGPoint!
+    var topicIndex: Int!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        topicHeaderView.backgroundColor = headerBackgroundColor
+        
+        let topic = Topic.allTopics()[topicIndex]
+        topicHeaderView.backgroundColor = topic.color
+        topicNameLabel.text = topic.name
     }
 
     override func didReceiveMemoryWarning() {

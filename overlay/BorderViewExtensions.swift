@@ -79,9 +79,5 @@ extension UIView {
         shapeLayer.path = UIBezierPath(roundedRect: shapeRect, cornerRadius: 30).CGPath
         
         self.layer.addSublayer(shapeLayer)
-    }
-    
-    
-    
-    
+    } 
 }

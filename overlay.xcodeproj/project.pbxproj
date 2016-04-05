@@ -30,7 +30,7 @@
 		3BEF997A1C9A6B21007B49DC /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEF99791C9A6B21007B49DC /* Answer.swift */; };
 		3BEF997C1C9A6BEB007B49DC /* MultipleChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEF997B1C9A6BEB007B49DC /* MultipleChoiceViewController.swift */; };
 		3BEF99811C9A6ED5007B49DC /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEF99801C9A6ED5007B49DC /* Topic.swift */; };
-		7E23B5471CA37C2100379B55 /* CircleViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E23B5461CA37C2100379B55 /* CircleViewExtensions.swift */; };
+		7E23B5471CA37C2100379B55 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E23B5461CA37C2100379B55 /* Circle.swift */; };
 		7E288FA41C7D918F0046C82F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E288FA31C7D918F0046C82F /* AppDelegate.swift */; };
 		7E288FA91C7D918F0046C82F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E288FA71C7D918F0046C82F /* Main.storyboard */; };
 		7E288FAB1C7D918F0046C82F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E288FAA1C7D918F0046C82F /* Assets.xcassets */; };
@@ -69,7 +69,7 @@
 		3BEF99801C9A6ED5007B49DC /* Topic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 		3F0FEFBA2F53027C8E7F1547 /* Pods_overlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_overlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E3192B06282321065C2D21E /* Pods-overlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-overlay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-overlay/Pods-overlay.debug.xcconfig"; sourceTree = "<group>"; };
-		7E23B5461CA37C2100379B55 /* CircleViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleViewExtensions.swift; sourceTree = "<group>"; };
+		7E23B5461CA37C2100379B55 /* Circle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
 		7E288FA01C7D918F0046C82F /* overlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = overlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E288FA31C7D918F0046C82F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E288FA81C7D918F0046C82F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -191,7 +191,7 @@
 				3B59186F1CB2279F00778E57 /* FadeTransition.swift */,
 				3BB30A581CA0F7DB0045B8CD /* BorderViewExtensions.swift */,
 				7EBE3EAA1C9A221F00EB4171 /* Color.swift */,
-				7E23B5461CA37C2100379B55 /* CircleViewExtensions.swift */,
+				7E23B5461CA37C2100379B55 /* Circle.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -341,6 +341,7 @@
 				7E23B5471CA37C2100379B55 /* CircleViewExtensions.swift in Sources */,
 				3B5918751CB2F5BE00778E57 /* ColorThreeViewController.swift in Sources */,
 				3B5918731CB2E8B400778E57 /* ColorTwoViewController.swift in Sources */,
+				7E23B5471CA37C2100379B55 /* Circle.swift in Sources */,
 				3BD1D45B1C9F5E8C006065C2 /* QuestionViewController.swift in Sources */,
 				3BEF997A1C9A6B21007B49DC /* Answer.swift in Sources */,
 				3BEF99761C9A69B2007B49DC /* Quiz.swift in Sources */,
