@@ -157,10 +157,17 @@
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2LG-tZ-QJ9">
-                                                <rect key="frame" x="28" y="34" width="251" height="75"/>
+                                                <rect key="frame" x="28" y="42" width="251" height="75"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="38"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="33"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vWA-ae-92g">
+                                                <rect key="frame" x="28" y="105" width="339" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -215,6 +222,7 @@
                     <connections>
                         <outlet property="scrollView" destination="RdC-Kq-SSZ" id="gbQ-r8-hwi"/>
                         <outlet property="tableView" destination="0M5-3s-ERN" id="KZK-Pv-Cge"/>
+                        <outlet property="topicDescriptionLabel" destination="vWA-ae-92g" id="w7B-uq-rAs"/>
                         <outlet property="topicHeaderView" destination="Gcv-s4-oBX" id="MmS-2C-bs8"/>
                         <outlet property="topicNameLabel" destination="2LG-tZ-QJ9" id="P4j-sJ-U0A"/>
                     </connections>

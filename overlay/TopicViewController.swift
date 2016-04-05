@@ -12,6 +12,7 @@ class TopicViewController: UIViewController, UITableViewDataSource, UITableViewD
 
     @IBOutlet weak var topicHeaderView: UIView!
     @IBOutlet weak var topicNameLabel: UILabel!
+    @IBOutlet weak var topicDescriptionLabel: UILabel!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var tableView: UITableView!
 
@@ -25,6 +26,7 @@ class TopicViewController: UIViewController, UITableViewDataSource, UITableViewD
         topic = OverlayData[topicIndex]
         topicHeaderView.backgroundColor = topic.color
         topicNameLabel.text = topic.name
+        topicDescriptionLabel.text = topic.description
         tableView.delegate = self
         tableView.dataSource = self
     }

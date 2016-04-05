@@ -12,11 +12,13 @@ class Topic {
     
     let name: String
     let color: UIColor
+    let description: String
     let subjects: [Subject]
     
-    init(name: String, color: UIColor, subjects: [Subject]) {
+    init(name: String, color: UIColor, description: String, subjects: [Subject]) {
         self.name = name
         self.color = color
+        self.description = description
         self.subjects = subjects
     }
 }

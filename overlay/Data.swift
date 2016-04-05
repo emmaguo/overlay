@@ -12,6 +12,7 @@ let OverlayData = [
     Topic(
         name: "Proximity",
         color: proximityColor!,
+        description: "Organize information, reduce clutter",
         subjects: [
             Subject(
                 name: "Proximity basics",
@@ -138,6 +139,7 @@ let OverlayData = [
     Topic(
         name: "Alignment",
         color: alignmentColor!,
+        description: "Organize information, reduce clutter",
         subjects: [
             Subject(
                 name: "Alignment basics",
@@ -159,6 +161,7 @@ let OverlayData = [
     Topic(
         name: "Repetition",
         color: repetitionColor!,
+        description: "Organize information, reduce clutter",
         subjects: [
             Subject(
                 name: "Repetition basics",
@@ -180,6 +183,7 @@ let OverlayData = [
     Topic(
         name: "Contrast",
         color: contrastColor!,
+        description: "Organize information, reduce clutter",
         subjects: [
             Subject(
                 name: "Contrast basics",
@@ -201,6 +205,7 @@ let OverlayData = [
     Topic(
         name: "Color",
         color: colorColor!,
+        description: "Organize information, reduce clutter",
         subjects: [
             Subject(
                 name: "Color wheel 101",
