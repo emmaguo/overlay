@@ -22,7 +22,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="123.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0b9-ua-eve" id="IfR-d2-pyQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="123.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="123.40000152587891"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" id="QZk-pz-7oz">
@@ -65,7 +65,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="693.5" y="346.5"/>
+            <point key="canvasLocation" x="663.5" y="346.5"/>
         </scene>
         <!--Topic View Controller-->
         <scene sceneID="F9d-c5-r5u">
@@ -101,7 +101,7 @@
                                                 <rect key="frame" x="72" y="8" width="150" height="54"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="FCg-mf-QB5">
@@ -1142,7 +1142,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2507.5" y="1871.5"/>
+            <point key="canvasLocation" x="2631.5" y="2067.5"/>
         </scene>
         <!--Color Three View Controller-->
         <scene sceneID="6bL-j5-P1S">
