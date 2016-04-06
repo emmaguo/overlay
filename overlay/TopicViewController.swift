@@ -53,6 +53,13 @@ class TopicViewController: UIViewController, UITableViewDataSource, UITableViewD
 
         return cell
     }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let cell = tableView.cellForRowAtIndexPath(indexPath)
+        dispatch_async(dispatch_get_main_queue()) { () -> Void in
+            self.performSegueWithIdentifier("lessonSegue", sender: cell)
+        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -82,14 +89,11 @@ class TopicViewController: UIViewController, UITableViewDataSource, UITableViewD
         }
     }
 
-    /*
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        let cell = sender as! SubjectCell
+        let lessonViewController = segue.destinationViewController as! LessonViewController
+        lessonViewController.topicIndex = topicIndex
+        lessonViewController.subjectIndex = tableView.indexPathForCell(cell)!.row
     }
-    */
-
 }

@@ -9,23 +9,28 @@
 import UIKit
 
 class LessonViewController: UIViewController, UIScrollViewDelegate {
+    
     @IBOutlet var backgroundView: UIView!
     @IBOutlet weak var lessonScrollView: UIScrollView!
     @IBOutlet weak var progressRailView: UIView!
     @IBOutlet weak var progressView: UIView!
     
-    let lessonCards = OverlayData[0].subjects[0].lessons
+    var topicIndex: Int!
+    var subjectIndex: Int!
+    var lessonCards: [LessonCard]!
     
     var lessonCount = CGFloat()
     var progressSegment = CGFloat()
     var primaryColor = UIColor(hexString: "#3CF7D1")
     var contentWidth = 333
     var lessonIndex = 0
-    
     var fadeTransition: FadeTransition!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        lessonCards = OverlayData[topicIndex].subjects[subjectIndex].lessons
+        
         lessonScrollView.delegate = self
         lessonCount = CGFloat(lessonCards.count)
         

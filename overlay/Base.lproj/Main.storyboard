@@ -249,6 +249,7 @@
                         <outlet property="topicDescriptionLabel" destination="vWA-ae-92g" id="w7B-uq-rAs"/>
                         <outlet property="topicHeaderView" destination="Gcv-s4-oBX" id="MmS-2C-bs8"/>
                         <outlet property="topicNameLabel" destination="2LG-tZ-QJ9" id="P4j-sJ-U0A"/>
+                        <segue destination="31S-nr-XOm" kind="modal" identifier="lessonSegue" id="g2q-6H-mT5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZIv-Wx-K7b" userLabel="First Responder" sceneMemberID="firstResponder"/>
