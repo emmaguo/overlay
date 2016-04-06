@@ -96,7 +96,7 @@ class LessonViewController: UIViewController, UIScrollViewDelegate {
             card.layer.shadowRadius = 16
             
             // Create content on 1 card
-            let headerLabel = UILabel(frame: CGRectMake(24, 24, 200, 30))
+            let headerLabel = UILabel(frame: CGRectMake(24, 24, 300, 30))
             headerLabel.text = lessonCard.title
             headerLabel.textColor = UIColor(hexString: "#2E3B54")
             headerLabel.font = UIFont(name:"Avenir-Heavy", size: 24.0)
@@ -114,6 +114,12 @@ class LessonViewController: UIViewController, UIScrollViewDelegate {
             bodyLabel.sizeToFit()
             card.addSubview(headerLabel)
             card.addSubview(bodyLabel)
+            
+            var bodyHeight = bodyLabel.bounds.height
+            var imageView : UIImageView
+            imageView  = UIImageView(frame:CGRectMake(45, CGFloat(bodyHeight)+75, 225, 225));
+            imageView.image = lessonCard.image
+            card.addSubview(imageView)
             
             lessonScrollView.addSubview(card)
 

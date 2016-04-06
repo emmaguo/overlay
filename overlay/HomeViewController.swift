@@ -26,6 +26,8 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBOutlet weak var alignmentProgressView: UIView!
     @IBOutlet weak var proximityProgressView: UIView!
     
+    @IBOutlet weak var caretImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -38,6 +40,9 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         globalProgressStyles()
         globalProgressFillStyles()
         globalTextContent()
+        
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
+
     }
     
     func globalProgressStyles() {
@@ -120,13 +125,27 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
             if (velocity.y > 0) {
                 // Collapse
                 animateHomeTableDown()
+                toggleCaretDown()
             } else {
                 // Open
                 animateHomeTableUp()
+                toggleCaretUp()
             }
             
             reloadHomeTable()
         }
+    }
+    
+    func toggleCaretDown() {
+        UIView.animateWithDuration(0.4, animations: {
+            self.caretImageView.transform = CGAffineTransformMakeRotation((180.0 * CGFloat(M_PI)) / 180.0)
+        })
+    }
+    
+    func toggleCaretUp() {
+        UIView.animateWithDuration(0.4, animations: {
+            self.caretImageView.transform = CGAffineTransformMakeRotation((0.0 * CGFloat(M_PI)) / 180.0)
+        })
     }
     
     // Reload home table to adjust table row height
