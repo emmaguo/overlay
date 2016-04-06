@@ -18,6 +18,7 @@ class SuccessViewController: UIViewController {
     
     var quizTitle: String!
     var topicColor: UIColor!
+    var topicIndex: Int!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -81,6 +82,7 @@ class SuccessViewController: UIViewController {
                             self.checkmarkImageView.center.x = 135
                         }, completion: { (Bool) -> Void in
                             // call manual segue here
+                            self.performSegueWithIdentifier("subjectCompletionSegue", sender: self)
                         })
                     })
                 })
@@ -88,14 +90,9 @@ class SuccessViewController: UIViewController {
         }
     }
 
-    /*
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        let topicViewController = segue.destinationViewController as! TopicViewController
+        topicViewController.topicIndex = topicIndex
     }
-    */
-
 }

@@ -93,6 +93,7 @@ class QuizViewController: UIViewController {
         if nextQuestionIndex < totalQuestionsCount {
             let nextQuestion = allQuestions[nextQuestionIndex]
             instantiateViewControllerForQuestion(nextQuestion, animated: true)
+            currentQuestionIndex = nextQuestionIndex
         } else {
             UIView.animateWithDuration(0.3, animations: { () -> Void in
                 self.topicLabel.alpha = 0
@@ -115,6 +116,7 @@ class QuizViewController: UIViewController {
             if let successViewController = segue.destinationViewController as? SuccessViewController {
                 successViewController.quizTitle = subject.name
                 successViewController.topicColor = topic.color
+                successViewController.topicIndex = topicIndex
             }
         }
     }

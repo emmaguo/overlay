@@ -205,7 +205,6 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         globalTitleLabel.text = "You are a design master!"
         globalBodyLabel.text = "You've made it to the end. Now what are you going to do about it?"
     }
-  
     
     // MARK: - Navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

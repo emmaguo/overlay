@@ -194,7 +194,7 @@
                                                             <rect key="frame" x="59" y="2" width="310" height="43"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
-                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Qcw-Jg-Ijv">
@@ -1881,6 +1881,7 @@
                         <outlet property="fillDotView" destination="lPd-jK-LxG" id="55m-nr-KfN"/>
                         <outlet property="initialDotView" destination="vac-RP-LaO" id="4iR-SS-t99"/>
                         <outlet property="quizTitleLabel" destination="Pz9-h7-ajw" id="Z15-Zb-Lmw"/>
+                        <segue destination="c7r-aD-7YF" kind="modal" identifier="subjectCompletionSegue" id="eb9-DC-HH6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hsW-5M-Fgs" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1959,4 +1960,7 @@
         <image name="close" width="28" height="27"/>
         <image name="flag" width="24" height="33"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="eb9-DC-HH6"/>
+    </inferredMetricsTieBreakers>
 </document>
