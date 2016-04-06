@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="dl8-UH-B4u">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="dl8-UH-B4u">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
         <!--Home View Controller-->
@@ -83,18 +83,18 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Topic Cell" id="0b9-ua-eve" customClass="TopicCell" customModule="overlay" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="123.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="123"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0b9-ua-eve" id="IfR-d2-pyQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="123.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="123"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" id="QZk-pz-7oz">
-                                                    <rect key="frame" x="0.0" y="0.0" width="101" height="123.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="101" height="123"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" id="cxT-qn-und">
-                                                    <rect key="frame" x="110" y="0.0" width="267" height="123.5"/>
+                                                    <rect key="frame" x="110" y="0.0" width="267" height="123"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="28"/>
                                                     <nil key="highlightedColor"/>
@@ -108,6 +108,10 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.69999999999999996" contentMode="scaleToFill" image="caret" id="LNk-LO-oNt">
+                                <rect key="frame" x="12" y="27" width="23" height="10"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -119,6 +123,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="alignmentProgressView" destination="BmJ-Qj-VLc" id="04Y-86-x9f"/>
+                        <outlet property="caretImageView" destination="LNk-LO-oNt" id="3h3-Vz-BRw"/>
                         <outlet property="colorProgressView" destination="L9z-cw-5bh" id="IQp-Zc-MYV"/>
                         <outlet property="contrastProgressView" destination="4wW-zF-Hba" id="CyK-dx-ZEA"/>
                         <outlet property="globalBodyLabel" destination="uCQ-Lp-SeN" id="wKG-UH-X7y"/>
@@ -186,7 +191,7 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bXh-Yy-hfW">
-                                                            <rect key="frame" x="59" y="2" width="310" height="42.5"/>
+                                                            <rect key="frame" x="59" y="2" width="310" height="43"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -1922,6 +1927,7 @@
         <image name="DButton_Unselected" width="48" height="48"/>
         <image name="DButton_selected" width="48" height="48"/>
         <image name="answer_check" width="48" height="48"/>
+        <image name="caret" width="33" height="17"/>
         <image name="checkmark_dot" width="50" height="50"/>
         <image name="close" width="28" height="27"/>
         <image name="flag" width="24" height="33"/>
