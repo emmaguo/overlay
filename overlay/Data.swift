@@ -218,7 +218,7 @@ let OverlayData = [
     Topic(
         name: "Color",
         color: colorColor!,
-        description: "Organize information, reduce clutter",
+        description: "Create harmonious color palettes",
         subjects: [
             Subject(
                 name: "Color wheel 101",
