@@ -25,7 +25,8 @@ let OverlayData = [
                     LessonCard(title: "What is proximity?", image: nil, body: "At a basic level, proximity is the nearness of something in place, order, or relation to something else. Proximity is a basic principle of design that is used to group related items together because physical closeness implies a relationship."),
                     LessonCard(title: "Why use proximity?", image: nil, body: "Proximity helps us organize information. Organized information reduces clutter and gives your audience a clear structure that will help them understand how to begin reading the message. If something isn’t well organized, it’s less likely to be read and remembered."),
                     LessonCard(title: "Organizing blocks", image: nil, body: "Grouped items also make it easier to find information because they become one visual unit rather than several. A trick to help you check this idea is to squint your eyes slightly and count the number of visual elements on the page by counting how many times your eye stops."),
-                    LessonCard(title: "Example of proximity", image: UIImage(named: "button_correct") as UIImage?, body: "Take a quick look at this list of desserts and notice what you assume about the list. Now take a look again. Does it seem like the last few desserts are different from the rest?")
+                    LessonCard(title: "Example of proximity", image: UIImage(named: "list_noproximity") as UIImage?, body: "Take a quick look at this list of desserts and notice what you assume about the list."),
+                    LessonCard(title: "Example of proximity", image: UIImage(named: "list_proximity") as UIImage?, body: "Now take a look again. Does it seem like the last few desserts are different from the rest?")
                 ],
                 quizzes: [
                     Question(
@@ -221,7 +222,17 @@ let OverlayData = [
         subjects: [
             Subject(
                 name: "Color wheel 101",
-                lessons: [],
+                lessons: [
+                    LessonCard(title: "Primary Colors", image: UIImage(named: "primary_colors") as UIImage?, body: "The color wheel starts with primary colors - yellow, red, blue. Primary colors are the only colors you cannot create from mixing other colors."),
+                    LessonCard(title: "Secondary Colors", image: UIImage(named: "secondary_colors") as UIImage?, body: "When you mix equal parts of each primary color with the one next to it to get secondary colors - green, purple, orange."),
+                    LessonCard(title: "Tertiary Colors", image: UIImage(named: "tertiary_colors") as UIImage?, body: "And if you mix equal parts of secondary colors, you get tertiary colors...whose names tend to vary."),
+                    LessonCard(title: "Device Colors", image: nil, body: "Device screens like this phone in your hand use an RGB color model. This means that they combine parts of red, green, and blue to create a variety of colors. With RGB color, black is the absence of color and white is actually a combination of all colors."),
+                    LessonCard(title: "Color Relationships", image: UIImage(named: "tertiary_colors") as UIImage?, body: "With the 12 colors, we can create combinations of colors that are mostly guaranteed to work together. These combinations are called color relationships."),
+                    LessonCard(title: "Complementary Colors", image: UIImage(named: "complimentary_colors") as UIImage?, body: "Complementary colors are direct opposites. They work best when one is the main color and the other is an accent color (used sparingly)."),
+                    LessonCard(title: "Analogous Colors", image: UIImage(named: "analogous_colors") as UIImage?, body: "Analogous colors are composed of colors that are next to each other on the color wheel. All 2-3 colors share an undertone of the same color, so they match well together."),
+                    LessonCard(title: "Triad Colors", image: UIImage(named: "triad_colors") as UIImage?, body: "Triads are a set of 3 colors equidistant from each other. All triads (except primary colors) have underlying colors connecting them, which make them harmonize well with each other."),
+                    LessonCard(title: "Shades and Tints", image: UIImage(named: "shades_tints") as UIImage?, body: "So far our color wheel has only been composed of the pure color, known as the hue. We can add black or white to create a variety of colors. Adding black to a hue creates a shade, while adding white creates a tint.")
+                ],
                 quizzes: [
                     Question(
                         type: Question.QuestionType.ColorOne,
