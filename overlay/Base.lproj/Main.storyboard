@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="dl8-UH-B4u">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="dl8-UH-B4u">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
         <!--Home View Controller-->
@@ -133,7 +133,7 @@
                         <outlet property="homeTableView" destination="v2P-vm-wvB" id="Uqy-ZN-L7d"/>
                         <outlet property="proximityProgressView" destination="hQh-3h-sqe" id="avu-v2-zhc"/>
                         <outlet property="repetitionProgressView" destination="fiI-V6-ewc" id="skf-Wh-yBO"/>
-                        <segue destination="c7r-aD-7YF" kind="modal" identifier="topicSegue" id="4BJ-oa-Xee"/>
+                        <segue destination="c7r-aD-7YF" kind="modal" identifier="topicSegue" animates="NO" id="4BJ-oa-Xee"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -157,27 +157,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="377" height="667"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" id="Gcv-s4-oBX">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="179"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2LG-tZ-QJ9">
-                                                <rect key="frame" x="28" y="42" width="251" height="75"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="33"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vWA-ae-92g">
-                                                <rect key="frame" x="28" y="105" width="339" height="40"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.52414448540000003" green="0.47963237530000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    </view>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" id="0M5-3s-ERN">
                                         <rect key="frame" x="0.0" y="218" width="377" height="449"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -232,6 +211,27 @@
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
+                                    <view contentMode="scaleToFill" id="Gcv-s4-oBX">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="179"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2LG-tZ-QJ9">
+                                                <rect key="frame" x="28" y="42" width="251" height="75"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="33"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vWA-ae-92g">
+                                                <rect key="frame" x="28" y="105" width="339" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.52414448540000003" green="0.47963237530000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
                                 </subviews>
                                 <gestureRecognizers/>
                                 <connections>
@@ -249,7 +249,7 @@
                         <outlet property="topicDescriptionLabel" destination="vWA-ae-92g" id="w7B-uq-rAs"/>
                         <outlet property="topicHeaderView" destination="Gcv-s4-oBX" id="MmS-2C-bs8"/>
                         <outlet property="topicNameLabel" destination="2LG-tZ-QJ9" id="P4j-sJ-U0A"/>
-                        <segue destination="31S-nr-XOm" kind="modal" identifier="lessonSegue" id="g2q-6H-mT5"/>
+                        <segue destination="31S-nr-XOm" kind="modal" identifier="lessonSegue" animates="NO" id="g2q-6H-mT5"/>
                         <segue destination="BYZ-38-t0r" kind="modal" identifier="backHomeSegue" id="Ecr-jb-ig0"/>
                     </connections>
                 </viewController>
@@ -1882,7 +1882,7 @@
                         <outlet property="fillDotView" destination="lPd-jK-LxG" id="55m-nr-KfN"/>
                         <outlet property="initialDotView" destination="vac-RP-LaO" id="4iR-SS-t99"/>
                         <outlet property="quizTitleLabel" destination="Pz9-h7-ajw" id="Z15-Zb-Lmw"/>
-                        <segue destination="c7r-aD-7YF" kind="modal" identifier="subjectCompletionSegue" id="eb9-DC-HH6"/>
+                        <segue destination="c7r-aD-7YF" kind="modal" identifier="subjectCompletionSegue" animates="NO" id="eb9-DC-HH6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hsW-5M-Fgs" userLabel="First Responder" sceneMemberID="firstResponder"/>

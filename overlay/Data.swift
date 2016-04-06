@@ -264,11 +264,11 @@ let OverlayData = [
                         title: "What do you add to the blue square to give it shade?",
                         answers: []
                     ),
-                    Question(
-                        type: Question.QuestionType.ColorFive,
-                        title: "What do you add to the green square to give it tint?",
-                        answers: []
-                    ),
+//                    Question(
+//                        type: Question.QuestionType.ColorFive,
+//                        title: "What do you add to the green square to give it tint?",
+//                        answers: []
+//                    ),
                     Question(
                         type: Question.QuestionType.ColorSix,
                         title: "Select three colors with a triad relationship",

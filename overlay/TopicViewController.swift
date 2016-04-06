@@ -29,6 +29,32 @@ class TopicViewController: UIViewController, UITableViewDataSource, UITableViewD
         topicDescriptionLabel.text = topic.description
         tableView.delegate = self
         tableView.dataSource = self
+        
+        topicHeaderView.alpha = 0
+        topicHeaderView.center.y = -10
+        tableView.alpha = 0
+        tableView.center.y = -10
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        UIView.animateWithDuration(0.4, delay: 0.4, usingSpringWithDamping: 5.0, initialSpringVelocity: 5.0, options: [], animations: { () -> Void in
+            self.topicHeaderView.alpha = 1
+            self.topicHeaderView.center.y = 80
+            }) { (Bool) -> Void in
+                UIView.animateWithDuration(0.4, delay: 0, usingSpringWithDamping: 5.0, initialSpringVelocity: 5.0, options: [], animations: { () -> Void in
+                    self.tableView.alpha = 1
+                    self.tableView.center.y = 420
+                }, completion: { (Bool) -> Void in
+                        
+            })
+        }
+        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
     }
     
     // Define number of table rows

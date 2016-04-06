@@ -36,12 +36,12 @@ class LessonViewController: UIViewController, UIScrollViewDelegate {
         
         // Progress and Bkg color
         progressView.layer.cornerRadius = 3
-        progressView.backgroundColor = UIColor(hexString: "#35DEBC")
+        progressView.backgroundColor = mediumGray
         progressRailView.layer.cornerRadius = 3
         backgroundView.backgroundColor = primaryColor
         let railLength = progressRailView.frame.size.width
-        progressSegment = railLength/(lessonCount+1)
-        print(progressSegment)
+        progressSegment = railLength/(lessonCount)
+//        print(progressSegment)
 
         //set scroll view dimensions
         let contentWidth = lessonScrollView.bounds.width
@@ -132,6 +132,41 @@ class LessonViewController: UIViewController, UIScrollViewDelegate {
                 lessonIndex++
             }
         }
+        
+        backgroundView.alpha = 0
+        
+        lessonScrollView.alpha = 0
+        progressRailView.alpha = 0
+        progressView.alpha = 0
+        
+        lessonScrollView.center.x = 520
+        
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        UIView.animateWithDuration(0.4, delay: 0, usingSpringWithDamping: 5.0, initialSpringVelocity: 5.0, options: [], animations: { () -> Void in
+            self.backgroundView.alpha = 1
+            }) { (Bool) -> Void in
+                UIView.animateWithDuration(0.4, delay: 0, usingSpringWithDamping: 5.0, initialSpringVelocity: 5.0, options: [], animations: { () -> Void in
+                    self.progressRailView.alpha = 1
+                    self.progressView.alpha = 1
+                    }, completion: { (Bool) -> Void in
+                        UIView.animateWithDuration(0.4, delay: 0, usingSpringWithDamping: 5.0, initialSpringVelocity: 1.0, options: [], animations: { () -> Void in
+                            self.lessonScrollView.center.x = 187.5
+                            self.lessonScrollView.alpha = 1
+                            }, completion: { (Bool) -> Void in
+                                
+                        })
+                    })
+                
+        }
+        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
     }
 
     override func didReceiveMemoryWarning() {
@@ -145,11 +180,9 @@ class LessonViewController: UIViewController, UIScrollViewDelegate {
     
     func scrollViewDidScroll(scrollView: UIScrollView) {
         // Get the current page based on the scroll offset
-        let progress : CGFloat = CGFloat(lessonScrollView.contentOffset.x / (lessonCount+1))
-        print(lessonScrollView.contentOffset.x)
-        print(progress)
-        print(progressSegment)
-        progressView.frame.origin.x = -270 + progress
+        let page : CGFloat = CGFloat(lessonScrollView.contentOffset.x / CGFloat(contentWidth))
+        print(page)
+        progressView.frame.origin.x = -270 + (progressSegment*page+1)
     }
     
     func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
