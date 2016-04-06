@@ -95,5 +95,6 @@ class TopicViewController: UIViewController, UITableViewDataSource, UITableViewD
         let lessonViewController = segue.destinationViewController as! LessonViewController
         lessonViewController.topicIndex = topicIndex
         lessonViewController.subjectIndex = tableView.indexPathForCell(cell)!.row
+        lessonViewController.primaryColor = topic.color
     }
 }

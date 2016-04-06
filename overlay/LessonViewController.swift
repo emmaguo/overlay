@@ -17,11 +17,11 @@ class LessonViewController: UIViewController, UIScrollViewDelegate {
     
     var topicIndex: Int!
     var subjectIndex: Int!
+    var primaryColor: UIColor!
     var lessonCards: [LessonCard]!
     
     var lessonCount = CGFloat()
     var progressSegment = CGFloat()
-    var primaryColor = UIColor(hexString: "#3CF7D1")
     var contentWidth = 333
     var lessonIndex = 0
     var fadeTransition: FadeTransition!
