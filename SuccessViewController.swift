@@ -73,7 +73,6 @@ class SuccessViewController: UIViewController {
                         }, completion: { (Bool) -> Void in
                             // nothing goes here
                         })
-                                    
                     }, completion: { (Bool) -> Void in
                         UIView.animateWithDuration(0.7, delay: 0.1, usingSpringWithDamping: 5.0, initialSpringVelocity: 0.5, options: [ ], animations: { () -> Void in
                             // Achievement label comes in and bumps checkmark left

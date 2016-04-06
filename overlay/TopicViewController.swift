@@ -81,7 +81,7 @@ class TopicViewController: UIViewController, UITableViewDataSource, UITableViewD
         } else if sender.state == UIGestureRecognizerState.Ended {
             if (velocity.y > 0) {
                 // Collapse
-                dismissViewControllerAnimated(true, completion: nil)
+                self.performSegueWithIdentifier("backHomeSegue", sender: self)
             } else {
                 // Open
                 scrollView.frame.origin = originalScrollViewOrigin
@@ -91,10 +91,12 @@ class TopicViewController: UIViewController, UITableViewDataSource, UITableViewD
 
     // MARK: - Navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let cell = sender as! SubjectCell
-        let lessonViewController = segue.destinationViewController as! LessonViewController
-        lessonViewController.topicIndex = topicIndex
-        lessonViewController.subjectIndex = tableView.indexPathForCell(cell)!.row
-        lessonViewController.primaryColor = topic.color
+        if segue.identifier == "lessonSegue" {
+            let cell = sender as! SubjectCell
+            let lessonViewController = segue.destinationViewController as! LessonViewController
+            lessonViewController.topicIndex = topicIndex
+            lessonViewController.subjectIndex = tableView.indexPathForCell(cell)!.row
+            lessonViewController.primaryColor = topic.color
+        }
     }
 }
