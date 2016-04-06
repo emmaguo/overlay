@@ -58,7 +58,7 @@ class ColorTwoViewController: QuestionViewController {
     }
     
     @IBAction func colorDidTap(sender: UITapGestureRecognizer) {
-        //        resetColorViews()
+//                resetColorViews()
         
         if let viewIndex = selectedViews.indexOf(sender.view!) {
             sender.view!.removeColorBorder()

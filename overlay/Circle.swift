@@ -9,20 +9,21 @@
 import Foundation
 import UIKit
 
-func createCircle(center: CGPoint, radius: CGFloat, lineWidth: CGFloat, strokeColor: CGColor) -> CAShapeLayer {
+func createCircle(center: CGPoint, radius: CGFloat, lineWidth: CGFloat, strokeColor: CGColor, fillColor: CGColor, strokeEnd: CGFloat, startAngle: CGFloat) -> CAShapeLayer {
     
     let shapeLayer = CAShapeLayer()
     let circlePath = UIBezierPath(
         arcCenter: center,
         radius: radius,
-        startAngle: CGFloat(0),
+        startAngle: startAngle,
         endAngle:CGFloat(M_PI * 2),
         clockwise: true)
     
     shapeLayer.path = circlePath.CGPath
     shapeLayer.strokeColor = strokeColor
-    shapeLayer.fillColor = UIColor.clearColor().CGColor
+    shapeLayer.fillColor = fillColor
     shapeLayer.lineWidth = lineWidth
+    shapeLayer.strokeEnd = strokeEnd
     
     return shapeLayer
 }

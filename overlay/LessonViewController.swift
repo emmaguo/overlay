@@ -36,7 +36,7 @@ class LessonViewController: UIViewController, UIScrollViewDelegate {
         
         // Progress and Bkg color
         progressView.layer.cornerRadius = 3
-        progressView.backgroundColor = UIColor(hexString: "#35DEBC")
+        progressView.backgroundColor = mediumGray
         progressRailView.layer.cornerRadius = 3
         backgroundView.backgroundColor = primaryColor
         let railLength = progressRailView.frame.size.width
