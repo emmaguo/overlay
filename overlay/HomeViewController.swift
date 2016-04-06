@@ -11,22 +11,20 @@ import UIKit
 class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var homeTableView: UITableView!
-    var homeTableViewHeight: CGFloat!
-    var originalTableViewOrigin: CGPoint!
-    var originalTableViewSize: CGSize!
-
     @IBOutlet weak var globalProgressCircle: UIView!
     @IBOutlet weak var globalTitleLabel: UILabel!
     @IBOutlet weak var globalBodyLabel: UILabel!
-    
     @IBOutlet weak var globalProgressCircleFill: UIView!
     @IBOutlet weak var colorProgressView: UIView!
     @IBOutlet weak var contrastProgressView: UIView!
     @IBOutlet weak var repetitionProgressView: UIView!
     @IBOutlet weak var alignmentProgressView: UIView!
     @IBOutlet weak var proximityProgressView: UIView!
-    
     @IBOutlet weak var caretImageView: UIImageView!
+    
+    var homeTableViewHeight: CGFloat!
+    var originalTableViewOrigin: CGPoint!
+    var originalTableViewSize: CGSize!
     
     override func viewDidLoad() {
         super.viewDidLoad()

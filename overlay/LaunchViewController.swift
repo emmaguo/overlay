@@ -9,16 +9,16 @@
 import UIKit
 
 class LaunchViewController: UIViewController {
-
     
     @IBOutlet weak var outlineView: UIView!
-    
-    var colorViews: [UIView]!
     @IBOutlet weak var colorView: UIView!
     @IBOutlet weak var contrastView: UIView!
     @IBOutlet weak var repetitionView: UIView!
     @IBOutlet weak var alignmentView: UIView!
     @IBOutlet weak var proximityView: UIView!
+    
+    var colorViews: [UIView]!
+    var fadeTransition: FadeTransition!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,14 +72,12 @@ class LaunchViewController: UIViewController {
         proximityView.backgroundColor = proximityColor
     }
     
-    /*
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        let homeViewController = segue.destinationViewController as! HomeViewController
+        homeViewController.modalPresentationStyle = UIModalPresentationStyle.Custom
+        fadeTransition = FadeTransition()
+        homeViewController.transitioningDelegate = fadeTransition
+        fadeTransition.duration = 1.0
     }
-    */
-
 }
