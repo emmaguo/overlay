@@ -139,6 +139,10 @@ class LessonViewController: UIViewController, UIScrollViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func onClickingClose(sender: UIButton) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     func scrollViewDidScroll(scrollView: UIScrollView) {
         // Get the current page based on the scroll offset
         let progress : CGFloat = CGFloat(lessonScrollView.contentOffset.x / (lessonCount+1))
@@ -153,38 +157,18 @@ class LessonViewController: UIViewController, UIScrollViewDelegate {
         
     }
     
+    // MARK: - Navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
-        // Access the ViewController that you will be transitioning too, a.k.a, the destinationViewController.
-        var destinationViewController = segue.destinationViewController
-        
-        // Set the modal presentation style of your destinationViewController to be custom.
-        destinationViewController.modalPresentationStyle = UIModalPresentationStyle.Custom
-        
-        // Create a new instance of your fadeTransition.
+        let quizViewController = segue.destinationViewController as! QuizViewController
+        quizViewController.topicIndex = topicIndex
+        quizViewController.subjectIndex = subjectIndex
+        quizViewController.modalPresentationStyle = UIModalPresentationStyle.Custom
         fadeTransition = FadeTransition()
-        
-        // Tell the destinationViewController's  transitioning delegate to look in fadeTransition for transition instructions.
-        destinationViewController.transitioningDelegate = fadeTransition
-        
-        // Adjust the transition duration. (seconds)
+        quizViewController.transitioningDelegate = fadeTransition
         fadeTransition.duration = 1.0
     }
     
     func buttonAction(sender:UIButton!) {
-        print("Button tapped")
-        
         performSegueWithIdentifier("quizSegue", sender: self)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

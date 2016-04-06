@@ -23,23 +23,28 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var closeImageView: UIImageView!
     @IBOutlet weak var endFadeView: UIView!
     
+    var topicIndex: Int!
+    var subjectIndex: Int!
+    
     var topic: Topic!
     var subject: Subject!
     var completedQuestions = [Question]()
+    var completedQuestionIndex: Int!
     var allQuestions: [Question]!
+    var totalQuestionsCount: Int!
     var currentQuestion: Question!
-    
-    
-    let userDefaults = NSUserDefaults.standardUserDefaults()
+    var currentQuestionIndex: Int!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // TODO: segue from topic view controller
-        topic = OverlayData.first!
-        subject = topic.subjects.first!
+        topic = OverlayData[topicIndex]
+        subject = topic.subjects[subjectIndex]
         allQuestions = subject.quizzes
-        currentQuestion = allQuestions.first!
+        totalQuestionsCount = allQuestions.count
+        currentQuestionIndex = 0
+        currentQuestion = allQuestions[currentQuestionIndex]
+        completedQuestionIndex = -1
         
         instantiateViewControllerForQuestion(currentQuestion, animated: false)
         
@@ -65,7 +70,6 @@ class QuizViewController: UIViewController {
     }
     
     func cardStyles() {
-//        var quizCard = UIView(frame: CGRectMake((lessonCount)*contentWidth+6, 100, 320, 244))
         contentView.backgroundColor = UIColor(hexString: "#FFFFFF")
         contentView.layer.cornerRadius = 16.0
         endFadeView.layer.cornerRadius = 16.0
@@ -73,8 +77,7 @@ class QuizViewController: UIViewController {
         contentView.layer.shadowOpacity = 0.2
         contentView.layer.shadowOffset = CGSizeZero
         contentView.layer.shadowRadius = 16
-    
-        var quizBody = UILabel(frame: CGRectMake(24, 66, 272, 400))
+        
         questionLabel.textColor = darkGray
         questionLabel.font = UIFont(name:"Avenir", size: 18.0)
         questionLabel.textAlignment = NSTextAlignment.Center
@@ -82,25 +85,15 @@ class QuizViewController: UIViewController {
     }
     
     func shouldAdvanceToNextQuestion() -> Bool {
-        return hasCompletedQuestion(currentQuestion)
-    }
-    
-    func hasCompletedQuestion(question: Question) -> Bool {
-//        return completedQuestions.contains({ completedQuestion in
-//            question.id == completedQuestion.id
-//        })
-        return false
+        return (currentQuestionIndex == completedQuestionIndex)
     }
     
     func advanceToNextQuestionOrSuccess () {
-        let uncompletedQuestions = allQuestions.filter { question in
-            !hasCompletedQuestion(question)
-        }
-        
-        if let nextQuestion = uncompletedQuestions.first {
+        let nextQuestionIndex = currentQuestionIndex + 1
+        if nextQuestionIndex < totalQuestionsCount {
+            let nextQuestion = allQuestions[nextQuestionIndex]
             instantiateViewControllerForQuestion(nextQuestion, animated: true)
         } else {
-            
             UIView.animateWithDuration(0.3, animations: { () -> Void in
                 self.topicLabel.alpha = 0
                 self.questionLabel.alpha = 0
@@ -114,11 +107,9 @@ class QuizViewController: UIViewController {
                     self.performSegueWithIdentifier("quizSuccessSegue", sender: self)
                 })
             })
-            
-            
         }
     }
-    
+
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "quizSuccessSegue" {
             if let successViewController = segue.destinationViewController as? SuccessViewController {
@@ -129,19 +120,16 @@ class QuizViewController: UIViewController {
     }
     
     @IBAction func quizButtonDidTap(sender: UIButton) {
-        
         if let questionViewController = questionViewController {
-                
             if questionViewController.answerIsCorrect() {
                 if shouldAdvanceToNextQuestion() {
                     advanceToNextQuestionOrSuccess()
-                    print("Advancing to next quiz")
                 } else {
                     questionViewController.showSuccessState()
                     quizButton.backgroundColor = green
                     quizButton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
                     quizButton.setTitle("Correct! Next  →", forState: UIControlState.Normal)
-                    completedQuestions.append(currentQuestion)
+                    completedQuestionIndex = currentQuestionIndex
                 }
             } else {
                 questionViewController.showIncorrectState()
@@ -208,9 +196,7 @@ class QuizViewController: UIViewController {
                     questionViewController.view.alpha = 1
                     }, completion: nil)
             }
-            
         }
-
     }
     
     enum SCLAlertViewStyle: Int {
@@ -220,7 +206,7 @@ class QuizViewController: UIViewController {
     @IBAction func exitButtonDidTap(sender: AnyObject) {
         let alert = SimpleAlert.Controller(title: "Are you sure?", message: "You will lose all progress if you exit the quiz", style: .Alert)
 
-        alert.configContentView = { [weak self] view in
+        alert.configContentView = { view in
             if let view = view as? SimpleAlert.ContentView {
                 view.titleLabel.textColor = UIColor.whiteColor()
                 view.titleLabel.font = UIFont.boldSystemFontOfSize(26)
@@ -236,19 +222,15 @@ class QuizViewController: UIViewController {
         let actionOK = SimpleAlert.Action(title: "Yes", style: .OK)
         
         alert.addAction(action)
-//        action.button.frame.size.height = 44
         action.button.titleLabel?.font = UIFont.systemFontOfSize(18)
         action.button.setTitleColor(darkGray, forState: .Normal)
         action.button.backgroundColor = UIColor.whiteColor()
         
         alert.addAction(actionOK)
-//        actionOK.button.frame.size.height = 44
         actionOK.button.titleLabel?.font = UIFont.boldSystemFontOfSize(18)
         actionOK.button.setTitleColor(darkGray, forState: .Normal)
         actionOK.button.backgroundColor = UIColor.whiteColor()
-        
+   
         presentViewController(alert, animated: true, completion: nil)
-        
     }
-    
 }
