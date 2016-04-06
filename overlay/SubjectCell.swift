@@ -14,9 +14,14 @@ class SubjectCell: UITableViewCell {
     @IBOutlet weak var durationLabel: UILabel!
     @IBOutlet weak var subjectContentView: UIView!
     @IBOutlet weak var circle: UIView!
+    @IBOutlet weak var bottomLine: UIView!
+    @IBOutlet weak var topLine: UIView!
+    
     var mainColor: UIColor! {
         didSet {
             circle.backgroundColor = mainColor
+            bottomLine.backgroundColor = mainColor
+            topLine.backgroundColor = mainColor
         }
     }
     

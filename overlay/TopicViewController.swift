@@ -44,6 +44,13 @@ class TopicViewController: UIViewController, UITableViewDataSource, UITableViewD
         cell.name.text = subject.name
         cell.mainColor = topic.color
         cell.durationLabel.text = String(subject.duration) + " mins"
+        
+        if index == 0 {
+            cell.topLine.hidden = true
+        } else if index == topic.subjects.count - 1 {
+            cell.bottomLine.hidden = true
+        }
+
         return cell
     }
 

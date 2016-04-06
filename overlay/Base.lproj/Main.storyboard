@@ -209,13 +209,25 @@
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <color key="backgroundColor" red="0.52414448540000003" green="0.47963237530000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         </view>
+                                                        <view contentMode="scaleToFill" id="JJa-2t-une">
+                                                            <rect key="frame" x="33" y="30" width="3" height="70"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <color key="backgroundColor" red="0.52414448540000003" green="0.47963237530000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" id="HW0-fe-43J">
+                                                            <rect key="frame" x="33" y="0.0" width="3" height="15"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <color key="backgroundColor" red="0.52414448540000003" green="0.47963237530000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </view>
                                                     </subviews>
                                                 </tableViewCellContentView>
                                                 <connections>
+                                                    <outlet property="bottomLine" destination="JJa-2t-une" id="o5b-X2-gi8"/>
                                                     <outlet property="circle" destination="9uX-kN-Nx6" id="hdx-1m-Ju0"/>
                                                     <outlet property="durationLabel" destination="Qcw-Jg-Ijv" id="ieR-bH-K41"/>
                                                     <outlet property="name" destination="bXh-Yy-hfW" id="fxf-hh-ukh"/>
                                                     <outlet property="subjectContentView" destination="wlM-pf-w3v" id="GzN-Mt-qxc"/>
+                                                    <outlet property="topLine" destination="HW0-fe-43J" id="PEp-E5-5as"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
