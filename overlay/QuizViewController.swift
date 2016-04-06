@@ -95,6 +95,10 @@ class QuizViewController: UIViewController {
             instantiateViewControllerForQuestion(nextQuestion, animated: true)
             currentQuestionIndex = nextQuestionIndex
         } else {
+            
+            let userDefaults = NSUserDefaults.standardUserDefaults()
+            userDefaults.setValue(true, forKey: "Topic-" + String(topicIndex) + "-Subject-" + String(subjectIndex))
+            
             UIView.animateWithDuration(0.3, animations: { () -> Void in
                 self.topicLabel.alpha = 0
                 self.questionLabel.alpha = 0

@@ -16,6 +16,15 @@ class SubjectCell: UITableViewCell {
     @IBOutlet weak var circle: UIView!
     @IBOutlet weak var bottomLine: UIView!
     @IBOutlet weak var topLine: UIView!
+    @IBOutlet weak var innerCircle: UIView!
+    
+    var status: Bool! {
+        didSet {
+            if status == true {
+                innerCircle.backgroundColor = UIColor(white: 1, alpha: 0)
+            }
+        }
+    }
     
     var mainColor: UIColor! {
         didSet {
@@ -28,6 +37,7 @@ class SubjectCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         circle.layer.cornerRadius = circle.frame.size.height / 2
+        innerCircle.layer.cornerRadius = innerCircle.frame.size.height / 2
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

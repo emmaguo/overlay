@@ -71,6 +71,15 @@ class TopicViewController: UIViewController, UITableViewDataSource, UITableViewD
         cell.mainColor = topic.color
         cell.durationLabel.text = String(subject.duration) + " mins"
         
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+        let subjectStatus = userDefaults.valueForKey("Topic-" + String(topicIndex) + "-Subject-" + String(index))
+        
+        if subjectStatus == nil {
+            cell.status = false
+        } else {
+            cell.status = subjectStatus as! Bool
+        }
+        
         if index == 0 {
             cell.topLine.hidden = true
         } else if index == topic.subjects.count - 1 {
