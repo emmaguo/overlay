@@ -25,6 +25,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     var homeTableViewHeight: CGFloat!
     var originalTableViewOrigin: CGPoint!
     var originalTableViewSize: CGSize!
+    var fadeTransition: FadeTransition!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -209,5 +210,9 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let cell = sender as! TopicCell
         let topicViewController = segue.destinationViewController as! TopicViewController
         topicViewController.topicIndex = homeTableView.indexPathForCell(cell)!.row
+        topicViewController.modalPresentationStyle = UIModalPresentationStyle.Custom
+        fadeTransition = FadeTransition()
+        topicViewController.transitioningDelegate = fadeTransition
+        fadeTransition.duration = 1.0
     }
 }
