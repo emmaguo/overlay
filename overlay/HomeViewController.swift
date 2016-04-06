@@ -11,37 +11,88 @@ import UIKit
 class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var homeTableView: UITableView!
+    @IBOutlet weak var globalProgressCircle: UIView!
+    @IBOutlet weak var globalTitleLabel: UILabel!
+    @IBOutlet weak var globalBodyLabel: UILabel!
+    @IBOutlet weak var globalProgressCircleFill: UIView!
+    @IBOutlet weak var colorProgressView: UIView!
+    @IBOutlet weak var contrastProgressView: UIView!
+    @IBOutlet weak var repetitionProgressView: UIView!
+    @IBOutlet weak var alignmentProgressView: UIView!
+    @IBOutlet weak var proximityProgressView: UIView!
+    @IBOutlet weak var caretImageView: UIImageView!
+    
     var homeTableViewHeight: CGFloat!
     var originalTableViewOrigin: CGPoint!
     var originalTableViewSize: CGSize!
-
+    var fadeTransition: FadeTransition!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.view.backgroundColor = mainBackgroundColor
-        homeTableView.backgroundColor = homeTableBackgroundColor
+
+        view.backgroundColor = mainBackgroundColor
         homeTableView.delegate = self
         homeTableView.dataSource = self
         homeTableView.rowHeight = calculateRowHeight()
         homeTableViewHeight = homeTableView.frame.height
+        
+        globalProgressStyles()
+        globalProgressFillStyles()
+        globalTextContent()
+        
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
+
+    }
+    
+    func globalProgressStyles() {
+        globalProgressCircle.addCircleBorder()
+    }
+    
+    func globalProgressFillStyles() {
+        colorProgressView.backgroundColor = colorColor
+        contrastProgressView.backgroundColor = contrastColor
+        repetitionProgressView.backgroundColor = repetitionColor
+        alignmentProgressView.backgroundColor = alignmentColor
+        proximityProgressView.backgroundColor = proximityColor
+        
+        colorProgressView.alpha = 0
+        contrastProgressView.alpha = 0
+        repetitionProgressView.alpha = 0
+        alignmentProgressView.alpha = 0
+        proximityProgressView.alpha = 0
+        
+        globalProgressCircleFill.clipsToBounds = true
+        globalProgressCircleFill.layer.cornerRadius = 75
+    }
+    
+    func globalTextContent() {
+    
+        globalTitleLabel.numberOfLines = 0
+        globalBodyLabel.numberOfLines = 2
+
+        globalTitleLabel.text = "You're just getting started"
+        globalBodyLabel.text = "Complete quizzes to get your fill of design thinking and progress to the next level"
+
     }
     
     // Calculate table row height based on number of topics
     func calculateRowHeight() -> CGFloat {
-        return homeTableView.frame.height / CGFloat(topicsColors.count)
+        return homeTableView.frame.height / CGFloat(OverlayData.count)
     }
 
     // Define number of table rows
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return topicsColors.count
+        return OverlayData.count
     }
     
     // Define table topic cell content
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = homeTableView.dequeueReusableCellWithIdentifier("Topic Cell") as! TopicCell
         let index = indexPath.row
-        cell.topicNameLabel.text = topicsNames[index]
-        cell.backgroundColor = topicsColors[index]
+        let topic = OverlayData[index]
+
+        cell.topicNameLabel.text = topic.name
+        cell.mainColor = topic.color
         return cell
     }
 
@@ -73,12 +124,27 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
             if (velocity.y > 0) {
                 // Collapse
                 animateHomeTableDown()
+                toggleCaretDown()
             } else {
                 // Open
                 animateHomeTableUp()
+                toggleCaretUp()
             }
+            
             reloadHomeTable()
         }
+    }
+    
+    func toggleCaretDown() {
+        UIView.animateWithDuration(0.4, animations: {
+            self.caretImageView.transform = CGAffineTransformMakeRotation((180.0 * CGFloat(M_PI)) / 180.0)
+        })
+    }
+    
+    func toggleCaretUp() {
+        UIView.animateWithDuration(0.4, animations: {
+            self.caretImageView.transform = CGAffineTransformMakeRotation((0.0 * CGFloat(M_PI)) / 180.0)
+        })
     }
     
     // Reload home table to adjust table row height
@@ -88,13 +154,12 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     func animateHomeTableDown() {
-        let collapsedHeight = CGFloat(160)
+        let collapsedHeight = CGFloat(220)
         UIView.animateWithDuration(0.4, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options:[] , animations: { () -> Void in
             self.homeTableView.frame.size = CGSize(
                 width: self.originalTableViewSize.width,
                 height: collapsedHeight)
-            self.homeTableView.frame.origin.y =
-                self.view.frame.height - collapsedHeight
+            self.homeTableView.frame.origin.y = self.view.frame.height - collapsedHeight
             }, completion: { (Bool) -> Void in
         })
     }
@@ -117,10 +182,37 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         }
     }
     
+    @IBAction func firstProgressButtonDidTap(sender: AnyObject) {
+        colorProgressView.alpha = 1
+        contrastProgressView.alpha = 0
+        repetitionProgressView.alpha = 0
+        alignmentProgressView.alpha = 0
+        proximityProgressView.alpha = 0
+        
+        globalTitleLabel.text = "Look at you go!"
+        globalBodyLabel.text = "One down, only a few more to go. Keep at it!"
+        
+    }
+    
+    @IBAction func secondProgressButtonDidTap(sender: AnyObject) {
+        colorProgressView.alpha = 1
+        contrastProgressView.alpha = 1
+        repetitionProgressView.alpha = 1
+        alignmentProgressView.alpha = 1
+        proximityProgressView.alpha = 1
+        
+        globalTitleLabel.text = "You are a design master!"
+        globalBodyLabel.text = "You've made it to the end. Now what are you going to do about it?"
+    }
+    
     // MARK: - Navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let cell = sender as! TopicCell
         let topicViewController = segue.destinationViewController as! TopicViewController
-        topicViewController.headerBackgroundColor = cell.backgroundColor
+        topicViewController.topicIndex = homeTableView.indexPathForCell(cell)!.row
+        topicViewController.modalPresentationStyle = UIModalPresentationStyle.Custom
+        fadeTransition = FadeTransition()
+        topicViewController.transitioningDelegate = fadeTransition
+        fadeTransition.duration = 1.0
     }
 }
