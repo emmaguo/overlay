@@ -42,6 +42,7 @@ class TopicViewController: UIViewController, UITableViewDataSource, UITableViewD
         let index = indexPath.row
         let subject = topic.subjects[index]
         cell.name.text = subject.name
+        cell.mainColor = topic.color
         cell.durationLabel.text = String(subject.duration) + " mins"
         return cell
     }

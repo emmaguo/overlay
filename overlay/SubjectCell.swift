@@ -12,10 +12,17 @@ class SubjectCell: UITableViewCell {
 
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var durationLabel: UILabel!
+    @IBOutlet weak var subjectContentView: UIView!
+    @IBOutlet weak var circle: UIView!
+    var mainColor: UIColor! {
+        didSet {
+            circle.backgroundColor = mainColor
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        circle.layer.cornerRadius = circle.frame.size.height / 2
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
