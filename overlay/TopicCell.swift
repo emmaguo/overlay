@@ -12,8 +12,9 @@ class TopicCell: UITableViewCell {
 
     @IBOutlet weak var topicNameLabel: UILabel!
     @IBOutlet weak var circleView: UIView!
-    var mainColor: UIColor! {
-        didSet {
+    
+    var topicIndex: Int! {
+        didSet{
             // Remove any existing circle
             circleView.layer.sublayers?.forEach({ (layer) -> () in
                 layer.removeFromSuperlayer()
@@ -23,14 +24,24 @@ class TopicCell: UITableViewCell {
             let center = CGPoint(x: 50, y: 60)
             let radius = CGFloat(25)
             let lineWidth = CGFloat(3)
-            let strokeColor = mainColor.CGColor
-                
+            let strokeColor = OverlayData[topicIndex].color.CGColor
+            let userDefaults = NSUserDefaults.standardUserDefaults()
+            let topicStatus = userDefaults.valueForKey("Topic-" + String(topicIndex))
+            var completed: Bool!
+            
+            if topicStatus == nil {
+                completed = false
+            } else {
+                completed = topicStatus as! Bool
+            }
+            
             let shapeLayer = createCircle(
                 center,
                 radius: radius,
                 lineWidth: lineWidth,
-                strokeColor: strokeColor)
-            
+                strokeColor: strokeColor,
+                completed: completed)
+
             circleView.layer.addSublayer(shapeLayer)
         }
     }

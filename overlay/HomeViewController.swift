@@ -27,6 +27,8 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     var originalTableViewSize: CGSize!
     var fadeTransition: FadeTransition!
     
+    let userDefaults = NSUserDefaults.standardUserDefaults()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -92,7 +94,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let topic = OverlayData[index]
 
         cell.topicNameLabel.text = topic.name
-        cell.mainColor = topic.color
+        cell.topicIndex = index
         return cell
     }
 
@@ -188,10 +190,10 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         repetitionProgressView.alpha = 0
         alignmentProgressView.alpha = 0
         proximityProgressView.alpha = 0
-        
         globalTitleLabel.text = "Look at you go!"
         globalBodyLabel.text = "One down, only a few more to go. Keep at it!"
-        
+        userDefaults.setValue(true, forKey: "Topic-4")
+        homeTableView.reloadData()
     }
     
     @IBAction func secondProgressButtonDidTap(sender: AnyObject) {
@@ -200,9 +202,14 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         repetitionProgressView.alpha = 1
         alignmentProgressView.alpha = 1
         proximityProgressView.alpha = 1
-        
         globalTitleLabel.text = "You are a design master!"
         globalBodyLabel.text = "You've made it to the end. Now what are you going to do about it?"
+        userDefaults.setValue(true, forKey: "Topic-0")
+        userDefaults.setValue(true, forKey: "Topic-1")
+        userDefaults.setValue(true, forKey: "Topic-2")
+        userDefaults.setValue(true, forKey: "Topic-3")
+        userDefaults.setValue(true, forKey: "Topic-4")
+        homeTableView.reloadData()
     }
     
     // MARK: - Navigation

@@ -83,10 +83,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Topic Cell" id="0b9-ua-eve" customClass="TopicCell" customModule="overlay" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="123.40000152587891"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="123.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0b9-ua-eve" id="IfR-d2-pyQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="123.40000152587891"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="123.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" id="QZk-pz-7oz">
@@ -1968,7 +1968,7 @@
         <image name="flag" width="24" height="33"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="4BJ-oa-Xee"/>
         <segue reference="Ecr-jb-ig0"/>
-        <segue reference="eb9-DC-HH6"/>
     </inferredMetricsTieBreakers>
 </document>
