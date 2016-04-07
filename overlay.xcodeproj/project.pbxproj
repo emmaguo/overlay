@@ -234,7 +234,7 @@
 				TargetAttributes = {
 					7E288F9F1C7D918F0046C82F = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = 8DCN22V7EM;
+						DevelopmentTeam = RE837Y5B45;
 					};
 				};
 			};
@@ -464,6 +464,7 @@
 			baseConfigurationReference = 4E3192B06282321065C2D21E /* Pods-overlay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = overlay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = overlay.overlay;
@@ -476,6 +477,7 @@
 			baseConfigurationReference = BF940E331B05955B847A35A8 /* Pods-overlay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = overlay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = overlay.overlay;
