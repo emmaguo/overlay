@@ -16,7 +16,7 @@ class TopicCell: UITableViewCell {
     var topicIndex: Int! {
         didSet{
             // Remove any existing circle
-            circleView.layer.sublayers?.forEach({ (layer) -> () in
+            circleView.layer.sublayers?.forEach({ layer in
                 layer.removeFromSuperlayer()
             })
             
@@ -27,13 +27,7 @@ class TopicCell: UITableViewCell {
             let strokeColor = OverlayData[topicIndex].color.CGColor
             let userDefaults = NSUserDefaults.standardUserDefaults()
             let topicStatus = userDefaults.valueForKey("Topic-" + String(topicIndex))
-            var completed: Bool!
-            
-            if topicStatus == nil {
-                completed = false
-            } else {
-                completed = topicStatus as! Bool
-            }
+            let completed = (topicStatus as? Bool) ?? false
             
             let shapeLayer = createCircle(
                 center,

@@ -69,15 +69,15 @@ class QuizViewController: UIViewController {
     func buttonStyles() {
         quizButton.layer.cornerRadius = 4
         quizButton.backgroundColor = lightGray
-        quizButton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Disabled)
+        quizButton.setTitleColor(white, forState: UIControlState.Disabled)
         quizButton.setTitle("Check", forState: UIControlState.Normal)
     }
     
     func cardStyles() {
-        contentView.backgroundColor = UIColor(hexString: "#FFFFFF")
+        contentView.backgroundColor = white
         contentView.layer.cornerRadius = 16.0
         endFadeView.layer.cornerRadius = 16.0
-        contentView.layer.shadowColor = UIColor.blackColor().CGColor
+        contentView.layer.shadowColor = darkGray.CGColor
         contentView.layer.shadowOpacity = 0.2
         contentView.layer.shadowOffset = CGSizeZero
         contentView.layer.shadowRadius = 16
@@ -137,14 +137,14 @@ class QuizViewController: UIViewController {
                 } else {
                     questionViewController.showSuccessState()
                     quizButton.backgroundColor = green
-                    quizButton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
+                    quizButton.setTitleColor(white, forState: UIControlState.Normal)
                     quizButton.setTitle("Correct! Next  →", forState: UIControlState.Normal)
                     completedQuestionIndex = currentQuestionIndex
                 }
             } else {
                 questionViewController.showIncorrectState()
                 quizButton.backgroundColor = red
-                quizButton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
+                quizButton.setTitleColor(white, forState: UIControlState.Normal)
                 quizButton.setTitle("Try again", forState: UIControlState.Normal)
             }
         }
@@ -155,7 +155,7 @@ class QuizViewController: UIViewController {
         print("enabled \(enabled)")
         if enabled {
             quizButton.backgroundColor = darkGray
-            quizButton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
+            quizButton.setTitleColor(white, forState: UIControlState.Normal)
             quizButton.setTitle("Check", forState: UIControlState.Normal)
         } else {
             buttonStyles()
@@ -218,9 +218,9 @@ class QuizViewController: UIViewController {
 
         alert.configContentView = { view in
             if let view = view as? SimpleAlert.ContentView {
-                view.titleLabel.textColor = UIColor.whiteColor()
+                view.titleLabel.textColor = white
                 view.titleLabel.font = headerFontThree
-                view.messageLabel.textColor = UIColor.whiteColor()
+                view.messageLabel.textColor = white
                 view.messageLabel.font = bodyFontOne
                 view.textBackgroundView.layer.cornerRadius = 4.0
                 view.backgroundColor = darkGray
@@ -234,12 +234,12 @@ class QuizViewController: UIViewController {
         alert.addAction(action)
         action.button.titleLabel?.font = bodyFontOne
         action.button.setTitleColor(darkGray, forState: .Normal)
-        action.button.backgroundColor = UIColor.whiteColor()
+        action.button.backgroundColor = white
         
         alert.addAction(actionOK)
         actionOK.button.titleLabel?.font = bodyFontOne
         actionOK.button.setTitleColor(darkGray, forState: .Normal)
-        actionOK.button.backgroundColor = UIColor.whiteColor()
+        actionOK.button.backgroundColor = white
    
         presentViewController(alert, animated: true, completion: nil)
     }

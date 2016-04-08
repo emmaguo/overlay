@@ -53,7 +53,7 @@ class LessonViewController: UIViewController, UIScrollViewDelegate {
         let quizCard = UIView(frame: CGRectMake((lessonCount)*contentWidth+6, 100, 320, 244))
         quizCard.backgroundColor = white
         quizCard.layer.cornerRadius = 16.0
-        quizCard.layer.shadowColor = UIColor.blackColor().CGColor
+        quizCard.layer.shadowColor = darkGray.CGColor
         quizCard.layer.shadowOpacity = 0.2
         quizCard.layer.shadowOffset = CGSizeZero
         quizCard.layer.shadowRadius = 16
@@ -94,7 +94,7 @@ class LessonViewController: UIViewController, UIScrollViewDelegate {
             let card = UIView(frame: CGRectMake(CGFloat(lessonIndex)*contentWidth+6, 0, 320, 480))
             card.backgroundColor = white
             card.layer.cornerRadius = 16.0
-            card.layer.shadowColor = UIColor.blackColor().CGColor
+            card.layer.shadowColor = darkGray.CGColor
             card.layer.shadowOpacity = 0.2
             card.layer.shadowOffset = CGSizeZero
             card.layer.shadowRadius = 16
