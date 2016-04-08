@@ -21,7 +21,7 @@ class SubjectCell: UITableViewCell {
     var status: Bool! {
         didSet {
             if status == true {
-                innerCircle.backgroundColor = UIColor(white: 1, alpha: 0)
+                innerCircle.backgroundColor = white
             }
         }
     }

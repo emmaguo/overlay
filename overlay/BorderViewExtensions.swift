@@ -74,7 +74,7 @@ extension UIView {
         let shapeRect = CGRect(x: 0, y: 0, width: frameSize.width, height: frameSize.height)
         
         shapeLayer.fillColor = UIColor.clearColor().CGColor
-        shapeLayer.strokeColor = UIColor.whiteColor().CGColor
+        shapeLayer.strokeColor = white.CGColor
         shapeLayer.lineWidth = 5
         shapeLayer.path = UIBezierPath(roundedRect: shapeRect, cornerRadius: 30).CGPath
         
@@ -87,7 +87,7 @@ extension UIView {
         let shapeRect = CGRect(x: 0, y: 0, width: frameSize.width, height: frameSize.height)
         
         shapeLayer.fillColor = UIColor.clearColor().CGColor
-        shapeLayer.strokeColor = UIColor.whiteColor().CGColor
+        shapeLayer.strokeColor = white.CGColor
         shapeLayer.lineWidth = 4
         shapeLayer.path = UIBezierPath(roundedRect: shapeRect, cornerRadius: 60).CGPath
         
