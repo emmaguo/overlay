@@ -41,7 +41,7 @@ class ProximityTwoViewController: QuestionViewController {
         
         resetCardViews()
 //        sender.view!.addDefaultBorderActive()
-        sender.view!.addDefaultBorderActive(proximityColor!.CGColor)
+        sender.view!.addDefaultBorderActive(proximityColor.CGColor)
         selectedView = sender.view
         resetQuizButton()
         

@@ -120,7 +120,7 @@ class LessonViewController: UIViewController, UIScrollViewDelegate {
             card.addSubview(headerLabel)
             card.addSubview(bodyLabel)
             
-            var bodyHeight = bodyLabel.bounds.height
+            let bodyHeight = bodyLabel.bounds.height
             var imageView : UIImageView
             imageView  = UIImageView(frame:CGRectMake(45, CGFloat(bodyHeight)+75, 225, 225));
             imageView.image = lessonCard.image
@@ -186,8 +186,7 @@ class LessonViewController: UIViewController, UIScrollViewDelegate {
     }
     
     func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
-        var page : Int = Int(round(lessonScrollView.contentOffset.x / 333))
-        
+//        var page : Int = Int(round(lessonScrollView.contentOffset.x / 333))
     }
     
     // MARK: - Navigation

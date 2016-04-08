@@ -50,7 +50,7 @@ class TopicCell: UITableViewCell {
         super.awakeFromNib()
         
         self.layer.borderWidth = 1.0
-        self.layer.borderColor = topicCellBorderColor!.CGColor
+        self.layer.borderColor = topicCellBorderColor.CGColor
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
