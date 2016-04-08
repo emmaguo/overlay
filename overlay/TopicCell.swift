@@ -51,6 +51,8 @@ class TopicCell: UITableViewCell {
         
         self.layer.borderWidth = 1.0
         self.layer.borderColor = topicCellBorderColor.CGColor
+        topicNameLabel.font = headerFontOne
+        
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

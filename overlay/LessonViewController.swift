@@ -41,7 +41,6 @@ class LessonViewController: UIViewController, UIScrollViewDelegate {
         backgroundView.backgroundColor = primaryColor
         let railLength = progressRailView.frame.size.width
         progressSegment = railLength/(lessonCount)
-//        print(progressSegment)
 
         //set scroll view dimensions
         let contentWidth = lessonScrollView.bounds.width
@@ -52,7 +51,7 @@ class LessonViewController: UIViewController, UIScrollViewDelegate {
         
         // Quiz card
         let quizCard = UIView(frame: CGRectMake((lessonCount)*contentWidth+6, 100, 320, 244))
-        quizCard.backgroundColor = UIColor(hexString: "#FFFFFF")
+        quizCard.backgroundColor = white
         quizCard.layer.cornerRadius = 16.0
         quizCard.layer.shadowColor = UIColor.blackColor().CGColor
         quizCard.layer.shadowOpacity = 0.2
@@ -61,15 +60,15 @@ class LessonViewController: UIViewController, UIScrollViewDelegate {
         
         let quizHeader = UILabel(frame: CGRectMake(24, 24, 272, 30))
         quizHeader.text = "Quiz Time!"
-        quizHeader.textColor = UIColor(hexString: "#2E3B54")
-        quizHeader.font = UIFont(name:"Avenir-Heavy", size: 24.0)
+        quizHeader.textColor = darkGray
+        quizHeader.font = headerFontThree
         quizHeader.textAlignment = NSTextAlignment.Center
         quizHeader.contentMode = UIViewContentMode.ScaleAspectFit
         
         let quizBody = UILabel(frame: CGRectMake(24, 66, 272, 400))
         quizBody.text = "Let’s put this lesson’s concepts into practice!"
-        quizBody.textColor = UIColor(hexString: "#2E3B54")
-        quizBody.font = UIFont(name:"Avenir", size: 18.0)
+        quizBody.textColor = darkGray
+        quizBody.font = bodyFontOne
         quizBody.textAlignment = NSTextAlignment.Center
         quizBody.lineBreakMode = NSLineBreakMode.ByWordWrapping
         quizBody.numberOfLines = 2
@@ -80,7 +79,7 @@ class LessonViewController: UIViewController, UIScrollViewDelegate {
         quizButton.backgroundColor = primaryColor
         quizButton.layer.cornerRadius = 4.0
         quizButton.setTitle("Take Quiz", forState: .Normal)
-        quizButton.titleLabel!.font = UIFont(name:"Avenir-Heavy", size: 24.0)
+        quizButton.titleLabel!.font = headerFontThree
         quizButton.addTarget(self, action: "buttonAction:", forControlEvents: UIControlEvents.TouchUpInside)
 
         quizCard.addSubview(quizHeader)
@@ -93,7 +92,7 @@ class LessonViewController: UIViewController, UIScrollViewDelegate {
             
             // Create cards
             let card = UIView(frame: CGRectMake(CGFloat(lessonIndex)*contentWidth+6, 0, 320, 480))
-            card.backgroundColor = UIColor(hexString: "#FFFFFF")
+            card.backgroundColor = white
             card.layer.cornerRadius = 16.0
             card.layer.shadowColor = UIColor.blackColor().CGColor
             card.layer.shadowOpacity = 0.2
@@ -103,15 +102,15 @@ class LessonViewController: UIViewController, UIScrollViewDelegate {
             // Create content on 1 card
             let headerLabel = UILabel(frame: CGRectMake(24, 24, 300, 30))
             headerLabel.text = lessonCard.title
-            headerLabel.textColor = UIColor(hexString: "#2E3B54")
-            headerLabel.font = UIFont(name:"Avenir-Heavy", size: 24.0)
+            headerLabel.textColor = darkGray
+            headerLabel.font = headerFontThree
             headerLabel.textAlignment = NSTextAlignment.Left
             headerLabel.contentMode = UIViewContentMode.ScaleAspectFit
             
             let bodyLabel = UILabel(frame: CGRectMake(24, 66, 272, 400))
             bodyLabel.text = lessonCard.body
-            bodyLabel.textColor = UIColor(hexString: "#2E3B54")
-            bodyLabel.font = UIFont(name:"Avenir", size: 18.0)
+            bodyLabel.textColor = darkGray
+            bodyLabel.font = bodyFontOne
             bodyLabel.textAlignment = NSTextAlignment.Left
             bodyLabel.lineBreakMode = NSLineBreakMode.ByWordWrapping
             bodyLabel.numberOfLines = 0
@@ -181,7 +180,6 @@ class LessonViewController: UIViewController, UIScrollViewDelegate {
     func scrollViewDidScroll(scrollView: UIScrollView) {
         // Get the current page based on the scroll offset
         let page : CGFloat = CGFloat(lessonScrollView.contentOffset.x / CGFloat(contentWidth))
-        print(page)
         progressView.frame.origin.x = -270 + (progressSegment*page+1)
     }
     

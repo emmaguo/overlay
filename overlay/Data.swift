@@ -28,7 +28,7 @@ let OverlayData = [
                     LessonCard(title: "Example of proximity", image: UIImage(named: "list_noproximity") as UIImage?, body: "Take a quick look at this list of desserts and notice what you assume about the list."),
                     LessonCard(title: "Example of proximity", image: UIImage(named: "list_proximity") as UIImage?, body: "Now take a look again. Does it seem like the last few desserts are different from the rest?")
                 ],
-                quizzes: [
+                questions: [
                     Question(
                         type: Question.QuestionType.MultipleChoice,
                         title: "The purpose of proximity is to...",
@@ -114,7 +114,7 @@ let OverlayData = [
                     LessonCard(title: "Ch-ch-changes", image: nil, body: "When grouping items into close proximity, you usually need to make changes. These changes can come from adjusting the size or font weight or placement of text and graphics."),
                     LessonCard(title: "Near. Far. Wherever you are.", image: nil, body: "Proximity doesn’t mean everything is close together. All elements on the page have some sort of relationship to each other based on how close or far away they are.")
                 ],
-                quizzes: [
+                questions: [
                     Question(
                         type: Question.QuestionType.MultipleChoice,
                         title: "What can you use to emphasize an element",
@@ -134,7 +134,7 @@ let OverlayData = [
                     LessonCard(title: "What to avoid", image: nil, body: "It might seem easy to design something that is organized and easy to read, but lets look at some common mistakes when designing something. Avoid having too many separate elements on a page. After 3-5 items, see which elements can be grouped together."),
                     LessonCard(title: "White space", image: nil, body: "Avoid leaving equal amounts of white space between elements unless each group is part of a related subset. Avoid sticking things in the corners or in the middle just because the space is empty.")
                 ],
-                quizzes: [
+                questions: [
                     Question(
                         type: Question.QuestionType.MultipleChoice,
                         title: "After how many items should you consider grouping elements together?",
@@ -157,17 +157,17 @@ let OverlayData = [
             Subject(
                 name: "Alignment basics",
                 lessons: [],
-                quizzes: []
+                questions: []
             ),
             Subject(
                 name: "Advanced alignment",
                 lessons: [],
-                quizzes: []
+                questions: []
             ),
             Subject(
                 name: "Alignment in digital design",
                 lessons: [],
-                quizzes: []
+                questions: []
             ),
         ]
     ),
@@ -179,17 +179,17 @@ let OverlayData = [
             Subject(
                 name: "Repetition basics",
                 lessons: [],
-                quizzes: []
+                questions: []
             ),
             Subject(
                 name: "Advanced repetition",
                 lessons: [],
-                quizzes: []
+                questions: []
             ),
             Subject(
                 name: "Repetition in digital design",
                 lessons: [],
-                quizzes: []
+                questions: []
             ),
         ]
     ),
@@ -201,17 +201,17 @@ let OverlayData = [
             Subject(
                 name: "Contrast basics",
                 lessons: [],
-                quizzes: []
+                questions: []
             ),
             Subject(
                 name: "Advanced contrast",
                 lessons: [],
-                quizzes: []
+                questions: []
             ),
             Subject(
                 name: "Contrast in digital design",
                 lessons: [],
-                quizzes: []
+                questions: []
             ),
         ]
     ),
@@ -233,7 +233,7 @@ let OverlayData = [
                     LessonCard(title: "Triad Colors", image: UIImage(named: "triad_colors") as UIImage?, body: "Triads are a set of 3 colors equidistant from each other. All triads (except primary colors) have underlying colors connecting them, which make them harmonize well with each other."),
                     LessonCard(title: "Shades and Tints", image: UIImage(named: "shades_tints") as UIImage?, body: "So far our color wheel has only been composed of the pure color, known as the hue. We can add black or white to create a variety of colors. Adding black to a hue creates a shade, while adding white creates a tint.")
                 ],
-                quizzes: [
+                questions: [
                     Question(
                         type: Question.QuestionType.ColorOne,
                         title: "Select the primary colors",
@@ -279,7 +279,7 @@ let OverlayData = [
             Subject(
                 name: "Color palette basics",
                 lessons: [],
-                quizzes: [
+                questions: [
                     Question(
                         type: Question.QuestionType.MultipleChoice,
                         title: "The purpose of proximity is to...",
@@ -295,7 +295,7 @@ let OverlayData = [
             Subject(
                 name: "Advanced color palettes",
                 lessons: [],
-                quizzes: [
+                questions: [
                     Question(
                         type: Question.QuestionType.MultipleChoice,
                         title: "The purpose of proximity is to...",

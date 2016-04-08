@@ -11,6 +11,7 @@ import SwiftHEXColors
 
 // Basic colors
 
+let white = UIColor(hexString: "#FFFFFF")!
 let offWhite = UIColor(hexString: "FAFAFA")!
 let lightestGray = UIColor(hexString: "#f9f9f9")!
 let lightGray = UIColor(hexString: "#eff0f1")!
