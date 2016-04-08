@@ -87,7 +87,7 @@ class ProximityThreeViewController: QuestionViewController {
     @IBAction func didPanLabel(sender: UIPanGestureRecognizer) {
         let point = sender.locationInView(view)
         let translation = sender.translationInView(view)
-        let labelView = sender.view as! UIView!
+        let labelView = sender.view! as UIView!
         
         if sender.state == UIGestureRecognizerState.Began {
             resetQuizButton()
@@ -168,7 +168,6 @@ class ProximityThreeViewController: QuestionViewController {
     
     func isInView(container: UIView, label: UIView) -> Bool {
         let frame = container.frame
-        print(container)
         return label.center.x > frame.minX &&
                label.center.x < frame.maxX &&
                label.center.y > frame.minY &&

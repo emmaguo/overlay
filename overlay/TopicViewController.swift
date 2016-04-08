@@ -26,6 +26,7 @@ class TopicViewController: UIViewController, UITableViewDataSource, UITableViewD
         topic = OverlayData[topicIndex]
         topicHeaderView.backgroundColor = topic.color
         topicNameLabel.text = topic.name
+        topicNameLabel.font = headerFontTwo
         topicDescriptionLabel.text = topic.description
         tableView.delegate = self
         tableView.dataSource = self
@@ -34,6 +35,7 @@ class TopicViewController: UIViewController, UITableViewDataSource, UITableViewD
         topicHeaderView.center.y = -10
         tableView.alpha = 0
         tableView.center.y = -10
+        
     }
     
     override func viewWillAppear(animated: Bool) {

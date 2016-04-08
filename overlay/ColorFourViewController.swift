@@ -65,7 +65,7 @@ class ColorFourViewController: QuestionViewController {
     @IBAction func didPanShape(sender: UIPanGestureRecognizer) {
         let point = sender.locationInView(view)
         let translation = sender.translationInView(view)
-        let shapeView = sender.view as! UIView!
+        let shapeView = sender.view! as UIView!
         
         if sender.state == UIGestureRecognizerState.Began {
             resetQuizButton()

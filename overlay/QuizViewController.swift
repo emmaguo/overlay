@@ -40,7 +40,7 @@ class QuizViewController: UIViewController {
         
         topic = OverlayData[topicIndex]
         subject = topic.subjects[subjectIndex]
-        allQuestions = subject.quizzes
+        allQuestions = subject.questions
         totalQuestionsCount = allQuestions.count
         currentQuestionIndex = 0
         currentQuestion = allQuestions[currentQuestionIndex]
@@ -54,6 +54,10 @@ class QuizViewController: UIViewController {
         endFadeView.alpha = 0
         
         navBackgroundView.backgroundColor = topic.color
+        
+        topicLabel.font = headerFontThree
+        questionLabel.font = bodyFontOne
+        quizButton.titleLabel?.font = headerFontThree
         
     }
     
@@ -79,7 +83,7 @@ class QuizViewController: UIViewController {
         contentView.layer.shadowRadius = 16
         
         questionLabel.textColor = darkGray
-        questionLabel.font = UIFont(name:"Avenir", size: 18.0)
+        questionLabel.font = bodyFontOne
         questionLabel.textAlignment = NSTextAlignment.Center
         questionLabel.numberOfLines = 2    
     }
@@ -215,9 +219,9 @@ class QuizViewController: UIViewController {
         alert.configContentView = { view in
             if let view = view as? SimpleAlert.ContentView {
                 view.titleLabel.textColor = UIColor.whiteColor()
-                view.titleLabel.font = UIFont.boldSystemFontOfSize(26)
+                view.titleLabel.font = headerFontThree
                 view.messageLabel.textColor = UIColor.whiteColor()
-                view.messageLabel.font = UIFont.systemFontOfSize(18)
+                view.messageLabel.font = bodyFontOne
                 view.textBackgroundView.layer.cornerRadius = 4.0
                 view.backgroundColor = darkGray
                 view.textBackgroundView.clipsToBounds = true
@@ -228,12 +232,12 @@ class QuizViewController: UIViewController {
         let actionOK = SimpleAlert.Action(title: "Yes", style: .OK)
         
         alert.addAction(action)
-        action.button.titleLabel?.font = UIFont.systemFontOfSize(18)
+        action.button.titleLabel?.font = bodyFontOne
         action.button.setTitleColor(darkGray, forState: .Normal)
         action.button.backgroundColor = UIColor.whiteColor()
         
         alert.addAction(actionOK)
-        actionOK.button.titleLabel?.font = UIFont.boldSystemFontOfSize(18)
+        actionOK.button.titleLabel?.font = bodyFontOne
         actionOK.button.setTitleColor(darkGray, forState: .Normal)
         actionOK.button.backgroundColor = UIColor.whiteColor()
    
