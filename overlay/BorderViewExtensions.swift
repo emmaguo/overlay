@@ -11,22 +11,22 @@ import UIKit
 
 extension UIView {
     func addInactiveDashedBorder() {
-        addBorder(outlineInactive!.CGColor, lineWidth: 1, lineDashPattern: [8,16], singleUse: false)
+        addBorder(outlineInactive.CGColor, lineWidth: 1, lineDashPattern: [8,16], singleUse: false)
     }
     
     func addActiveDashedBorder() {
-        addBorder(outlineActive!.CGColor, lineWidth: 1.4, lineDashPattern: [8,16], singleUse: false)
+        addBorder(outlineActive.CGColor, lineWidth: 1.4, lineDashPattern: [8,16], singleUse: false)
     }
     
     func addSelectedBorder() {
-        addBorder(outlineActive!.CGColor, lineWidth: 1.4, lineDashPattern: [20,0], singleUse: false)
+        addBorder(outlineActive.CGColor, lineWidth: 1.4, lineDashPattern: [20,0], singleUse: false)
     }
     
     func addDefaultBorderInactive() {
-        addBorder(outlineInactive!.CGColor, lineWidth: 1, lineDashPattern: [20,0], singleUse: false)
+        addBorder(outlineInactive.CGColor, lineWidth: 1, lineDashPattern: [20,0], singleUse: false)
     }
     
-    func addDefaultBorderActive(borderColor: CGColor = proximityColor!.CGColor) {
+    func addDefaultBorderActive(borderColor: CGColor = proximityColor.CGColor) {
         addBorder(borderColor, lineWidth: 4, lineDashPattern: [20,0], singleUse: false)
     }
     
@@ -44,7 +44,7 @@ extension UIView {
         
         shapeLayer.bounds = shapeRect
         shapeLayer.position = CGPoint(x: frameSize.width/2, y: frameSize.height/2)
-        shapeLayer.fillColor = lightestGray?.CGColor
+        shapeLayer.fillColor = lightestGray.CGColor
         shapeLayer.strokeColor = strokeColor
         shapeLayer.lineWidth = lineWidth
         shapeLayer.lineJoin = kCALineJoinRound
@@ -61,7 +61,7 @@ extension UIView {
         let shapeRect = CGRect(x: 0, y: 0, width: frameSize.width, height: frameSize.height)
 
         shapeLayer.fillColor = UIColor.clearColor().CGColor
-        shapeLayer.strokeColor = mediumGray?.CGColor
+        shapeLayer.strokeColor = mediumGray.CGColor
         shapeLayer.lineWidth = 4
         shapeLayer.path = UIBezierPath(roundedRect: shapeRect, cornerRadius: 30).CGPath
         

@@ -15,7 +15,7 @@ let correctImage = UIImage(named: "button_correct") as UIImage?
 let OverlayData = [
     Topic(
         name: "Proximity",
-        color: proximityColor!,
+        color: proximityColor,
         description: "Organize information, reduce clutter",
         subjects: [
             Subject(
@@ -151,7 +151,7 @@ let OverlayData = [
     ),
     Topic(
         name: "Alignment",
-        color: alignmentColor!,
+        color: alignmentColor,
         description: "Organize information, reduce clutter",
         subjects: [
             Subject(
@@ -173,7 +173,7 @@ let OverlayData = [
     ),
     Topic(
         name: "Repetition",
-        color: repetitionColor!,
+        color: repetitionColor,
         description: "Organize information, reduce clutter",
         subjects: [
             Subject(
@@ -195,7 +195,7 @@ let OverlayData = [
     ),
     Topic(
         name: "Contrast",
-        color: contrastColor!,
+        color: contrastColor,
         description: "Organize information, reduce clutter",
         subjects: [
             Subject(
@@ -217,7 +217,7 @@ let OverlayData = [
     ),
     Topic(
         name: "Color",
-        color: colorColor!,
+        color: colorColor,
         description: "Create harmonious color palettes",
         subjects: [
             Subject(

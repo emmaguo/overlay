@@ -156,7 +156,6 @@ class ProximityThreeViewController: QuestionViewController {
         let fontTitleInZoneTwo = allInArray(fontTitleLabel) { eachLabel in self.isInView(self.zoneTwoTopView, label: eachLabel) }
         
         return (allColorInZoneOne && colorTitleInZoneOne && allFontInZoneTwo && fontTitleInZoneTwo) || (allColorInZoneTwo && colorTitleInZoneTwo && allFontInZoneOne && fontTitleInZoneOne)
-        return true
     }
     
     func resetQuizButton() {
